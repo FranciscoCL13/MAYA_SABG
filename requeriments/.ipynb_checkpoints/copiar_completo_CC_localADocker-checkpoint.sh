@@ -1,27 +1,41 @@
 #!/bin/bash
 
-echo "[YY] Copiando SOLO archivos (sin subdirectorios) desde .docs dentro del contenedor..."
+echo "[YY] Copiando SOLO archivos subidos HOY (con subdirectorios) desde .docs dentro del contenedor..."
 
-# 1. Fecha actual para la subcarpeta destino
+# Fecha actual
 FECHA=$(date +%F)
 DESTINO="/opt/jboss/wildfly/bin/jbpm_docs/${FECHA}"
 
-# 2. Ejecutar todo dentro del contenedor
+# Ejecutar dentro del contenedor
 docker exec -u 0 jbpm-server bash -c "
     echo '[YY] Creando carpeta destino: $DESTINO'
     mkdir -p \"$DESTINO\"
 
-    echo '[YY] Empaquetando toda la carpeta .docs en un .tar...'
-    tar -cvf /tmp/docs_only.tar -C /opt/jboss/wildfly/bin/.docs .
-    
-    echo '[YY] Moviendo el .tar al destino...'
-    mv /tmp/docs_only.tar \"$DESTINO/docs_only.tar\"
+    cd /opt/jboss/wildfly/bin/.docs
 
-    echo '[YY] Descomprimiendo el .tar en el destino...'
-    tar -xvf \"$DESTINO/docs_only.tar\" -C \"$DESTINO\"
+    echo '[YY] Buscando archivos subidos hoy...'
+    find . -type f -newerct \"$(date +%F) 00:00:00\" > /tmp/lista_docs_hoy.txt
 
-    echo '[YY] Eliminando el archivo .tar...'
-    rm -f \"$DESTINO/docs_only.tar\"
+    CANTIDAD=\$(wc -l < /tmp/lista_docs_hoy.txt)
 
+    if [ \$CANTIDAD -gt 0 ]; then
+        echo '[YY] Se encontraron '\$CANTIDAD' archivos subidos hoy.'
+
+        echo '[YY] Empaquetando en un .tar...'
+        tar -cvf /tmp/docs_only.tar -T /tmp/lista_docs_hoy.txt
+
+        echo '[YY] Moviendo el .tar al destino...'
+        mv /tmp/docs_only.tar \"$DESTINO/docs_only.tar\"
+
+        echo '[YY] Descomprimiendo el .tar en el destino...'
+        tar -xvf \"$DESTINO/docs_only.tar\" -C \"$DESTINO\"
+
+        echo '[YY] Limpiando archivos temporales...'
+        rm -f \"$DESTINO/docs_only.tar\" /tmp/lista_docs_hoy.txt
+    else
+        echo '[YY] No hay archivos subidos HOY. Nada que copiar.'
+    fi
+
+    echo '[YY] Total de archivos copiados hoy: '\$CANTIDAD
     echo '[YY] ¡Proceso completo!'
 "
