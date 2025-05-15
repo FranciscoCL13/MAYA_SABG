@@ -40,7 +40,7 @@
     <!-- Script para consumir endpoint y mostrar la tabla -->
     <script>
         document.getElementById('btnGenerar').addEventListener('click', function () {
-            fetch('/generar_tabla')
+            fetch('/tablas/generar_tabla')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('tablaResultado').innerHTML = data.tabla;
