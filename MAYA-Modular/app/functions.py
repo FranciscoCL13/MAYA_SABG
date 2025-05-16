@@ -10,36 +10,44 @@ from app.conexion import get_engine
 JBPM_HOST = "http://host.docker.internal:8080"
 USERNAME = "wbadmin"
 PASSWORD = "wbadmin"
-CONTAINER_ID = "Publica_In_Out_1.0.0-SNAPSHOT"
 HEADERS = {"Accept": "application/json"}
 AUTH = HTTPBasicAuth(USERNAME, PASSWORD)
 
 # ================================
-# Obtener último processInstanceId COMBINAR ESTADOS: ...?status=1&status=2
-
+# Obtener última instancia activa junto con container_id
 # ================================
-def get_latest_process_instance():
-    url = f"{JBPM_HOST}/kie-server/services/rest/server/queries/processes/instances?status=1&page=0&pageSize=10"
-    print(f"[INFO] Consultando últimas instancias activas en: {url}")
+def get_latest_active_instance():
+    url = f"{JBPM_HOST}/kie-server/services/rest/server/queries/processes/instances"
+    params = {
+        "status": 1,  # Instancias activas
+        "page": 0,
+        "pageSize": 10
+    }
+
+    print(f"[INFO] Consultando últimas instancias activas en: {url}?status=1")
+
     try:
-        response = requests.get(url, headers=HEADERS, auth=AUTH, timeout=10)
+        response = requests.get(url, headers=HEADERS, params=params, auth=AUTH, timeout=10)
         response.raise_for_status()
         instances = response.json().get("process-instance", [])
         if not instances:
             print("[INFO] No hay instancias activas.")
-            return None
+            return None, None
         latest = instances[0]
-        print(f"[OK] Última instancia activa: {latest.get('process-instance-id')}")
-        return latest.get("process-instance-id")
+        process_instance_id = latest.get('process-instance-id')
+        container_id = latest.get('container-id')
+        print(f"[OK] Última instancia activa: {process_instance_id}")
+        print(f"[ZZ] Contenedor detectado: {container_id}")
+        return process_instance_id, container_id
     except Exception as e:
-        print(f"[ERROR] Fallo en get_latest_process_instance: {e}")
-        return None
+        print(f"[ERROR] Fallo en get_latest_active_instance: {e}")
+        return None, None
 
 # ================================
-# Obtener todos los documentos del proceso
+# Obtener variables (documentos) de la instancia y contenedor dinámicos
 # ================================
-def get_all_documents(process_instance_id):
-    url = f"{JBPM_HOST}/kie-server/services/rest/server/containers/{CONTAINER_ID}/processes/instances/{process_instance_id}/variables"
+def get_all_documents(process_instance_id, container_id):
+    url = f"{JBPM_HOST}/kie-server/services/rest/server/containers/{container_id}/processes/instances/{process_instance_id}/variables"
     print(f"[INFO] Consultando variables del proceso: {url}")
     try:
         response = requests.get(url, headers=HEADERS, auth=AUTH)
@@ -77,22 +85,22 @@ def get_all_documents(process_instance_id):
         print(f"[ERROR] Fallo en get_all_documents: {e}")
         return []
 
-
 # ================================
-# Ejecutar y almacenar documentos
+# Ejecutar extracción y almacenar documentos en BD
 # ================================
 def extract_and_store_documents():
     try:
         print("-----INICIANDO PROCESO documentCollection---------")
 
-        process_instance_id = get_latest_process_instance()
+        process_instance_id, container_id = get_latest_active_instance()
         print(f"[ZZ] Instancia obtenida: {process_instance_id}")
+        print(f"[ZZ] Contenedor obtenido: {container_id}")
 
-        if not process_instance_id:
-            print("[INFO] No se pudo continuar sin instancia activa.")
+        if not process_instance_id or not container_id:
+            print("[INFO] No se pudo continuar sin instancia activa y contenedor.")
             return
 
-        docs = get_all_documents(process_instance_id)
+        docs = get_all_documents(process_instance_id, container_id)
         if not docs:
             print("[INFO] No se encontraron documentos para procesar.")
             return
