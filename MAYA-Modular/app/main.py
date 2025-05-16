@@ -24,14 +24,20 @@ def ejecutar_script(script_name):
 
 @app.route('/copiar_y_limpiar', methods=['POST'])
 def copiar_y_limpiar():
-    if not ejecutar_script('copiar_completo_CC_localADocker.sh'):
+    print("--------------INICIANDO PROCESO copiar archivos--------------")
+    if not ejecutar_script('copiar_completo_CC_localADocker_V2.sh'):
         return 'Error en script de copia.', 500
+    print("--------------FINALIZANDO PROCESO copiar archivos--------------")
+    print("--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------")
+    
     if not ejecutar_script('limpiar_jbpm_docs_localADocker.sh'):
         return 'Error en script de limpieza.', 500
+    print("--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------")
+    
 
-    print("-----INICIANDO PROCESO documentCollection---------")
+    print("--------------INICIANDO PROCESO documentCollection--------------")
     extract_and_store_documents()
-    print("FINALIZANDO PROCESO documentCollection")
+    print("--------------FINALIZANDO PROCESO documentCollection--------------")
 
     return 'Proceso ejecutado correctamente.', 200
 

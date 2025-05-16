@@ -61,7 +61,8 @@ def generar_tabla():
                 taskvariableimpl.value,
                 task.name,
                 taskvariableimpl.processid,
-                taskvariableimpl.processinstanceid
+                taskvariableimpl.processinstanceid,
+                taskvariableimpl.name as variable
             FROM taskvariableimpl
             JOIN task
                 ON taskvariableimpl.processinstanceid = task.processinstanceid
