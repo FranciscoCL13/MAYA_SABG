@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, jsonify, send_from_directory
+from flask import Blueprint, render_template, jsonify, send_file, abort
 from sqlalchemy import text
 import pandas as pd
 import os
@@ -6,7 +6,8 @@ import json
 from app.conexion import get_engine
 
 tablas_bp = Blueprint('tablas_bp', __name__, template_folder='templates')
-#AQUI LA RUTA DEL FILE SERVER
+
+# Ruta base de archivos
 ARCHIVOS_BASE_DIR = r"C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
 
 engine = get_engine()
@@ -15,22 +16,22 @@ engine = get_engine()
 def index():
     return render_template('index.html')
 
-@tablas_bp.route('/descargar/<path:filename>')  # path: para permitir subdirectorios si hay
+@tablas_bp.route('/descargar/<path:filename>')
 def descargar_archivo(filename):
-    try:
-        return send_from_directory(ARCHIVOS_BASE_DIR, filename, as_attachment=True)
-    except FileNotFoundError:
-        return f"<p style='color:red;'>Archivo no encontrado en {ARCHIVOS_BASE_DIR}</p>", 404
+    # Busca recursivamente en subdirectorios
+    for root, dirs, files in os.walk(ARCHIVOS_BASE_DIR):
+        if filename in files:
+            ruta_completa = os.path.join(root, filename)
+            return send_file(ruta_completa, as_attachment=True)
+    return f"<p style='color:red;'>Archivo <b>{filename}</b> no encontrado en {ARCHIVOS_BASE_DIR}</p>", 404
 
 def extraer_documentos(valor):
     nombres = []
     try:
-        # Normaliza comillas simples a dobles para json.loads
         doc_data = json.loads(valor.replace("'", '"'))
         if isinstance(doc_data, dict):
             if "documents" in doc_data:
                 for doc_wrapper in doc_data["documents"]:
-                    # doc_wrapper es dict con un solo par clave-valor
                     doc = list(doc_wrapper.values())[0]
                     nombre = doc.get("name")
                     if nombre:
@@ -40,22 +41,19 @@ def extraer_documentos(valor):
                 if nombre:
                     nombres.append(nombre)
     except Exception:
-        pass  # Podrías agregar logging aquí si quieres
+        pass
     return nombres
 
 def generar_html_descarga(nombre_archivo):
     if nombre_archivo:
-        ruta_archivo = os.path.join(ARCHIVOS_BASE_DIR, nombre_archivo)
-        if os.path.isfile(ruta_archivo):
-            url = f"/tablas/descargar/{nombre_archivo}"
-            return f'<a href="{url}" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">{nombre_archivo}</a>'
+        url = f"/tablas/descargar/{nombre_archivo}"
+        return f'<a href="{url}" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">{nombre_archivo}</a>'
     return nombre_archivo
 
 @tablas_bp.route('/generar_tabla', methods=['GET'])
-@tablas_bp.route('/generar_tabla', methods=['GET'])
 def generar_tabla():
     try:
-        # 1. Genera x_mi_tabla_completa
+        # 1. Genera la tabla base
         consulta_sql = text("""
             SELECT
                 task.actualowner_id AS usuario,
@@ -84,9 +82,8 @@ def generar_tabla():
         df_base = pd.read_sql(consulta_sql, engine, params={"patron": "%####%", "patronDos": "%@%"})
         df_base.to_sql('x_mi_tabla_completa', engine, if_exists='replace', index=False)
 
-        # 2. Ejecuta la combinación con tabla_document_collections
+        # 2. Crea tabla combinada
         combinacion_sql = text("""
-            -- Archivos reales que ya vienen en x_mi_tabla_completa
             SELECT 
               x.numero_catastral,
               x.usuario,
@@ -98,7 +95,6 @@ def generar_tabla():
 
             UNION ALL
 
-            -- Reemplazos desde tabla_document_collections
             SELECT 
               x.numero_catastral,
               x.usuario,
@@ -113,15 +109,15 @@ def generar_tabla():
         """)
 
         df_final = pd.read_sql(combinacion_sql, engine)
+        df_final.to_sql('x_mi_tabla_combinada', engine, if_exists='replace', index=False)
 
-        # 3. Enlace a descargas (si aplica)
+        # 3. Agrega enlaces de descarga
         df_final['value'] = df_final['value'].apply(
             lambda v: '<br>'.join([generar_html_descarga(n) for n in extraer_documentos(v)]) if extraer_documentos(v) else generar_html_descarga(v)
         )
 
         tabla_html = df_final.to_html(classes='table table-bordered', index=False, escape=False)
-        return jsonify({'tabla': f"<h3>Tabla final combinada:</h3><hr>{tabla_html}"})
+        return jsonify({'tabla': f"<h3>x_mi_tabla_combinada:</h3><hr>{tabla_html}"})
 
     except Exception as e:
         return jsonify({'tabla': f"<p style='color:red;'>Error: {str(e)}</p>"}), 500
-
