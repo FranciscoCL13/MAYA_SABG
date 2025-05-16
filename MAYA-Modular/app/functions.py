@@ -15,7 +15,8 @@ HEADERS = {"Accept": "application/json"}
 AUTH = HTTPBasicAuth(USERNAME, PASSWORD)
 
 # ================================
-# Obtener último processInstanceId
+# Obtener último processInstanceId COMBINAR ESTADOS: ...?status=1&status=2
+
 # ================================
 def get_latest_process_instance():
     url = f"{JBPM_HOST}/kie-server/services/rest/server/queries/processes/instances?status=1&page=0&pageSize=10"
