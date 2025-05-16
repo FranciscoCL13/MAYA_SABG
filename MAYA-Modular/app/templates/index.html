@@ -6,52 +6,74 @@
 
     <!-- Estilos oficiales del Gobierno de México -->
     <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
-	
-    <!-- Estilos personalizados -->
+
     <style>
         table {
-            font-size: 12px;  /* Reducir el tamaño de la fuente */
-            width: 100%;  /* Asegurar que la tabla ocupe el ancho completo */
-            border-collapse: collapse;  /* Asegura que las celdas estén unidas */
+            font-size: 12px;
+            width: 100%;
+            border-collapse: collapse;
         }
         th, td {
-            padding: 4px 6px;  /* Reducir el espacio de las celdas */
-            text-align: left;  /* Alineación de texto a la izquierda */
-            border: 1px solid #ddd;  /* Bordes suaves para la tabla */
+            padding: 4px 6px;
+            text-align: left;
+            border: 1px solid #ddd;
         }
         th {
-            background-color: #f2f2f2;  /* Color de fondo para las cabeceras */
+            background-color: #f2f2f2;
+        }
+        /* Ocultar inicialmente el filtro */
+        #filtroBusqueda {
+            display: none;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Contenido -->
     <div class="container">
         <h2 class="h3">Tabla final de JBPM</h2>
 
-        <button id="btnGenerar" class="btn btn-primary">
-            Generar tabla
-        </button>
+        <button id="btnGenerar" class="btn btn-primary">Generar tabla</button>
+
+        <!-- Filtro oculto inicialmente -->
+        <div id="filtroBusqueda">
+            <input type="text" id="filtroNumeroCatastral" placeholder="Buscar número catastral" />
+            <button id="btnBuscar" class="btn btn-secondary">Buscar</button>
+        </div>
 
         <div id="tablaResultado" class="s-margin-top--medium"></div>
     </div>
-	<script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
-    <!-- Script para consumir endpoint y mostrar la tabla -->
+
+    <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+
     <script>
+        // Mostrar tabla al hacer clic en Generar
         document.getElementById('btnGenerar').addEventListener('click', function () {
             fetch('/tablas/generar_tabla')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('tablaResultado').innerHTML = data.tabla;
+                    // Mostrar filtro cuando ya esté la tabla
+                    document.getElementById('filtroBusqueda').style.display = 'block';
                 })
                 .catch(error => {
                     console.error('Error:', error);
                     alert('Hubo un problema al generar la tabla.');
                 });
         });
+
+        // Función para buscar por número catastral
+        document.getElementById('btnBuscar').addEventListener('click', function () {
+            const valor = document.getElementById('filtroNumeroCatastral').value;
+            fetch('/tablas/buscar_tabla?numero_catastral=' + encodeURIComponent(valor))
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('tablaResultado').innerHTML = data.tabla;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al buscar por número catastral');
+                });
+        });
     </script>
-
 </body>
-
 </html>

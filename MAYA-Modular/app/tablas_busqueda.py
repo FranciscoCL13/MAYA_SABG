@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, jsonify, send_file, abort
+from flask import Blueprint, render_template, jsonify, send_file, abort, request
 from sqlalchemy import text
 import pandas as pd
 import os
@@ -11,7 +11,7 @@ tablas_bp = Blueprint('tablas_bp', __name__, template_folder='templates')
 ARCHIVOS_BASE_DIR = r"C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
 
 engine = get_engine()
-
+##-----------------------------------------------------------------------------------------
 @tablas_bp.route('/')
 def index():
     return render_template('index.html')
@@ -24,7 +24,7 @@ def descargar_archivo(filename):
             ruta_completa = os.path.join(root, filename)
             return send_file(ruta_completa, as_attachment=True)
     return f"<p style='color:red;'>Archivo <b>{filename}</b> no encontrado en {ARCHIVOS_BASE_DIR}</p>", 404
-
+##-------------------------------------------------------------------------------------------
 def extraer_documentos(valor):
     nombres = []
     try:
@@ -49,7 +49,7 @@ def generar_html_descarga(nombre_archivo):
         url = f"/tablas/descargar/{nombre_archivo}"
         return f'<a href="{url}" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">{nombre_archivo}</a>'
     return nombre_archivo
-
+## -------------------------------------------------------------------------------------------
 @tablas_bp.route('/generar_tabla', methods=['GET'])
 def generar_tabla():
     try:
@@ -106,6 +106,7 @@ def generar_tabla():
               ON x.processinstanceid = d.processinstanceid
              AND x.variable = d.variable
             WHERE x.value !~ '####[0-9]+####'
+            order by numero_catastral
         """)
 
         df_final = pd.read_sql(combinacion_sql, engine)
@@ -121,3 +122,36 @@ def generar_tabla():
 
     except Exception as e:
         return jsonify({'tabla': f"<p style='color:red;'>Error: {str(e)}</p>"}), 500
+
+## ----------------------------------------------------------------------------------
+
+@tablas_bp.route('/buscar_tabla', methods=['GET'])
+def buscar_tabla():
+    numero = request.args.get('numero_catastral', '').strip()
+    if not numero:
+        return jsonify({'tabla': '<p style="color:red;">Número catastral no proporcionado</p>'}), 400
+
+    try:
+        consulta_sql = text("""
+            SELECT 
+                numero_catastral,
+                usuario,
+                processinstanceid,
+                value,
+                variable
+            FROM x_mi_tabla_combinada
+            WHERE numero_catastral LIKE :numero
+        """)
+        df_filtro = pd.read_sql(consulta_sql, engine, params={'numero': f"%{numero}%"})
+        if df_filtro.empty:
+            return jsonify({'tabla': f'<p>No se encontraron resultados para el número catastral: <strong>{numero}</strong></p>'})
+
+        # Enlace de descarga
+        df_filtro['value'] = df_filtro['value'].apply(
+            lambda v: '<br>'.join([generar_html_descarga(n) for n in extraer_documentos(v)]) if extraer_documentos(v) else generar_html_descarga(v)
+        )
+
+        tabla_html = df_filtro.to_html(classes='table table-bordered', index=False, escape=False)
+        return jsonify({'tabla': f"<h3>Resultados filtrados por número catastral: {numero}</h3><hr>{tabla_html}"})
+    except Exception as e:
+        return jsonify({'tabla': f"<p style='color:red;'>Error al buscar: {str(e)}</p>"}), 500
