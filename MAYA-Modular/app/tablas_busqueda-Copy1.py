@@ -6,7 +6,7 @@ import json
 from app.conexion import get_engine
 
 tablas_bp = Blueprint('tablas_bp', __name__, template_folder='templates')
-#AQUI LA RUTA DEL FILE SERVER
+
 ARCHIVOS_BASE_DIR = r"C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
 
 engine = get_engine()
@@ -52,10 +52,8 @@ def generar_html_descarga(nombre_archivo):
     return nombre_archivo
 
 @tablas_bp.route('/generar_tabla', methods=['GET'])
-@tablas_bp.route('/generar_tabla', methods=['GET'])
 def generar_tabla():
     try:
-        # 1. Genera x_mi_tabla_completa
         consulta_sql = text("""
             SELECT
                 task.actualowner_id AS usuario,
@@ -81,47 +79,18 @@ def generar_tabla():
             ORDER BY taskvariableimpl.processinstanceid;
         """)
 
-        df_base = pd.read_sql(consulta_sql, engine, params={"patron": "%####%", "patronDos": "%@%"})
-        df_base.to_sql('x_mi_tabla_completa', engine, if_exists='replace', index=False)
+        df = pd.read_sql(consulta_sql, engine, params={"patron": "%####%", "patronDos": "%@%"})
 
-        # 2. Ejecuta la combinación con tabla_document_collections
-        combinacion_sql = text("""
-            -- Archivos reales que ya vienen en x_mi_tabla_completa
-            SELECT 
-              x.numero_catastral,
-              x.usuario,
-              x.processinstanceid,
-              x.value,
-              x.variable
-            FROM x_mi_tabla_completa x
-            WHERE x.value ~ '####[0-9]+####'
-
-            UNION ALL
-
-            -- Reemplazos desde tabla_document_collections
-            SELECT 
-              x.numero_catastral,
-              x.usuario,
-              d.processinstanceid,
-              d.value,
-              d.variable
-            FROM x_mi_tabla_completa x
-            JOIN tabla_document_collections d
-              ON x.processinstanceid = d.processinstanceid
-             AND x.variable = d.variable
-            WHERE x.value !~ '####[0-9]+####'
-        """)
-
-        df_final = pd.read_sql(combinacion_sql, engine)
-
-        # 3. Enlace a descargas (si aplica)
-        df_final['value'] = df_final['value'].apply(
-            lambda v: '<br>'.join([generar_html_descarga(n) for n in extraer_documentos(v)]) if extraer_documentos(v) else generar_html_descarga(v)
+        # Aplica función para convertir valores que parecen contener documentos a enlaces de descarga
+        df['value'] = df['value'].apply(
+            lambda v: '<br>'.join([generar_html_descarga(n) for n in extraer_documentos(v)]) if extraer_documentos(v) else v
         )
 
-        tabla_html = df_final.to_html(classes='table table-bordered', index=False, escape=False)
-        return jsonify({'tabla': f"<h3>Tabla final combinada:</h3><hr>{tabla_html}"})
+        # Guarda la tabla en base de datos (sobrescribe si ya existe)
+        df.to_sql('x_mi_tabla_completa', engine, if_exists='replace', index=False)
+
+        tabla_html = df.to_html(classes='table table-bordered', index=False, escape=False)
+        return jsonify({'tabla': f"<h3>Tabla:</h3><h1>x_mi_tabla_completa</h1><a> Se generó y almacenó en base de datos</a><hr>{tabla_html}"})
 
     except Exception as e:
-        return jsonify({'tabla': f"<p style='color:red;'>Error: {str(e)}</p>"}), 500
-
+        return jsonify({'tabla': f"<p style='color:red;'>Error al generar o almacenar la tabla: {str(e)}</p>"}), 500

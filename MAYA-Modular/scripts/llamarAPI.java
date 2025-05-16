@@ -11,9 +11,8 @@ try {
     System.out.println("[ZZ] Respuesta HTTP: " + code);
 } catch (Exception e) {
     // Captura segura sin propagar
-    System.out.println("[ERROR] Fallo al llamar a la API:");
+    System.out.println("[ZZ][ERROR] Fallo al llamar a la API:");
     System.out.println(e.getMessage());
     e.printStackTrace();
 
-    // No relanzar el error, ni hacer throw
 }
