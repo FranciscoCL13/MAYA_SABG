@@ -4,9 +4,12 @@ import os
 from app.functions import extract_and_store_documents
 
 app = create_app()
+#Define la ruta al directorio scripts/ relativo a este archivo
+#__file__ se refiere al archivo actual. Subimos un nivel (..) y entramos a la carpeta scripts
 SCRIPT_DIR = os.path.join(os.path.dirname(__file__), '..', 'scripts')
 
 def ejecutar_script(script_name):
+    #Crea la ruta completa del script bash que se va a ejecutar, combinando el directorio base scripts/ y el nombre del archivo.
     ruta_script = os.path.join(SCRIPT_DIR, script_name)
     try:
         result = subprocess.run(
@@ -42,5 +45,6 @@ def copiar_y_limpiar():
     return 'Proceso ejecutado correctamente.', 200
 
 if __name__ == '__main__':
+    # Lanza la app Flask si el script es ejecutado directamente, escuchando en todas las IPs (0.0.0.0) y en el puerto 8083
     app.run(host='0.0.0.0', port=8083, debug=True)
 

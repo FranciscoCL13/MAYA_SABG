@@ -131,6 +131,12 @@ def generar_tabla():
         # 3. Agrega enlaces de descarga con nombres limpios
         df_final['value'] = df_final['value'].apply(limpiar_nombre_archivo)
 
+        # Cambia el nombre del campo "value" por "Descargar archivo" en el HTML
+        # df_final = df_final.rename(columns={'value': 'Descargar archivo'})
+        df_final = df_final.rename(columns={
+            'value': 'Descargar archivo',
+            'modificationdate': 'Fecha de carga'
+        })        
         tabla_html = df_final.to_html(classes='table table-bordered', index=False, escape=False)
         return jsonify({'tabla': f"<h3>x_mi_tabla_combinada:</h3><hr>{tabla_html}"})
 
@@ -160,8 +166,14 @@ def buscar_tabla():
             return jsonify({'tabla': f'<p>No se encontraron resultados para el número catastral: <strong>{numero}</strong></p>'})
 
         df_filtro['value'] = df_filtro['value'].apply(limpiar_nombre_archivo)
-
+        # Cambia el nombre del campo para presentación
+        # df_filtro = df_filtro.rename(columns={'value': 'Descargar archivo'})
+        df_filtro = df_filtro.rename(columns={
+            'value': 'Descargar archivo',
+            'modificationdate': 'Fecha de carga'
+        })           
         tabla_html = df_filtro.to_html(classes='table table-bordered', index=False, escape=False)
+        
         return jsonify({'tabla': f"<h3>Resultados filtrados por número catastral: {numero}</h3><hr>{tabla_html}"})
     except Exception as e:
         return jsonify({'tabla': f"<p style='color:red;'>Error al buscar: {str(e)}</p>"}), 500
