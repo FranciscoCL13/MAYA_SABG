@@ -12,7 +12,6 @@ tablas_bp = Blueprint('tablas_bp', __name__, template_folder='templates')
 ARCHIVOS_BASE_DIR = r"C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
 
 engine = get_engine()
-
 ##-------------------------------------------------------------------------------------------
 @tablas_bp.route('/')
 def index():
@@ -26,7 +25,6 @@ def descargar_archivo(filename):
             ruta_completa = os.path.join(root, filename)
             return send_file(ruta_completa, as_attachment=True)
     return f"<p style='color:red;'>Archivo <b>{filename}</b> no encontrado en {ARCHIVOS_BASE_DIR}</p>", 404
-
 ##-------------------------------------------------------------------------------------------
 def extraer_documentos(valor):
     nombres = []
@@ -46,7 +44,6 @@ def extraer_documentos(valor):
     except Exception:
         pass
     return nombres
-
 ##---------------------------------------------------------------------------------------------
 def generar_html_descarga(nombre_archivo):
     if nombre_archivo:
@@ -102,27 +99,30 @@ def generar_tabla():
 
         # 2. tabla combinada
         combinacion_sql = text("""
-            SELECT 
-                x.numero_catastral,
-                x.usuario,
-                x.value,
-                x.modificationdate
+            		SELECT 
+              x.numero_catastral,
+              x.usuario,
+             
+              x.value,
+              x.modificationdate
             FROM x_mi_tabla_completa x
             WHERE x.value ~ '####[0-9]+####'
 
             UNION ALL
 
             SELECT 
-                x.numero_catastral,
-                x.usuario,
-                d.value,
-                x.modificationdate
+              x.numero_catastral,
+              x.usuario,
+              
+              d.value,
+              x.modificationdate
             FROM x_mi_tabla_completa x
             JOIN tabla_document_collections d
               ON x.processinstanceid = d.processinstanceid
              AND x.variable = d.variable
             WHERE x.value !~ '####[0-9]+####'
             ORDER BY modificationdate;
+
         """)
 
         df_final = pd.read_sql(combinacion_sql, engine)
@@ -131,16 +131,14 @@ def generar_tabla():
         # 3. Agrega enlaces de descarga con nombres limpios
         df_final['value'] = df_final['value'].apply(limpiar_nombre_archivo)
 
+        # Cambia el nombre del campo "value" por "Descargar archivo" en el HTML
+        # df_final = df_final.rename(columns={'value': 'Descargar archivo'})
         df_final = df_final.rename(columns={
             'value': 'Descargar archivo',
             'modificationdate': 'Fecha de carga'
-        })
-
-        total_registros = len(df_final)
-        conteo_html = f"<p>Registros encontrados: <strong>{total_registros}</strong></p>"
-
+        })        
         tabla_html = df_final.to_html(classes='table table-bordered', index=False, escape=False)
-        return jsonify({'tabla': f"<h3>x_mi_tabla_combinada:</h3>{conteo_html}<hr>{tabla_html}"})
+        return jsonify({'tabla': f"<h3>x_mi_tabla_combinada:</h3><hr>{tabla_html}"})
 
     except Exception as e:
         return jsonify({'tabla': f"<p style='color:red;'>Error: {str(e)}</p>"}), 500
@@ -157,6 +155,7 @@ def buscar_tabla():
             SELECT 
                 numero_catastral,
                 usuario,
+                
                 value,
                 modificationdate
             FROM x_mi_tabla_combinada
@@ -168,16 +167,14 @@ def buscar_tabla():
             return jsonify({'tabla': f'<p>No se encontraron resultados para el número catastral: <strong>{numero}</strong></p>'})
 
         df_filtro['value'] = df_filtro['value'].apply(limpiar_nombre_archivo)
+        # Cambia el nombre del campo para presentación
+        # df_filtro = df_filtro.rename(columns={'value': 'Descargar archivo'})
         df_filtro = df_filtro.rename(columns={
             'value': 'Descargar archivo',
             'modificationdate': 'Fecha de carga'
-        })
-
-        total_filtrados = len(df_filtro)
-        conteo_html = f"<p>Registros encontrados: <strong>{total_filtrados}</strong></p>"
-
+        })           
         tabla_html = df_filtro.to_html(classes='table table-bordered', index=False, escape=False)
-        return jsonify({'tabla': f"<h3>Resultados filtrados por número catastral: {numero}</h3>{conteo_html}<hr>{tabla_html}"})
-
+        
+        return jsonify({'tabla': f"<h3>Resultados filtrados por número catastral: {numero}</h3><hr>{tabla_html}"})
     except Exception as e:
         return jsonify({'tabla': f"<p style='color:red;'>Error al buscar: {str(e)}</p>"}), 500
