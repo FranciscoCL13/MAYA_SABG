@@ -99,12 +99,12 @@ def generar_tabla():
 
         # 2. tabla combinada
         combinacion_sql = text("""
-            SELECT 
+            		SELECT 
               x.numero_catastral,
               x.usuario,
               x.processinstanceid,
               x.value,
-              x.variable
+              x.modificationdate
             FROM x_mi_tabla_completa x
             WHERE x.value ~ '####[0-9]+####'
 
@@ -115,13 +115,14 @@ def generar_tabla():
               x.usuario,
               d.processinstanceid,
               d.value,
-              d.variable
+              x.modificationdate
             FROM x_mi_tabla_completa x
             JOIN tabla_document_collections d
               ON x.processinstanceid = d.processinstanceid
              AND x.variable = d.variable
             WHERE x.value !~ '####[0-9]+####'
-            ORDER BY numero_catastral
+            ORDER BY numero_catastral;
+
         """)
 
         df_final = pd.read_sql(combinacion_sql, engine)
@@ -150,7 +151,7 @@ def buscar_tabla():
                 usuario,
                 processinstanceid,
                 value,
-                variable
+                modificationdate
             FROM x_mi_tabla_combinada
             WHERE numero_catastral LIKE :numero
         """)
