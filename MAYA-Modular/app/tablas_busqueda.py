@@ -102,7 +102,7 @@ def generar_tabla():
             		SELECT 
               x.numero_catastral,
               x.usuario,
-              x.processinstanceid,
+             
               x.value,
               x.modificationdate
             FROM x_mi_tabla_completa x
@@ -113,7 +113,7 @@ def generar_tabla():
             SELECT 
               x.numero_catastral,
               x.usuario,
-              d.processinstanceid,
+              
               d.value,
               x.modificationdate
             FROM x_mi_tabla_completa x
@@ -121,7 +121,7 @@ def generar_tabla():
               ON x.processinstanceid = d.processinstanceid
              AND x.variable = d.variable
             WHERE x.value !~ '####[0-9]+####'
-            ORDER BY numero_catastral;
+            ORDER BY modificationdate;
 
         """)
 
@@ -155,11 +155,12 @@ def buscar_tabla():
             SELECT 
                 numero_catastral,
                 usuario,
-                processinstanceid,
+                
                 value,
                 modificationdate
             FROM x_mi_tabla_combinada
             WHERE numero_catastral LIKE :numero
+            ORDER BY modificationdate;
         """)
         df_filtro = pd.read_sql(consulta_sql, engine, params={'numero': f"%{numero}%"})
         if df_filtro.empty:

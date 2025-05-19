@@ -118,15 +118,15 @@ select * from taskvariableimpl t;
 select * from x_mi_tabla_completa xmtc ;
 
 select * from tabla_document_collections tdc ;
-
--- ----------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 		SELECT 
               x.numero_catastral,
               x.usuario,
               x.processinstanceid,
               x.value,
-              x.variable
+              x.variable,
+              x.modificationdate
             FROM x_mi_tabla_completa x
             WHERE x.value ~ '####[0-9]+####'
 
@@ -137,7 +137,8 @@ select * from tabla_document_collections tdc ;
               x.usuario,
               d.processinstanceid,
               d.value,
-              d.variable
+              d.variable,
+              x.modificationdate
             FROM x_mi_tabla_completa x
             JOIN tabla_document_collections d
               ON x.processinstanceid = d.processinstanceid
