@@ -1,0 +1,365 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8083
+ * Running on http://172.19.78.144:8083
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:09:42] "POST /copiar_y_limpiar HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:12:49] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:12:51] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\functions.py', reloading
+--------------INICIANDO PROCESO copiar archivos--------------
+[INFO] Salida copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al dÃ­a actual (evitando duplicados previos)...
+[CHECK] Creando carpeta destino si no existe: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22
+[CHECK] Iniciando recorrido de carpetas UUID en .docs...
+[SKIP] UUID '10c8f1ec-38d3-41b6-be3f-c1febcb200d4' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/10c8f1ec-38d3-41b6-be3f-c1febcb200d4
+[SKIP] UUID '11632276' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/11632276
+[SKIP] UUID '168620893' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/168620893
+[SKIP] UUID '252042678' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/252042678
+[SKIP] UUID '26552515' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/26552515
+[COPY] Copiando '285007433' a carpeta de hoy...
+[SKIP] UUID '299168191' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/299168191
+[SKIP] UUID '31331253' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/31331253
+[SKIP] UUID '34385655' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/34385655
+[SKIP] UUID '421278591' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/421278591
+[SKIP] UUID '446470588' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/446470588
+[SKIP] UUID '452643407' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/452643407
+[SKIP] UUID '454964083' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/454964083
+[SKIP] UUID '469339014' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/469339014
+[SKIP] UUID '483886065' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/483886065
+[SKIP] UUID '484135336' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/484135336
+[SKIP] UUID '515238335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/515238335
+[SKIP] UUID '51569664' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/51569664
+[SKIP] UUID '526649734' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/526649734
+[SKIP] UUID '546317552' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/546317552
+[SKIP] UUID '54848827' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/54848827
+[SKIP] UUID '595359335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/595359335
+[SKIP] UUID '629754630' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/629754630
+[SKIP] UUID '694461897' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/694461897
+[SKIP] UUID '73544792' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/73544792
+[SKIP] UUID '743128012' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/743128012
+[SKIP] UUID '75867489' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/75867489
+[SKIP] UUID '767389476' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/767389476
+[SKIP] UUID '793460429' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/793460429
+[SKIP] UUID '801778758' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/801778758
+[SKIP] UUID '82375477' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/82375477
+[SKIP] UUID '890745227' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/890745227
+[SKIP] UUID '910353427' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/910353427
+[SKIP] UUID '919534863' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/919534863
+[SKIP] UUID '939328787' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/939328787
+[SKIP] UUID '951237755' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/951237755
+[SKIP] UUID '99829367' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/99829367
+[SKIP] UUID 'b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8
+[CHECK] Â¡Proceso completado!
+
+--------------FINALIZANDO PROCESO copiar archivos--------------
+--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------
+[INFO] Salida limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaÃ±o de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]TamaÃ±o actual de /opt/jboss/wildfly/bin/.docs: 359608 bytes
+[YY]LÃ­mite configurado: 107374182400 bytes
+[YY]Dentro del lÃ­mite. No se borra nada.
+
+--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------
+--------------INICIANDO PROCESO documentCollection--------------
+-----INICIANDO PROCESO documentCollection---------
+[INFO] Consultando últimas instancias activas en: http://host.docker.internal:8080/kie-server/services/rest/server/queries/processes/instances?status=1
+[OK] Última instancia activa: 83
+[ZZ] Contenedor detectado: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[ZZ] Instancia obtenida: 83
+[ZZ] Contenedor obtenido: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[INFO] Consultando variables del proceso: http://host.docker.internal:8080/kie-server/services/rest/server/containers/Publica_In_Out_Local_1.0.0-SNAPSHOT/processes/instances/83/variables
+[DEBUG] Código de respuesta: 200
+[DEBUG] Respuesta raw: {
+  "documentosSETN" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "595359335",
+    "name" : "Publica (3) (4) (1).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747759918289
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "168620893",
+    "name" : "geo-3 (5) (1) (3).kml",
+    "link" : "",
+    "size" : 507,
+    "lastModified" : {
+      "java.util.Date" : 1747759715208
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "EsSuceptibledeEntrega" : true,
+  "documentosSRTIC" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "285007433",
+    "name" : "Publica (3) (4) (1).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747759918289
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "initiator" : "wbadmin"
+}
+[DEBUG] Variables encontradas: ['documentosSETN', 'EsSuceptibledeEntrega', 'documentosSRTIC', 'initiator']
+[DEBUG] Analizando variable: documentosSETN
+[DEBUG] Se encontraron documentos en documentosSETN
+[DEBUG] Analizando variable: EsSuceptibledeEntrega
+[DEBUG] EsSuceptibledeEntrega no contiene documentos
+[DEBUG] Analizando variable: documentosSRTIC
+[DEBUG] Se encontraron documentos en documentosSRTIC
+[DEBUG] Analizando variable: initiator
+[DEBUG] initiator no contiene documentos
+[OK] Se insertaron 1 documento(s) nuevo(s).
+[INFO] Últimos registros en tabla_document_collections:
+    processinstanceid  ... identifier
+0                   7  ...   31331253
+1                   7  ...  526649734
+2                   7  ...  939328787
+3                   9  ...   54848827
+4                   9  ...  454964083
+5                   9  ...  252042678
+6                   9  ...  483886065
+7                   9  ...   82375477
+8                   9  ...  890745227
+9                  10  ...  546317552
+10                 10  ...  951237755
+11                 10  ...  801778758
+12                 19  ...   73544792
+13                 46  ...  629754630
+14                 83  ...  595359335
+15                 83  ...  168620893
+16                 83  ...  285007433
+
+[17 rows x 5 columns]
+--------------FINALIZANDO PROCESO documentCollection--------------
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:22:18] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:22:25] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:22:30] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+--------------INICIANDO PROCESO copiar archivos--------------
+[INFO] Salida copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al dÃ­a actual (evitando duplicados previos)...
+[CHECK] Creando carpeta destino si no existe: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22
+[CHECK] Iniciando recorrido de carpetas UUID en .docs...
+[SKIP] UUID '10c8f1ec-38d3-41b6-be3f-c1febcb200d4' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/10c8f1ec-38d3-41b6-be3f-c1febcb200d4
+[SKIP] UUID '11632276' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/11632276
+[SKIP] UUID '168620893' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/168620893
+[COPY] Copiando '19042194' a carpeta de hoy...
+[COPY] Copiando '209763095' a carpeta de hoy...
+[SKIP] UUID '252042678' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/252042678
+[SKIP] UUID '26552515' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/26552515
+[SKIP] UUID '285007433' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/285007433
+[SKIP] UUID '299168191' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/299168191
+[SKIP] UUID '31331253' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/31331253
+[SKIP] UUID '34385655' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/34385655
+[SKIP] UUID '421278591' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/421278591
+[SKIP] UUID '446470588' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/446470588
+[SKIP] UUID '452643407' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/452643407
+[SKIP] UUID '454964083' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/454964083
+[SKIP] UUID '469339014' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/469339014
+[SKIP] UUID '483886065' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/483886065
+[SKIP] UUID '484135336' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/484135336
+[SKIP] UUID '515238335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/515238335
+[SKIP] UUID '51569664' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/51569664
+[SKIP] UUID '526649734' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/526649734
+[SKIP] UUID '546317552' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/546317552
+[SKIP] UUID '54848827' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/54848827
+[SKIP] UUID '595359335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/595359335
+[SKIP] UUID '629754630' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/629754630
+[COPY] Copiando '689785201' a carpeta de hoy...
+[SKIP] UUID '694461897' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/694461897
+[SKIP] UUID '73544792' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/73544792
+[SKIP] UUID '743128012' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/743128012
+[SKIP] UUID '75867489' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/75867489
+[SKIP] UUID '767389476' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/767389476
+[SKIP] UUID '793460429' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/793460429
+[SKIP] UUID '801778758' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/801778758
+[SKIP] UUID '82375477' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/82375477
+[SKIP] UUID '890745227' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/890745227
+[COPY] Copiando '903549483' a carpeta de hoy...
+[SKIP] UUID '910353427' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/910353427
+[SKIP] UUID '919534863' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/919534863
+[SKIP] UUID '939328787' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/939328787
+[SKIP] UUID '951237755' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/951237755
+[COPY] Copiando '994368961' a carpeta de hoy...
+[SKIP] UUID '99829367' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/99829367
+[SKIP] UUID 'b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8
+[CHECK] Â¡Proceso completado!
+
+--------------FINALIZANDO PROCESO copiar archivos--------------
+--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------
+[INFO] Salida limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaÃ±o de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]TamaÃ±o actual de /opt/jboss/wildfly/bin/.docs: 513611 bytes
+[YY]LÃ­mite configurado: 107374182400 bytes
+[YY]Dentro del lÃ­mite. No se borra nada.
+
+--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------
+--------------INICIANDO PROCESO documentCollection--------------
+-----INICIANDO PROCESO documentCollection---------
+[INFO] Consultando últimas instancias activas en: http://host.docker.internal:8080/kie-server/services/rest/server/queries/processes/instances?status=1
+[OK] Última instancia activa: 84
+[ZZ] Contenedor detectado: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[ZZ] Instancia obtenida: 84
+[ZZ] Contenedor obtenido: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[INFO] Consultando variables del proceso: http://host.docker.internal:8080/kie-server/services/rest/server/containers/Publica_In_Out_Local_1.0.0-SNAPSHOT/processes/instances/84/variables
+[DEBUG] Código de respuesta: 200
+[DEBUG] Respuesta raw: {
+  "documentosSETN" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "994368961",
+    "name" : "ipconfig_Francisco_CL (3) (1).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747850281224
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "903549483",
+    "name" : "Publica (3) (5).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747844635865
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "689785201",
+    "name" : "Publica (3) (4) (1).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747759918289
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "209763095",
+    "name" : "geo-3 (5) (1) (3).kml",
+    "link" : "",
+    "size" : 507,
+    "lastModified" : {
+      "java.util.Date" : 1747759715208
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "19042194",
+    "name" : "ipconfig_Francisco_CL (3).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747694721693
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "initiator" : "wbadmin"
+}
+[DEBUG] Variables encontradas: ['documentosSETN', 'initiator']
+[DEBUG] Analizando variable: documentosSETN
+[DEBUG] Se encontraron documentos en documentosSETN
+[DEBUG] Analizando variable: initiator
+[DEBUG] initiator no contiene documentos
+[OK] Se insertaron 5 documento(s) nuevo(s).
+[INFO] Últimos registros en tabla_document_collections:
+    processinstanceid  ... identifier
+0                   7  ...   31331253
+1                   7  ...  526649734
+2                   7  ...  939328787
+3                   9  ...   54848827
+4                   9  ...  454964083
+5                   9  ...  252042678
+6                   9  ...  483886065
+7                   9  ...   82375477
+8                   9  ...  890745227
+9                  10  ...  546317552
+10                 10  ...  951237755
+11                 10  ...  801778758
+12                 19  ...   73544792
+13                 46  ...  629754630
+14                 83  ...  595359335
+15                 83  ...  168620893
+16                 83  ...  285007433
+17                 84  ...  994368961
+18                 84  ...  903549483
+19                 84  ...  689785201
+20                 84  ...  209763095
+21                 84  ...   19042194
+
+[22 rows x 5 columns]127.0.0.1 - - [22/May/2025 11:34:06] "POST /copiar_y_limpiar HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:38:28] "GET /tablas/buscar_tabla?numero_catastral=11PruebaLocal HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:39:22] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:10] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:10] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:10] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:11] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:20] "GET /tablas/buscar_tabla?numero_catastral=33.PRUEBALOCAL HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:23] "GET /tablas/descargar/Publica%20(3).bpmn HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:41:14] "GET /tablas/ HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-Copy1-checkpoint.py', reloading
+
+--------------FINALIZANDO PROCESO documentCollection--------------
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:42:56] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:42:57] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-Copy1-checkpoint.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:43:07] "GET /tablas/generar_tabla HTTP/1.1" 200 -

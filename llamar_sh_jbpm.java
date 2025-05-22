@@ -1,9 +1,12 @@
+Boolean kcontextEsSuceptibledeEntrega = false;
 try {
-    java.net.HttpURLConnection con = (java.net.HttpURLConnection)
-        new java.net.URL("http://host.docker.internal:8083/copiar_y_limpiar").openConnection();
-    con.setRequestMethod("POST");
-    con.setDoOutput(true);
-    int code = con.getResponseCode();
-    System.out.println("Respuesta HTTP: " + code);
+    System.out.println("[YY]Iniciando script ");
+
+    String[] cmd = {"/bin/bash", "/opt/jboss/wildfly/bin/jbpm_docs/MAYA-Modular/scripts/start_api.sh"};
+    Process proc = Runtime.getRuntime().exec(cmd);
+    int code = proc.waitFor();
+    System.out.println("[YY]Script ejecutado con código de salida: " + code);
 } catch (Exception e) {
-    e.printStackTrace();
+    System.out.println("[YY]Error al ejecutar script: " + e.getMessage());
+}
+

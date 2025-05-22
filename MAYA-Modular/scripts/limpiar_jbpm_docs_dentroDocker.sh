@@ -4,7 +4,7 @@
 DIR="/opt/jboss/wildfly/bin/.docs"
 
 # Tamaño máximo permitido en bytes (100 GB)
-MAX_SIZE=107374182400
+MAX_SIZE=90737
 
 # Verifica si la carpeta existe
 if [ ! -d "$DIR" ]; then

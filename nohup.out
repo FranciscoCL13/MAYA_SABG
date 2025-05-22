@@ -1,0 +1,268 @@
+[I 2025-05-20 12:58:51.700 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-20 12:58:51.706 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-20 12:58:51.713 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-20 12:58:51.719 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-20 12:58:52.371 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-20 12:58:52.372 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-05-20 12:58:52.427 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-20 12:58:52.430 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-20 12:58:52.431 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-20 12:58:52.438 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyterlab
+[I 2025-05-20 12:58:52.438 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\AppData\Local\anaconda3\share\jupyter\lab
+[I 2025-05-20 12:58:52.439 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-20 12:58:52.683 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-20 12:58:52.690 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-20 12:58:52.692 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-05-20 12:58:52.692 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-05-20 12:58:52.692 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-05-20 12:58:52.692 ServerApp] http://localhost:8888/lab?token=46abd97480f3e854d87998d260fcb1b7c2ea96f17311e192
+[I 2025-05-20 12:58:52.692 ServerApp]     http://127.0.0.1:8888/lab?token=46abd97480f3e854d87998d260fcb1b7c2ea96f17311e192
+[I 2025-05-20 12:58:52.693 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-20 12:58:52.759 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-8696-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=46abd97480f3e854d87998d260fcb1b7c2ea96f17311e192
+        http://127.0.0.1:8888/lab?token=46abd97480f3e854d87998d260fcb1b7c2ea96f17311e192
+[I 2025-05-20 12:58:52.971 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 2025-05-20 12:58:56.664 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-20 13:46:12.198 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:46:12.926 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:52:14.362 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:54:11.547 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:55:24.149 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:55:24.387 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:57:30.638 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:59:58.068 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 13:59:58.363 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 14:00:55.914 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 14:02:56.058 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 14:02:58.266 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 15:07:02.065 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-20 15:50:40.652 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-20 15:50:40.658 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-20 15:50:40.664 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-20 15:50:40.671 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-20 15:50:41.250 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-20 15:50:41.250 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-05-20 15:50:41.309 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-20 15:50:41.312 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-20 15:50:41.313 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-20 15:50:41.317 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyterlab
+[I 2025-05-20 15:50:41.317 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\AppData\Local\anaconda3\share\jupyter\lab
+[I 2025-05-20 15:50:41.318 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-20 15:50:41.571 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-20 15:50:41.577 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-20 15:50:41.578 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-05-20 15:50:41.581 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-05-20 15:50:41.581 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-05-20 15:50:41.581 ServerApp] http://localhost:8888/lab?token=4126334725938e74daddcd3f1ec99d79e2247e24e0f75578
+[I 2025-05-20 15:50:41.581 ServerApp]     http://127.0.0.1:8888/lab?token=4126334725938e74daddcd3f1ec99d79e2247e24e0f75578
+[I 2025-05-20 15:50:41.581 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-20 15:50:41.644 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-3112-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=4126334725938e74daddcd3f1ec99d79e2247e24e0f75578
+        http://127.0.0.1:8888/lab?token=4126334725938e74daddcd3f1ec99d79e2247e24e0f75578
+[I 2025-05-20 15:50:41.851 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 2025-05-20 15:50:46.166 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-20 16:01:02.390 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-20 16:03:02.479 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-20 16:05:02.553 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-20 16:17:52.479 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-20 16:18:03.742 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-20 16:21:11.534 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-20 16:21:11.795 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-20 17:05:58.953 ServerApp] Saving file at /llamar_sh_jbpm.java
+[I 2025-05-20 17:05:59.543 ServerApp] Saving file at /llamar_sh_jbpm.java
+[W 2025-05-20 17:16:12.991 ServerApp] delete /MAYA-Modular/qwertyu.txt
+[I 2025-05-20 17:16:20.048 ServerApp] Creating new file in /MAYA-Modular
+[I 2025-05-20 17:20:06.601 ServerApp] Saving file at /MAYA-Modular/Dockerfile
+[I 2025-05-20 17:22:44.631 ServerApp] Saving file at /MAYA-Modular/README.md
+[I 2025-05-20 17:30:56.616 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-20 17:30:56.631 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-20 17:30:56.638 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-20 17:30:56.638 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-20 17:30:57.441 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-20 17:30:57.441 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-05-20 17:30:57.503 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-20 17:30:57.503 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-20 17:30:57.503 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-20 17:30:57.519 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyterlab
+[I 2025-05-20 17:30:57.519 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\AppData\Local\anaconda3\share\jupyter\lab
+[I 2025-05-20 17:30:57.519 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-20 17:30:57.756 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-20 17:30:57.756 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-20 17:30:57.764 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-05-20 17:30:57.765 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-05-20 17:30:57.765 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-05-20 17:30:57.765 ServerApp] http://localhost:8888/lab?token=92eb34efe58f9f97d8c43aee3267161908258367ce06f516
+[I 2025-05-20 17:30:57.765 ServerApp]     http://127.0.0.1:8888/lab?token=92eb34efe58f9f97d8c43aee3267161908258367ce06f516
+[I 2025-05-20 17:30:57.765 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-20 17:30:57.832 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-1872-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=92eb34efe58f9f97d8c43aee3267161908258367ce06f516
+        http://127.0.0.1:8888/lab?token=92eb34efe58f9f97d8c43aee3267161908258367ce06f516
+[I 2025-05-20 17:30:58.032 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 2025-05-20 17:31:02.553 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-20 17:42:05.181 ServerApp] Saving file at /MAYA-Modular/README.md
+[I 2025-05-20 17:47:32.210 ServerApp] Saving file at /MAYA-Modular/Dockerfile
+[I 2025-05-20 17:58:05.899 ServerApp] Saving file at /MAYA-Modular/README.md
+[I 2025-05-20 18:00:46.490 ServerApp] Saving file at /MAYA-Modular/app/conexion.py
+[I 2025-05-20 18:00:49.050 ServerApp] Saving file at /MAYA-Modular/app/conexion.py
+[I 2025-05-20 18:03:33.358 ServerApp] Saving file at /MAYA-Modular/README.md
+[I 2025-05-21 09:33:32.261 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-21 09:33:32.267 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-21 09:33:32.273 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-21 09:33:33.912 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-21 09:33:34.032 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-21 09:33:34.035 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-21 09:33:34.036 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-21 09:33:34.042 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyterlab
+[I 2025-05-21 09:33:34.042 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\share\jupyter\lab
+[I 2025-05-21 09:33:34.043 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-21 09:33:34.506 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-21 09:33:34.507 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-05-21 09:33:34.507 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-05-21 09:33:34.507 ServerApp] http://localhost:8888/lab?token=2b1a17c6c759514bf3ea6cdabfcea356095245872ab09a21
+[I 2025-05-21 09:33:34.507 ServerApp]     http://127.0.0.1:8888/lab?token=2b1a17c6c759514bf3ea6cdabfcea356095245872ab09a21
+[I 2025-05-21 09:33:34.507 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-21 09:33:34.654 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-5324-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=2b1a17c6c759514bf3ea6cdabfcea356095245872ab09a21
+        http://127.0.0.1:8888/lab?token=2b1a17c6c759514bf3ea6cdabfcea356095245872ab09a21
+[I 2025-05-21 09:33:34.823 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-05-21 09:33:39.287 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-21 09:43:58.688 ServerApp] Saving file at /MAYA-Modular/app/conexion.py
+[I 2025-05-21 09:53:46.919 ServerApp] Saving file at /MAYA-Modular/app/conexion.py
+[I 2025-05-21 09:56:41.847 ServerApp] Saving file at /MAYA-Modular/requirements.txt
+[I 2025-05-21 10:03:56.844 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-21 10:23:56.584 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[W 2025-05-21 10:30:41.606 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-21 10:32:50.382 ServerApp] Saving file at /MAYA-Modular/scripts/copiar_completo_CC_dentroDocker.sh
+[I 2025-05-21 11:24:16.443 ServerApp] Saving file at /MAYA-Modular/README.md
+[W 2025-05-21 12:00:14.556 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-21 12:02:16.523 ServerApp] Saving file at /MAYA-Modular/scripts/copiar_completo_CC_dentroDocker.sh
+[I 2025-05-21 12:04:16.604 ServerApp] Saving file at /MAYA-Modular/scripts/copiar_completo_CC_dentroDocker.sh
+[I 2025-05-21 12:05:13.713 ServerApp] Saving file at /MAYA-Modular/scripts/copiar_completo_CC_dentroDocker.sh
+[I 2025-05-21 12:23:13.888 ServerApp] Copying 'llamar_sh_jbpm.java' to ''
+[I 2025-05-21 12:23:34.207 ServerApp] Saving file at /llamarSH+API.java
+[I 2025-05-21 12:25:30.500 ServerApp] Saving file at /llamarSH+API.java
+[I 2025-05-21 12:29:32.567 ServerApp] Saving file at /MAYA-Modular/scripts/limpiar_jbpm_docs_dentroDocker.sh
+[I 2025-05-21 12:32:44.225 ServerApp] Creating new file in /MAYA-Modular/scripts
+[I 2025-05-21 12:32:56.653 ServerApp] Saving file at /MAYA-Modular/scripts/llamarSH+API.java
+[I 2025-05-21 13:03:21.745 ServerApp] Saving file at /MAYA-Modular/README.md
+[I 2025-05-21 13:14:49.649 ServerApp] Creating new file in /MAYA-Modular
+[I 2025-05-21 13:16:58.536 ServerApp] Saving file at /MAYA-Modular/pruebas.py
+[I 2025-05-21 13:44:47.584 ServerApp] Saving file at /MAYA-Modular/pruebas.py
+[I 2025-05-21 13:50:08.994 ServerApp] Saving file at /MAYA-Modular/pruebas.py
+[I 2025-05-21 13:56:16.900 ServerApp] Copying 'MAYA-Modular/pruebas.py' to ''
+[W 2025-05-21 13:56:21.772 ServerApp] delete /MAYA-Modular/pruebas.py
+[I 2025-05-21 13:59:22.181 ServerApp] Saving file at /MAYA-Modular/app/conexion.py
+[I 2025-05-21 13:59:32.801 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[W 2025-05-21 14:00:00.042 ServerApp] delete /MAYA-Modular/app/routes.py
+[W 2025-05-21 14:09:44.564 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-05-21 14:43:54.340 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-21 14:48:11.531 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 14:49:00.855 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 14:49:33.238 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 14:56:46.472 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 14:57:18.683 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 14:57:30.439 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 14:59:03.919 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 15:17:08.669 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 15:17:46.727 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 15:18:24.668 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 15:20:04.508 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 15:23:40.811 ServerApp] Saving file at /MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 15:30:54.350 ServerApp] Saving file at /archivosAdjuntos/MAYA-Modular/scripts/start_api.sh
+[I 2025-05-21 15:37:56.739 ServerApp] Saving file at /llamar_sh_jbpm.java
+[I 2025-05-21 15:41:36.635 ServerApp] Saving file at /llamar_sh_jbpm.java
+[I 2025-05-21 15:42:10.962 ServerApp] Saving file at /llamar_sh_jbpm.java
+[I 2025-05-22 11:13:50.614 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-22 11:13:50.614 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-22 11:13:50.629 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-22 11:13:50.629 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-22 11:13:52.590 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-22 11:13:52.590 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-05-22 11:13:52.693 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-22 11:13:52.696 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-22 11:13:52.697 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-22 11:13:52.706 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyterlab
+[I 2025-05-22 11:13:52.707 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\AppData\Local\anaconda3\share\jupyter\lab
+[I 2025-05-22 11:13:52.708 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-22 11:13:52.975 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-22 11:13:52.984 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-22 11:13:52.985 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-05-22 11:13:52.987 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-05-22 11:13:52.988 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-05-22 11:13:52.988 ServerApp] http://localhost:8888/lab?token=6af1eeb49656b60ece3b00ee1a3fcdf921939ea295c91dff
+[I 2025-05-22 11:13:52.988 ServerApp]     http://127.0.0.1:8888/lab?token=6af1eeb49656b60ece3b00ee1a3fcdf921939ea295c91dff
+[I 2025-05-22 11:13:52.988 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-22 11:13:53.114 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-4360-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=6af1eeb49656b60ece3b00ee1a3fcdf921939ea295c91dff
+        http://127.0.0.1:8888/lab?token=6af1eeb49656b60ece3b00ee1a3fcdf921939ea295c91dff
+[I 2025-05-22 11:13:53.471 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 2025-05-22 11:13:58.680 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-05-22 11:13:59.363 ServerApp] 404 GET /api/contents/MAYA-Modular/pruebas.py?content=0&hash=0&1747934039276 (309f91296725408088f28968e3de7ab3@::1) 3.00ms referer=http://localhost:8888/lab
+[W 2025-05-22 11:13:59.364 ServerApp] 404 GET /api/contents/MAYA-Modular/pruebas.py?content=0&hash=0&1747934039276 (::1): No such file or directory: MAYA-Modular/pruebas.py
+[I 2025-05-22 11:14:13.033 ServerApp] Kernel started: 62e3c7bf-70a9-4fa1-9fc9-31c18231898c
+[I 2025-05-22 11:14:16.721 ServerApp] Connecting to kernel 62e3c7bf-70a9-4fa1-9fc9-31c18231898c.
+[I 2025-05-22 11:14:16.732 ServerApp] Connecting to kernel 62e3c7bf-70a9-4fa1-9fc9-31c18231898c.
+[I 2025-05-22 11:14:16.748 ServerApp] Connecting to kernel 62e3c7bf-70a9-4fa1-9fc9-31c18231898c.
+[W 2025-05-22 11:14:16.865 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x000001DBF2E315E0>
+[I 2025-05-22 11:14:20.501 ServerApp] Starting buffering for 62e3c7bf-70a9-4fa1-9fc9-31c18231898c:a4396284-3c4d-420e-ac06-2c5ca872d25b
+[I 2025-05-22 11:18:02.064 ServerApp] Saving file at /MAYA-Modular/app/functions.py
+[I 2025-05-22 11:30:34.392 ServerApp] Kernel started: 07fde066-0861-4dd2-b9cf-ae8a22a65dbd
+0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-05-22 11:30:37.184 ServerApp] Connecting to kernel 07fde066-0861-4dd2-b9cf-ae8a22a65dbd.
+[I 2025-05-22 11:30:37.199 ServerApp] Connecting to kernel 07fde066-0861-4dd2-b9cf-ae8a22a65dbd.
+[I 2025-05-22 11:30:37.216 ServerApp] Connecting to kernel 07fde066-0861-4dd2-b9cf-ae8a22a65dbd.
+[I 2025-05-22 11:30:55.390 ServerApp] Kernel started: 6b34ee76-29b7-4070-8868-11bf6539608a
+[I 2025-05-22 11:30:57.108 ServerApp] Kernel started: 9cb14a56-91b5-4ec7-ac1d-6d5d91739447
+0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-05-22 11:30:57.674 ServerApp] Connecting to kernel 6b34ee76-29b7-4070-8868-11bf6539608a.
+[I 2025-05-22 11:30:59.211 ServerApp] Connecting to kernel 9cb14a56-91b5-4ec7-ac1d-6d5d91739447.
+[I 2025-05-22 11:31:01.855 ServerApp] Kernel started: c2e94ffc-1b2a-4330-8935-fe83f9e7cbdd
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-05-22 11:31:03.954 ServerApp] Connecting to kernel c2e94ffc-1b2a-4330-8935-fe83f9e7cbdd.
+[I 2025-05-22 11:31:04.992 ServerApp] Kernel started: 7a14711b-66ba-4047-8d3b-4bc30332a152
+[I 2025-05-22 11:31:06.327 ServerApp] Connecting to kernel 7a14711b-66ba-4047-8d3b-4bc30332a152.

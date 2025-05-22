@@ -118,6 +118,8 @@ select * from taskvariableimpl t;
 select * from x_mi_tabla_completa xmtc ;
 
 select * from tabla_document_collections tdc ;
+
+select * from variableinstancelog v ; -- USAR ESTA PARA document COLLECTIONS
 -----------------------------------------------------------------------------------
 
 		SELECT 

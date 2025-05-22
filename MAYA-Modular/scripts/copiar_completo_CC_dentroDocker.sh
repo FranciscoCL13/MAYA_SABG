@@ -1,23 +1,29 @@
-echo "[YY]Empaquetando la carpeta .docs completa desde el contenedor, incluyendo subcarpetas..."
+#!/bin/bash
 
-# 1. Obtener fecha actual para subcarpeta
+echo "[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al día actual (evitando duplicados previos)..."
+
 FECHA=$(date +%F)
-DESTINO="/opt/jboss/wildfly/bin/jbpm_docs/${FECHA}"
+BASE="/opt/jboss/wildfly/bin/"
+BASEDEST="/opt/jboss/wildfly/bin/jbpm_docs/"
+DESTINO="${BASEDEST}/${FECHA}"
 
-# 2. Crear subcarpeta de destino si no existe
+echo "[CHECK] Creando carpeta destino si no existe: $DESTINO"
 mkdir -p "$DESTINO"
 
-# 3. Crear archivo .tar incluyendo toda la estructura
-tar -cvf /tmp/docs_only.tar -C /opt/jboss/wildfly/bin/.docs .
+cd "${BASE}/.docs" || { echo "No existe carpeta .docs"; exit 1; }
 
-# 4. Mover el .tar al destino
-mv /tmp/docs_only.tar "$DESTINO/docs_only.tar"
+echo "[CHECK] Iniciando recorrido de carpetas UUID en .docs..."
+for uuid_dir in */; do
+    uuid=${uuid_dir%/}
 
-# 5. Descomprimir automáticamente el .tar en el destino
-echo "[YY]Descomprimiendo archivo en $DESTINO..."
-tar -xvf "$DESTINO/docs_only.tar" -C "$DESTINO"
+    encontrado=$(find "${BASE}/jbpm_docs/" -mindepth 2 -maxdepth 2 -type d -name "$uuid")
 
-# 6. Eliminar el .tar después de descomprimir
-rm -f "$DESTINO/docs_only.tar"
+    if [ -n "$encontrado" ]; then
+        echo "[SKIP] UUID '$uuid' ya existe en: $encontrado"
+    else
+        echo "[COPY] Copiando '$uuid' a carpeta de hoy..."
+        cp -r "${BASE}/.docs/$uuid" "$DESTINO/"
+    fi
+done
 
-echo "[YY]¡Proceso completo! Archivos copiados, extraídos y .docs limpiado."
+echo "[CHECK] ¡Proceso completado!"

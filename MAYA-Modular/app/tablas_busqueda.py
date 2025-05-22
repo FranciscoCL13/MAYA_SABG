@@ -10,6 +10,7 @@ tablas_bp = Blueprint('tablas_bp', __name__, template_folder='templates')
 
 # Ruta base de archivos
 ARCHIVOS_BASE_DIR = r"C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
+# ARCHIVOS_BASE_DIR = "/app/archivosAdjuntos"
 
 engine = get_engine()
 
@@ -130,7 +131,7 @@ def generar_tabla():
 
         # 3. Agrega enlaces de descarga con nombres limpios
         df_final['value'] = df_final['value'].apply(limpiar_nombre_archivo)
-
+        #Cambiar nombre a columnas
         df_final = df_final.rename(columns={
             'value': 'Descargar archivo',
             'modificationdate': 'Fecha de carga'
@@ -168,6 +169,7 @@ def buscar_tabla():
             return jsonify({'tabla': f'<p>No se encontraron resultados para el número catastral: <strong>{numero}</strong></p>'})
 
         df_filtro['value'] = df_filtro['value'].apply(limpiar_nombre_archivo)
+        #Cambiar nombre a columnas
         df_filtro = df_filtro.rename(columns={
             'value': 'Descargar archivo',
             'modificationdate': 'Fecha de carga'

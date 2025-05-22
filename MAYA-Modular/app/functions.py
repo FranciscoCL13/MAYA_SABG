@@ -8,6 +8,7 @@ from app.conexion import get_engine
 # Parámetros de conexión jBPM
 # ================================
 JBPM_HOST = "http://host.docker.internal:8080"
+# JBPM_HOST = "http://localhost:8080"
 USERNAME = "wbadmin"
 PASSWORD = "wbadmin"
 HEADERS = {"Accept": "application/json"}
