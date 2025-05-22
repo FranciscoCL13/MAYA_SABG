@@ -266,3 +266,110 @@
 [I 2025-05-22 11:31:03.954 ServerApp] Connecting to kernel c2e94ffc-1b2a-4330-8935-fe83f9e7cbdd.
 [I 2025-05-22 11:31:04.992 ServerApp] Kernel started: 7a14711b-66ba-4047-8d3b-4bc30332a152
 [I 2025-05-22 11:31:06.327 ServerApp] Connecting to kernel 7a14711b-66ba-4047-8d3b-4bc30332a152.
+[I 2025-05-22 11:36:24.509 ServerApp] Starting buffering for 07fde066-0861-4dd2-b9cf-ae8a22a65dbd:925ae818-4bc4-44d4-a268-41aa43f59731
+[I 2025-05-22 11:36:25.331 ServerApp] Starting buffering for 6b34ee76-29b7-4070-8868-11bf6539608a:f3922f36-ba85-401d-8916-06a1a3c76910
+[I 2025-05-22 11:36:26.492 ServerApp] Starting buffering for 9cb14a56-91b5-4ec7-ac1d-6d5d91739447:7b5ba6f3-d4ef-4ebb-9edd-4b4e5fefa482
+[I 2025-05-22 11:36:27.179 ServerApp] Starting buffering for c2e94ffc-1b2a-4330-8935-fe83f9e7cbdd:369e27d4-8e60-48e9-af9d-f2628eaab8fc
+[I 2025-05-22 11:36:27.933 ServerApp] Starting buffering for 7a14711b-66ba-4047-8d3b-4bc30332a152:5d8deb48-da15-448c-af7d-ff736fb24885
+[I 2025-05-22 11:42:52.562 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda-Copy1.py
+[I 2025-05-22 11:43:03.393 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda-Copy1.py
+[W 2025-05-22 13:19:25.261 ServerApp] Notebook jbpmTables.ipynb is not trusted
+[I 2025-05-22 13:19:25.703 ServerApp] Kernel started: 11b62227-795a-48de-a4fa-03fe71a4de19
+[I 2025-05-22 13:19:28.217 ServerApp] Connecting to kernel 11b62227-795a-48de-a4fa-03fe71a4de19.
+[I 2025-05-22 13:20:25.307 ServerApp] Creating new notebook in 
+[I 2025-05-22 13:20:25.984 ServerApp] Kernel started: 1823d064-3963-43c8-b072-290cd975754c
+0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-05-22 13:20:28.802 ServerApp] Connecting to kernel 1823d064-3963-43c8-b072-290cd975754c.
+[I 2025-05-22 13:21:18.918 ServerApp] Kernel started: eef1538f-68c1-4e7f-b5e1-b80f44a4d840
+[I 2025-05-22 13:21:18.921 ServerApp] Kernel shutdown: 1823d064-3963-43c8-b072-290cd975754c
+[I 2025-05-22 13:21:20.640 ServerApp] Connecting to kernel eef1538f-68c1-4e7f-b5e1-b80f44a4d840.
+[I 2025-05-22 13:21:22.658 ServerApp] Kernel restarted: eef1538f-68c1-4e7f-b5e1-b80f44a4d840
+[I 2025-05-22 13:21:22.670 ServerApp] Starting buffering for eef1538f-68c1-4e7f-b5e1-b80f44a4d840:0e3f5daf-1c15-426d-ab49-c1c798bef1db
+[I 2025-05-22 13:21:22.675 ServerApp] Connecting to kernel eef1538f-68c1-4e7f-b5e1-b80f44a4d840.
+[I 2025-05-22 13:21:22.675 ServerApp] Restoring connection for eef1538f-68c1-4e7f-b5e1-b80f44a4d840:0e3f5daf-1c15-426d-ab49-c1c798bef1db
+[I 2025-05-22 13:21:25.424 ServerApp] Saving file at /jbpmTables.ipynb
+[W 2025-05-22 13:21:25.425 ServerApp] Notebook jbpmTables.ipynb is not trusted
+[I 2025-05-22 13:21:43.791 ServerApp] Starting buffering for 11b62227-795a-48de-a4fa-03fe71a4de19:6ced6b39-214a-4834-9ab6-2514db8cfb43
+[I 2025-05-22 13:24:01.416 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 13:26:01.541 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 13:48:01.793 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 13:50:01.919 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 13:52:02.017 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:17:12.968 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:19:13.212 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:21:13.370 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:23:13.953 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:25:14.198 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:25:33.682 ServerApp] Kernel restarted: eef1538f-68c1-4e7f-b5e1-b80f44a4d840
+[I 2025-05-22 15:25:33.711 ServerApp] Starting buffering for eef1538f-68c1-4e7f-b5e1-b80f44a4d840:0e3f5daf-1c15-426d-ab49-c1c798bef1db
+[I 2025-05-22 15:25:33.741 ServerApp] Connecting to kernel eef1538f-68c1-4e7f-b5e1-b80f44a4d840.
+[I 2025-05-22 15:25:33.741 ServerApp] Restoring connection for eef1538f-68c1-4e7f-b5e1-b80f44a4d840:0e3f5daf-1c15-426d-ab49-c1c798bef1db
+[I 2025-05-22 15:27:14.302 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:27:45.638 ServerApp] Kernel restarted: eef1538f-68c1-4e7f-b5e1-b80f44a4d840
+[I 2025-05-22 15:27:45.711 ServerApp] Starting buffering for eef1538f-68c1-4e7f-b5e1-b80f44a4d840:0e3f5daf-1c15-426d-ab49-c1c798bef1db
+[I 2025-05-22 15:27:45.723 ServerApp] Connecting to kernel eef1538f-68c1-4e7f-b5e1-b80f44a4d840.
+[I 2025-05-22 15:27:45.724 ServerApp] Restoring connection for eef1538f-68c1-4e7f-b5e1-b80f44a4d840:0e3f5daf-1c15-426d-ab49-c1c798bef1db
+[I 2025-05-22 15:29:14.383 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 15:31:10.524 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda-Copy1.py
+[I 2025-05-22 15:31:58.737 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda-Copy1.py
+[I 2025-05-22 15:32:03.191 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 15:32:04.588 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 15:34:03.413 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 15:34:12.110 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 15:40:12.240 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 15:44:12.426 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 15:44:17.534 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 15:45:16.969 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 16:09:22.581 ServerApp] Saving file at /document_Complete.ipynb
+[I 2025-05-22 16:10:35.511 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:11:34.240 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:13:02.812 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:13:58.024 ServerApp] Copying MAYA-Modular/app/functions.py to /MAYA-Modular/app
+[W 2025-05-22 16:14:04.611 ServerApp] delete /MAYA-Modular/app/functions.py
+[I 2025-05-22 16:16:27.055 ServerApp] Saving file at /MAYA-Modular/app/main.py
+[I 2025-05-22 16:16:47.428 ServerApp] Saving file at /MAYA-Modular/app/main.py
+[I 2025-05-22 16:16:53.712 ServerApp] Copying MAYA-Modular/app/main.py to /MAYA-Modular/app
+[W 2025-05-22 16:16:58.977 ServerApp] delete /MAYA-Modular/app/main.py
+[I 2025-05-22 16:19:14.809 ServerApp] Starting buffering for eef1538f-68c1-4e7f-b5e1-b80f44a4d840:0e3f5daf-1c15-426d-ab49-c1c798bef1db
+[I 2025-05-22 16:21:35.951 ServerApp] Connecting to kernel 9cb14a56-91b5-4ec7-ac1d-6d5d91739447.
+[I 2025-05-22 16:22:02.832 ServerApp] Starting buffering for 9cb14a56-91b5-4ec7-ac1d-6d5d91739447:c2eb2b83-0df8-444d-acf8-d5c2ebb5b99c
+[I 2025-05-22 16:22:19.345 ServerApp] Kernel shutdown: 62e3c7bf-70a9-4fa1-9fc9-31c18231898c
+[I 2025-05-22 16:22:19.364 ServerApp] Kernel shutdown: c2e94ffc-1b2a-4330-8935-fe83f9e7cbdd
+[I 2025-05-22 16:22:19.367 ServerApp] Kernel shutdown: 6b34ee76-29b7-4070-8868-11bf6539608a
+[I 2025-05-22 16:22:19.371 ServerApp] Kernel shutdown: 7a14711b-66ba-4047-8d3b-4bc30332a152
+[I 2025-05-22 16:22:19.375 ServerApp] Kernel shutdown: 07fde066-0861-4dd2-b9cf-ae8a22a65dbd
+[I 2025-05-22 16:22:19.377 ServerApp] Kernel shutdown: 9cb14a56-91b5-4ec7-ac1d-6d5d91739447
+[I 2025-05-22 16:22:21.364 ServerApp] Kernel shutdown: 11b62227-795a-48de-a4fa-03fe71a4de19
+[I 2025-05-22 16:22:21.369 ServerApp] Kernel shutdown: eef1538f-68c1-4e7f-b5e1-b80f44a4d840
+[I 2025-05-22 16:22:22.639 ServerApp] Kernel shutdown: eef1538f-68c1-4e7f-b5e1-b80f44a4d840
+[I 2025-05-22 16:22:31.102 ServerApp] Kernel started: 867b8053-6264-4b6f-94b2-101fe24366c2
+[I 2025-05-22 16:22:33.212 ServerApp] Connecting to kernel 867b8053-6264-4b6f-94b2-101fe24366c2.
+[I 2025-05-22 16:23:42.204 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:31:43.756 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:36:54.770 ServerApp] Copying MAYA-Modular/app/main.py to /MAYA-Modular/app
+[I 2025-05-22 16:38:06.007 ServerApp] Saving file at /MAYA-Modular/app/main.py
+[I 2025-05-22 16:38:10.001 ServerApp] Saving file at /MAYA-Modular/app/main.py
+[I 2025-05-22 16:38:19.335 ServerApp] Copying MAYA-Modular/app/functions.py to /MAYA-Modular/app
+[W 2025-05-22 16:38:24.509 ServerApp] delete /MAYA-Modular/app/functions.py
+[I 2025-05-22 16:42:10.099 ServerApp] Saving file at /MAYA-Modular/app/main.py
+[I 2025-05-22 16:43:57.809 ServerApp] Saving file at /MAYA-Modular/app/main.py
+[I 2025-05-22 16:43:59.529 ServerApp] Saving file at /MAYA-Modular/app/main.py
+[W 2025-05-22 16:45:48.942 ServerApp] delete /MAYA-Modular/app/functions-Copy1.py
+[W 2025-05-22 16:45:52.495 ServerApp] delete /MAYA-Modular/app/tablas_busqueda-Copy1.py
+[W 2025-05-22 16:45:56.000 ServerApp] delete /MAYA-Modular/app/main-Copy1.py
+[I 2025-05-22 16:46:09.736 ServerApp] Starting buffering for 867b8053-6264-4b6f-94b2-101fe24366c2:4815fd76-48db-4a63-bef8-a7ed18722fca
+[I 2025-05-22 16:48:25.626 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:50:21.406 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:50:22.239 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:50:43.526 ServerApp] Copying MAYA-Modular/app/tablas_busqueda.py to /MAYA-Modular/app
+[I 2025-05-22 16:51:01.469 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:52:25.487 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:53:12.421 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:53:36.468 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 16:53:36.721 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 17:13:51.371 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 17:14:08.326 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-22 17:14:24.620 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py

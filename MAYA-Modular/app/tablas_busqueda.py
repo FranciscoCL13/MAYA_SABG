@@ -9,7 +9,9 @@ import re
 tablas_bp = Blueprint('tablas_bp', __name__, template_folder='templates')
 
 # Ruta base de archivos
-ARCHIVOS_BASE_DIR = r"C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
+ARCHIVOS_BASE_DIR = r"C:\User\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
+ARCHIVOS_BASE_DIR = r"\server"
+
 # ARCHIVOS_BASE_DIR = "/app/archivosAdjuntos"
 
 engine = get_engine()
@@ -72,58 +74,28 @@ def limpiar_nombre_archivo(texto):
 def generar_tabla():
     try:
         # 1. Genera la tabla base
-        consulta_sql = text("""
-            SELECT
-                task.actualowner_id AS usuario,
-                numero_catastral.value AS numero_catastral,
-                taskvariableimpl.value,
-                task.name,
-                taskvariableimpl.processid,
-                taskvariableimpl.processinstanceid,
-                taskvariableimpl.name as variable,
-                taskvariableimpl.modificationdate
-            FROM taskvariableimpl
-            JOIN task
-                ON taskvariableimpl.processinstanceid = task.processinstanceid
-                AND taskvariableimpl.taskid = task.id
-            LEFT JOIN (
-                SELECT
-                    processinstanceid,
-                    value
-                FROM taskvariableimpl
-                WHERE name = 'numero_catastral'
-            ) AS numero_catastral
-                ON numero_catastral.processinstanceid = taskvariableimpl.processinstanceid
-            WHERE taskvariableimpl.value LIKE :patron OR taskvariableimpl.value LIKE :patronDos
-            ORDER BY taskvariableimpl.processinstanceid;
-        """)
-
-        df_base = pd.read_sql(consulta_sql, engine, params={"patron": "%####%", "patronDos": "%@%"})
-        df_base.to_sql('x_mi_tabla_completa', engine, if_exists='replace', index=False)
-
         # 2. tabla combinada
         combinacion_sql = text("""
-            SELECT 
-                x.numero_catastral,
-                x.usuario,
-                x.value,
-                x.modificationdate
-            FROM x_mi_tabla_completa x
-            WHERE x.value ~ '####[0-9]+####'
-
-            UNION ALL
-
-            SELECT 
-                x.numero_catastral,
-                x.usuario,
-                d.value,
-                x.modificationdate
-            FROM x_mi_tabla_completa x
-            JOIN tabla_document_collections d
-              ON x.processinstanceid = d.processinstanceid
-             AND x.variable = d.variable
-            WHERE x.value !~ '####[0-9]+####'
-            ORDER BY modificationdate;
+            select distinct 
+                nc.value AS numero_catastral,
+                
+                t.actualowner_id as usuario,
+                v.value,
+                
+                tv.modificationdate
+                
+            FROM variableinstancelog v
+            JOIN task t ON v.processinstanceid = t.processinstanceid
+            LEFT JOIN taskvariableimpl tv
+                ON v.processinstanceid = tv.processinstanceid
+                AND v.variableinstanceid = tv.name
+            LEFT JOIN (
+                SELECT processinstanceid, value
+                FROM taskvariableimpl
+                WHERE name = 'numero_catastral'
+            ) nc ON v.processinstanceid = nc.processinstanceid
+            WHERE v.variableinstanceid LIKE 'documento%'
+            ORDER BY numero_catastral;
         """)
 
         df_final = pd.read_sql(combinacion_sql, engine)

@@ -80,7 +80,7 @@ JOIN
 
 SELECT column_name, data_type, column_default, is_nullable
 FROM information_schema.columns
-WHERE table_name = 'tabla_document_collections';
+WHERE table_name = 'task';
 
 select * from  task;
 
@@ -113,13 +113,12 @@ SELECT processinstanceid, taskid, name as Campo_llenado, value as registro_de_ca
 
 select * from task;
 
-select * from taskvariableimpl t;
-
 select * from x_mi_tabla_completa xmtc ;
 
 select * from tabla_document_collections tdc ;
 
-select * from variableinstancelog v ; -- USAR ESTA PARA document COLLECTIONS
+select name, processinstanceid, value, modificationdate from taskvariableimpl t;
+select processinstanceid, value  from variableinstancelog v ; -- USAR ESTA PARA document COLLECTIONS
 -----------------------------------------------------------------------------------
 
 		SELECT 
@@ -147,4 +146,39 @@ select * from variableinstancelog v ; -- USAR ESTA PARA document COLLECTIONS
              AND x.variable = d.variable
             WHERE x.value !~ '####[0-9]+####'
             ORDER BY numero_catastral;
+
+ ----------------------------------------------------------------------------------------------------------------------
+            
+select processinstanceid, actualowner_id from task order by processinstanceid ;
+
+select processinstanceid , value, variableinstanceid  from variableinstancelog v ;
+
+select processinstanceid , value, name, modificationdate from taskvariableimpl ;
+
+select * from task;
+
+
+-------------------------------
+
+select distinct 
+    v.processinstanceid,
+    t.actualowner_id,
+    v.value,
+    v.variableinstanceid,
+    tv.modificationdate,
+    nc.value AS numero_catastral
+FROM variableinstancelog v
+JOIN task t ON v.processinstanceid = t.processinstanceid
+LEFT JOIN taskvariableimpl tv
+    ON v.processinstanceid = tv.processinstanceid
+    AND v.variableinstanceid = tv.name
+LEFT JOIN (
+    SELECT processinstanceid, value
+    FROM taskvariableimpl
+    WHERE name = 'numero_catastral'
+) nc ON v.processinstanceid = nc.processinstanceid
+WHERE v.variableinstanceid LIKE 'documentos%'
+ORDER BY numero_catastral;
+
+
 
