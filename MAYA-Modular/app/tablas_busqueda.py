@@ -5,16 +5,36 @@ import os
 import json
 from app.conexion import get_engine
 import re
+import subprocess
 
 tablas_bp = Blueprint('tablas_bp', __name__, template_folder='templates')
 
 # Ruta base de archivos
-ARCHIVOS_BASE_DIR = r"C:\User\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
-ARCHIVOS_BASE_DIR = r"\server"
+ARCHIVOS_BASE_DIR = r"C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\archivosAdjuntos"
+# ARCHIVOS_BASE_DIR = r"\server"
 
 # ARCHIVOS_BASE_DIR = "/app/archivosAdjuntos"
-
 engine = get_engine()
+# -------------------------------------------------------------------------------------------
+
+# Directorio donde están los .sh
+SCRIPT_DIR = os.path.join(os.path.dirname(__file__), '..', 'scripts')
+
+def ejecutar_script(nombre_script):
+    ruta_script = os.path.join(SCRIPT_DIR, nombre_script)
+    try:
+        result = subprocess.run(
+            [r'C:\Program Files\Git\bin\bash.exe', ruta_script],
+            capture_output=True, text=True
+        )
+        print(f"[INFO] Salida de {nombre_script}:\n{result.stdout}")
+        if result.returncode != 0:
+            print(f"[ERROR] Error en {nombre_script}: {result.stderr}")
+            return False
+        return True
+    except Exception as e:
+        print(f"[ERROR] Excepción al ejecutar {nombre_script}: {e}")
+        return False
 
 ##-------------------------------------------------------------------------------------------
 @tablas_bp.route('/')
@@ -73,17 +93,20 @@ def limpiar_nombre_archivo(texto):
 @tablas_bp.route('/generar_tabla', methods=['GET'])
 def generar_tabla():
     try:
-        # 1. Genera la tabla base
-        # 2. tabla combinada
+        # Ejecutar scripts .sh antes de generar la tabla
+        if not ejecutar_script('copiar_completo_CC_localADocker_V2.sh'):
+            return jsonify({'tabla': '<p style="color:red;">Error al copiar archivos</p>'}), 500
+
+        if not ejecutar_script('limpiar_jbpm_docs_localADocker.sh'):
+            return jsonify({'tabla': '<p style="color:red;">Error al limpiar archivos</p>'}), 500
+
+        # Lógica original: combinación SQL
         combinacion_sql = text("""
             select distinct 
                 nc.value AS numero_catastral,
-                
                 t.actualowner_id as usuario,
                 v.value,
-                
                 tv.modificationdate
-                
             FROM variableinstancelog v
             JOIN task t ON v.processinstanceid = t.processinstanceid
             LEFT JOIN taskvariableimpl tv
@@ -101,9 +124,7 @@ def generar_tabla():
         df_final = pd.read_sql(combinacion_sql, engine)
         df_final.to_sql('x_mi_tabla_combinada', engine, if_exists='replace', index=False)
 
-        # 3. Agrega enlaces de descarga con nombres limpios
         df_final['value'] = df_final['value'].apply(limpiar_nombre_archivo)
-        #Cambiar nombre a columnas
         df_final = df_final.rename(columns={
             'value': 'Descargar archivo',
             'modificationdate': 'Fecha de carga'
@@ -117,6 +138,7 @@ def generar_tabla():
 
     except Exception as e:
         return jsonify({'tabla': f"<p style='color:red;'>Error: {str(e)}</p>"}), 500
+
 
 ## ----------------------------------------------------------------------------------
 @tablas_bp.route('/buscar_tabla', methods=['GET'])

@@ -179,6 +179,7 @@ LEFT JOIN (
 ) nc ON v.processinstanceid = nc.processinstanceid
 WHERE v.variableinstanceid LIKE 'documentos%'
 ORDER BY numero_catastral;
+---------------------------------
 
 
 
