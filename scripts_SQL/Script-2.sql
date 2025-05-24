@@ -178,7 +178,7 @@ LEFT JOIN (
     WHERE name = 'numero_catastral'
 ) nc ON v.processinstanceid = nc.processinstanceid
 WHERE v.variableinstanceid LIKE 'documentos%'
-ORDER BY numero_catastral;
+ORDER BY modificationdate desc;
 ---------------------------------
 
 

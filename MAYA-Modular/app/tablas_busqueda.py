@@ -93,12 +93,18 @@ def limpiar_nombre_archivo(texto):
 @tablas_bp.route('/generar_tabla', methods=['GET'])
 def generar_tabla():
     try:
-        # Ejecutar scripts .sh antes de generar la tabla
-        if not ejecutar_script('copiar_completo_CC_localADocker_V2.sh'):
-            return jsonify({'tabla': '<p style="color:red;">Error al copiar archivos</p>'}), 500
+        # Ejecutar scripts sin interrumpir la ejecución si fallan
+        try:
+            if not ejecutar_script('MAYA-Modular-scripts-copiar_completo_CC.sh'):
+                print("[WARNING] Error al ejecutar script de copiado")
+        except Exception as e:
+            print(f"[ERROR] Falló ejecución de copiado: {e}")
 
-        if not ejecutar_script('limpiar_jbpm_docs_localADocker.sh'):
-            return jsonify({'tabla': '<p style="color:red;">Error al limpiar archivos</p>'}), 500
+        try:
+            if not ejecutar_script('limpiar_jbpm_docs_localADocker.sh'):
+                print("[WARNING] Error al ejecutar script de limpieza")
+        except Exception as e:
+            print(f"[ERROR] Falló ejecución de limpieza: {e}")
 
         # Lógica original: combinación SQL
         combinacion_sql = text("""
@@ -118,7 +124,7 @@ def generar_tabla():
                 WHERE name = 'numero_catastral'
             ) nc ON v.processinstanceid = nc.processinstanceid
             WHERE v.variableinstanceid LIKE 'documento%'
-            ORDER BY numero_catastral;
+            ORDER BY modificationdate desc;
         """)
 
         df_final = pd.read_sql(combinacion_sql, engine)
