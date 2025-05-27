@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "es">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="https://framework-gb.cdn.gob.mx/gm/v4/css/main.css" rel="stylesheet">
+      <link href="https://framework-gb.cdn.gob.mx/gm/v4/image/favicon.ico" rel="shortcut icon">
+      <link rel="stylesheet" href="{{ url_for('static', filename='Style/style.css') }}">
+      <title>Inicio de Sesión</title>
+      <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">-->
+      <script src="/static/nodecfdi/nodecfdi.js"></script>-->
+
+   </head>
+   <body onload="inicia_sesion(null)">
+      <!------------------------------LOGO BUEN GOBIERNO------------------------------------>
+
+      <div class="container" cols="12">
+         <a  href="https://www.gob.mx/buengobierno" target="_blank">
+           <img class="logo" url="https://www.gob.mx/buengobierno" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Buen_gobierno.svg"
+             alt="Buen Gobierno">
+         </a>
+      <hr class="red" style="margin:20px; padding:0;">
+      <br>
+      <div id="dentro" style="display: none;">
+         <div id="rfc"></div>
+         <button type="button" onclick="cierra_sesion( )">Cerrar sesión</button>
+      </div>
+      <!----------------------------------FORMULARIO------------------------------------------>
+      <!----------------------------------CERTIFICADO----------------------------------------->
+      <div>
+         <h2>Acceso con e.firma</h2>
+      </div>
+      <br>
+      <div class="file-input-row">
+         <p>*Certificado (.cer):</p>
+         <div class="file-wrapper">
+            <span id="placeholder-cert">Ubicación del certificado</span>
+            <input type="file" name="certificado" id="cert-input" accept=".cer" required onchange="document.getElementById('placeholder-cert').innerText = this.files[0]?.name || 'Ubicación del certificado';">
+            <button type="button" class="btn btn-secondary" onclick="document.getElementById('cert-input').click()">Buscar</button>
+         </div>
+      </div>
+      <!--------------------------------------CLAVE PRIVADA------------------------------------>
+      <div class="file-input-row">
+         <p>*Clave privada (.key):</p>
+         <div class="file-wrapper">
+            <span id="placeholder-key">Ubicación de la llave privada</span>
+            <input type="file" name="llave_privada" id="key-input"  accept=".key" required onchange="document.getElementById('placeholder-key').innerText = this.files[0]?.name || 'Ubicación de la llave';">
+            <button type="button" class="btn btn-secondary" onclick="document.getElementById('key-input').click()">Buscar</button>
+         </div>
+      </div>
+       <!--------------------------------------CONTRASEÑA-------------------------------------->
+      <div class="contraseña">
+         <p>*Contraseña de clave privada:</p>
+         <input type="password" name="password" placeholder="Contraseña" required><br><br>
+      </div>
+      <div class="enviar_solicitud">
+         <button class="btn btn-primary" type="button" onclick="this.form.reportValidity() && autentica(this.form)">Enviar solicitud</button>
+      </div>
+      
+   </div>
+      <br>
+      <br>
+
+      <!--------------------------------------LOADER------------------------------------------>
+
+      <div id="loader-overlay">
+         <div class="loader-container">
+            <img src="{{ url_for('static', filename='double-ring.gif') }}" alt="Cargando..." class="loader-gif">
+            <p>Cargando, gracias por su paciencia...</p>
+         </div>
+      </div>
+
+      <!------------------------------------SCRIPTS------------------------------------------->
+
+      <script src="{{ url_for('static', filename='Script/script.js') }}"></script>
+
+      <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+     
+   </body>
+</html>

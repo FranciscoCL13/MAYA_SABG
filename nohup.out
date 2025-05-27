@@ -458,3 +458,8 @@
 0.00s - to python to disable frozen modules.
 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
 [W 2025-05-23 09:37:53.215 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-23 09:38:18.005 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-23 09:38:19.329 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-05-23 11:10:42.752 ServerApp] Creating new file in /MAYA-Modular
+[I 2025-05-23 11:11:19.907 ServerApp] Saving file at /MAYA-Modular/llamarAPI.java
+[I 2025-05-23 11:18:26.071 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py

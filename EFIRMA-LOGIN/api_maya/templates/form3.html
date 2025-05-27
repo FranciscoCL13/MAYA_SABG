@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario jBPM</title>
+</head>
+<body>
+  <h2>Formulario de Envío de Documento</h2>
+  <form id="formulario" method="POST" action="/submit" enctype="multipart/form-data">
+    
+    <label for="nombreSolicitante">Nombre del Solicitante:</label><br>
+    <input type="text" name="nombreSolicitante" id="nombreSolicitante" placeholder="TextBox" required><br><br>
+
+    <label for="projectType">Tipo de Proyecto:</label><br>
+    <select id="projectType" name="tipoProyecto" required>
+      <option value="Privado" selected>Privado</option>
+      <option value="Social">Social</option>
+      <option value="Público">Público</option>
+    </select><br><br>
+
+    <label for="documento">Evidencia (1 archivo):</label><br>
+    <input type="file" name="documento" id="documento" accept=".pdf,.png,.jpg,.docx,.txt,.kml" required><br><br>
+
+    <button type="submit">Completar</button>
+  </form>
+</body>
+</html>

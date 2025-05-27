@@ -151,6 +151,7 @@ select processinstanceid, value  from variableinstancelog v ; -- USAR ESTA PARA 
             
 select processinstanceid, actualowner_id from task order by processinstanceid ;
 
+
 select processinstanceid , value, variableinstanceid  from variableinstancelog v ;
 
 select processinstanceid , value, name, modificationdate from taskvariableimpl ;
@@ -180,6 +181,7 @@ LEFT JOIN (
 WHERE v.variableinstanceid LIKE 'documentos%'
 ORDER BY modificationdate desc;
 ---------------------------------
+select * from x_mi_tabla_combinada;
 
 
 

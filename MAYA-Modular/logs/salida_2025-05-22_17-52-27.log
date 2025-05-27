@@ -702,3 +702,195 @@ Press CTRL+C to quit
 127.0.0.1 - - [23/May/2025 11:39:03] "GET /tablas/generar_tabla HTTP/1.1" 200 -
 127.0.0.1 - - [23/May/2025 12:47:51] "GET /tablas/buscar_tabla?numero_catastral=11223344 HTTP/1.1" 200 -
 127.0.0.1 - - [23/May/2025 12:47:55] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [23/May/2025 17:16:48] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [23/May/2025 17:16:51] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 09:33:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/May/2025 09:34:29] "GET /tablas/generar_tabla HTTP/1.1" 500 -
+127.0.0.1 - - [26/May/2025 09:35:35] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 09:38:50] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 09:38:50] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [26/May/2025 10:38:44] "GET /tablas/descargar/Adquisicion%20de%20Inmuebles_V2_20022025%20(7).xlsx HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 10:39:27] "GET /tablas/buscar_tabla?numero_catastral=11223344 HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 10:40:07] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 10:40:13] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 10:43:06] "GET /tablas/buscar_tabla?numero_catastral=11223344 HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 10:43:08] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 10:52:04] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 10:52:07] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 13:09:30] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+>>> Finaliz� ejecuci�n de scripts b�sicos.
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+127.0.0.1 - - [26/May/2025 16:58:08] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 16:58:10] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/May/2025 18:29:50] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:29:59] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:30:00] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:30:01] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:30:01] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:30:01] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:30:02] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:30:02] "GET /copiar_y_limpiar HTTP/1.1" 405 -
+127.0.0.1 - - [26/May/2025 18:30:10] "POST /copiar_y_limpiar HTTP/1.1" 500 -
+127.0.0.1 - - [26/May/2025 18:30:16] "POST /copiar_y_limpiar HTTP/1.1" 500 -
+Exception in thread Thread-1 (serve_forever):
+
+[INFO] Salida de MAYA-Modular-scripts-copiar_completo_CC.sh:
+
+[ERROR] Error en MAYA-Modular-scripts-copiar_completo_CC.sh: /usr/bin/bash: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\..\scripts\MAYA-Modular-scripts-copiar_completo_CC.sh: No such file or directory
+
+[WARNING] Error al ejecutar script de copiado
+[INFO] Salida de limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaño de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]Tamaño actual de /opt/jboss/wildfly/bin/.docs: 1281637 bytes
+[YY]Límite configurado: 107374182400 bytes
+[YY]Dentro del límite. No se borra nada.
+
+>>> Iniciando ejecuci�n de scripts b�sicos...
+[INFO] Salida de copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al día actual (evitando duplicados previos)...
+
+[ERROR] Error en copiar_completo_CC_localADocker_V2.sh: Error response from daemon: container bb5d571ee383219c7e69fa446b114d08de622376bbddd852b93ee6c5b10b7ddd is not running
+
+>>> Iniciando ejecuci�n de scripts b�sicos...
+[INFO] Salida de copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al día actual (evitando duplicados previos)...
+
+[ERROR] Error en copiar_completo_CC_localADocker_V2.sh: Error response from daemon: container bb5d571ee383219c7e69fa446b114d08de622376bbddd852b93ee6c5b10b7ddd is not running
+

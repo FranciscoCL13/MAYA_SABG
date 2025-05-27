@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">-->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="/static/nodecfdi/nodecfdi.js"></script>
+   </head>
+   <body onload="inicia_sesion(null)">
+      <div id="dentro" style="display: none;">
+         <div id="rfc"></div>
+         <button type="button" onclick="cierra_sesion( )">Cerrar sesión</button>
+      </div>
+      <form id="fuera" style="display: none;" accept-charset="utf-8" autocomplete="off">
+         <p>*Certificado del usuario:</p> <input type="file" name="certificado" required><br>
+         <p>*Llave privada del usuario:</p><input type="file" name="llave_privada" required><br>
+         <p>*Contraseña del usuario:</p><input type="password" name="password" required><br>
+         <button type="button" onclick="this.form.reportValidity( ) && autentica(this.form)">Enviar solicitud</button>
+      </form>
+      <script>
+        let sesion = null;
+     
+        async function inicia_sesion(datos) {
+           const respuesta = await fetch("/", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: datos ? JSON.stringify(datos) : "{}"
+           });
+           sesion = await respuesta.json();
+           
+     
+           if ("rfc" in sesion) {
+            window.location.href = "/bienvenido.html";
+         } else {
+            document.getElementById("fuera").style = "";
+            document.getElementById("dentro").style = "display: none;";
+         }
+
+        }
+     
+        async function cierra_sesion() {
+           inicia_sesion({ salir: true });
+        }
+     
+        async function autentica(forma) {
+           function cadena_binaria(arr) {
+              return Array.from(arr).map(byte => String.fromCharCode(byte)).join('');
+           }
+     
+           try {
+              const certificado = cadena_binaria(new Uint8Array(await forma.certificado.files[0].arrayBuffer()));
+              const llave_privada = cadena_binaria(new Uint8Array(await forma.llave_privada.files[0].arrayBuffer()));
+              const fiel = credentials.Credential.create(certificado, llave_privada, forma.password.value);
+              const timestamp = Math.floor(Date.now() / 1000);
+              const cadena_original = `${timestamp}_${sesion.challenge}`;
+     
+              const enviar = {
+                 certificado: btoa(certificado),
+                 timestamp: timestamp,
+                 firma_cadena: btoa(fiel.sign(cadena_original))
+              };
+     
+              inicia_sesion(enviar);
+           } catch (e) {
+              alert(`Se produjo un error inesperados ${e.message}`);
+           }
+        }
+     </script>
+     
+   </body>
+</html>

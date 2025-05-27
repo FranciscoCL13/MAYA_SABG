@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validación Geoespacial con Tipos</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://framework-gb.cdn.gob.mx/gm/v4/css/main.css" rel="stylesheet">
+  <link href="https://framework-gb.cdn.gob.mx/gm/v4/image/favicon.ico" rel="shortcut icon">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://makinacorpus.github.io/Leaflet.FileLayer/leaflet.filelayer.js"></script>
+  <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
+  <script src="https://unpkg.com/togeojson"></script>
+  <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+  <script src="https://github.com/AetherKronos/geojson.git"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #navbar{
+      background-color: #10312B;
+      height: 70px;
+    }
+
+    #map {
+      width: 100%;
+      height: 70vh;
+      margin-top: 10px;
+    }
+
+    .controls { margin: 10px; display:flex; flex-direction:row; align-items: center; gap: 10px;}
+
+    #projectType {
+      display: none;
+    }
+
+    #baseLoaderSection {
+      display: block;
+    }
+
+    /* Ahora visible al inicio */
+    .logo {
+      width: 200px;
+      padding-top: 22px;
+      /* top: 0; */
+      /* left: 10; */
+      /* padding: 0rem 8.6%; */
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+
+    }
+
+    .form-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+  gap: 10px; /* Espaciado entre los elementos */
+  width: 100%; /* Ajusta según el diseño deseado */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.form-row label {
+  white-space: nowrap; /* Evita que el texto del label se divida */
+}
+
+#nombreSolicitante {
+  flex: 4; /* Ocupa el 70% del espacio */
+}
+
+#tipoProyecto {
+  flex: 3; /* Ocupa el 30% del espacio */
+}
+
+  </style>
+
+
+</head>
+
+<body ">
+     <!-- Barra sub navegacion-->
+<!-- <nav id="navbar" style="color: rgb(209, 12, 12);"> -->
+  <!--LOGO BUEN GOBIERNO-->
+  <div class="container" cols="12">
+    <a  href="https://www.gob.mx/buengobierno" target="_blank">
+      <img class="logo" url="https://www.gob.mx/buengobierno"
+        src="data:image/png;base64,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"
+        alt="Buen Gobierno">
+    </a>
+  </div>
+
+
+
+  <!-- </nav> -->
+
+
+
+  <div class="container" cols="12">
+    <h2 style="font-family: 'Noto Sans', sans-serif; font-size: 22px; font-weight: bold; padding: 0px;">
+      Vía Transparente: Sistema tecnológico para la trazabilidad y georreferenciación de derechos de vías
+    </h2>
+    <hr class="red" style="margin:20px; padding:0">
+    <div style="display:none" class="controls" id="baseLoaderSection">
+      <!-- <p><strong>Para registrar un nuevo proyecto, cargar georeferencia y datos del proyecto:</strong></p> -->
+      <input style="display: none" type="text" id="baseType" value="ProyectoEjecutivo" readonly>
+      <input style="display: none" type="text" id="baseType" value="Terreno" readonly>
+
+      <!-- <select id="baseType">
+      <option value="ProyectoEjecutivo">Proyecto Ejecutivo</option>
+      <option value="Terreno">Favor de capturar el tipo de terreno.</option>
+    </select> -->
+      <input type="file" id="baseInput" accept=".geojson,.kmz" />
+      <button style="display: none" id="hideBaseLoader">Ocultar carga de datos previos</button>
+    </div>
+
+    <div class="controls">
+      <p style="font-family: 'Noto Sans', sans-serif; font-size: 18px; padding: 0;"><strong> Cargar archivo: <i>(KMZ, KML o
+            GeoJSON): </i></strong></p>
+      <input display="" type="file" id="fileInput" accept=".kmz,.kml,.geojson" class="btn btn-secondary" />
+      <button type="button" class="btn btn-primary btn-sm" id="uploadButton" disabled>Cargar</button>
+      <!-- <button type="button" class="btn btn-primary" id="sendToJBPM" disabled>Iniciar Proceso</button> -->
+
+    </div>
+
+    <!-- <div class="for-row">
+
+
+      <label for="nombreSolicitante" style="font-family: 'Noto Sans', sans-serif;">
+        <strong>Nombre del Solicitante:</strong>
+      </label>
+      <input type="text" id="nombreSolicitante" class="form-control" required />
+    </div>
+
+    <div class="controls">
+      <label for="tipoProyecto"><strong>Tipo de Propiedad:</strong></label><label for="tipoProyecto"
+        style="font-family: 'Noto Sans', sans-serif;"> -->
+        <!-- <strong>Tipo de Proyecto:</strong> -->
+      <!-- </label>
+
+      <select id="tipoProyecto" name="tipoProyecto" class="form-control" required>
+        <option value="">Selecciona...</option>
+        <option value="Privado">Privado</option>
+        <option value="Social">Social</option>
+        <option value="Público">Público</option>
+      </select>
+    </div> -->
+    <div style="padding-left: 0%;" class="form-row container" >
+
+        <label style="padding-left: 0%;" for="nombreSolicitante"><strong>Nombre del Solicitante:</strong></label>
+
+
+      <input type="text" id="nombreSolicitante" class="form-control" required />
+
+      <label for="tipoProyecto"><strong>Tipo de Propiedad:</strong></label>
+      <select id="tipoProyecto" name="tipoProyecto" class="form-control" required>
+        <option value="">Selecciona...</option>
+        <option value="Privado">Privado</option>
+        <option value="Social">Social</option>
+        <option value="Público">Público</option>
+      </select>
+    </div>
+    <!-- <div class="form-row">
+      <label for="nombreSolicitante"><strong style="font-family: 'Noto Sans', sans-serif; font-size: 12px; padding: 0px;">Nombre del Solicitante:</strong></label>
+      <input type="text" id="nombreSolicitante" class="form-control" required />
+
+      <label for="tipoProyecto"><strong style="font-family: 'Noto Sans', sans-serif; font-size: 12px; padding: 0px;">Tipo de Proyecto:</strong></label>
+      <select id="tipoProyecto" name="tipoProyecto" class="form-control" required>
+        <option value="">Selecciona...</option>
+        <option value="Privado">Privado</option>
+        <option value="Social">Social</option>
+        <option value="Público">Público</option>
+      </select>
+    </div> -->
+    <div style="margin: 10px 0;">
+      <button class="btn btn-primary btn-sm" type="button" id="sendToJBPM" disabled>Enviar</button>
+    </div>
+
+    <div id="map"></div>
+  </div>
+  <script>
+    const map = L.map('map').setView([20.4, -89.0], 8);
+    // const map = L.map('map').setView([23.6345, -102.5528], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    let selectedFile = null;
+    let loadedGeoJSON = null;
+    let proyectos = []; // Lista de ProyectoEjecutivo
+    let terrenos = [];  // Lista de Terreno
+    let ultimaCapaCargada = null;
+
+    const terrenoConstante = {
+      "type": "FeatureCollection",
+      "features": [{
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [
+              -89.64091776909031,
+              20.978579706820568
+            ],
+            [
+              -89.25776275049857,
+              20.679985000373037
+            ],
+            [
+              -88.13666074174995,
+              20.568179445916073
+            ],
+            [
+              -87.11664170100272,
+              20.877593003944256
+            ],
+            [
+              -86.84555555954323,
+              21.16494838274552
+            ],
+            [
+              -88.1811946963877,
+              20.93736812905017
+            ],
+            [
+              -89.64091776909031,
+              20.978579706820568
+            ]
+          ]]
+        }
+      }]
+    };
+    L.geoJSON(terrenoConstante, { style: { color: 'green' } }).addTo(map);
+    map.fitBounds(L.geoJSON(terrenoConstante).getBounds());
+    proyectos.push(...terrenoConstante.features);
+
+    const geometriaDentro = {
+      "type": "FeatureCollection",
+      "features": [{
+        "type": "Feature",
+        "properties": { "nombre": "Dentro" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [-89.35, 20.88],
+            [-89.33, 20.89],
+            [-89.32, 20.91],
+            [-89.34, 20.93],
+            [-89.36, 20.91],
+            [-89.35, 20.88]
+          ]]
+        }
+      }]
+    };
+    L.geoJSON(geometriaDentro, { style: { color: 'purple' } }).addTo(map);
+    map.fitBounds(L.geoJSON(geometriaDentro).getBounds());
+    terrenos.push(...geometriaDentro.features);
+
+    // L.geoJSON(geometriaParcial, { style: { color: 'orange' } }).addTo(map);
+    //     terrenos.push(...terrenoConstante.features);
+
+    const uploadBtn = document.getElementById('uploadButton');
+    const sendBtn = document.getElementById('sendToJBPM');
+
+    document.getElementById('fileInput').addEventListener('change', (e) => {
+      selectedFile = e.target.files[0];
+      uploadBtn.disabled = !selectedFile;
+    });
+
+    document.getElementById('tipoProyecto').addEventListener('change', function () {
+      document.getElementById('projectType').style.display = this.checked ? 'none' : 'inline';
+    });
+
+    document.getElementById('hideBaseLoader').addEventListener('click', () => {
+      document.getElementById('baseLoaderSection').style.display = 'none';
+    });
+
+    document.getElementById('baseInput').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      const type = document.getElementById('baseType').value;
+      if (!file) return;
+      const name = file.name.toLowerCase();
+
+      if (name.endsWith('.geojson')) {
+        const reader = new FileReader();
+        reader.onload = function (evt) {
+          try {
+            const geojson = JSON.parse(evt.target.result);
+            agregarBasePorTipo(geojson, type);
+          } catch (err) {
+            alert("GeoJSON inválido.");
+          }
+        };
+        reader.readAsText(file);
+      } else if (name.endsWith('.kmz')) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          JSZip.loadAsync(e.target.result).then(zip => {
+            const kmlFile = Object.keys(zip.files).find(n => n.endsWith('.kml'));
+            return zip.files[kmlFile].async("string");
+          }).then(kmlText => {
+            const parser = new DOMParser();
+            const kmlDom = parser.parseFromString(kmlText, "text/xml");
+            const geojson = toGeoJSON.kml(kmlDom);
+            agregarBasePorTipo(geojson, type);
+          }).catch(err => {
+            alert("Error al procesar KMZ.");
+          });
+        };
+        reader.readAsArrayBuffer(file);
+      } else {
+        alert("Formato no soportado.");
+      }
+    });
+
+    function agregarBasePorTipo(geojson, tipo) {
+      if (tipo === "ProyectoEjecutivo") {
+        proyectos.push(...geojson.features);
+        L.geoJSON(geojson, { style: { color: 'green' } }).addTo(map);
+      } else if (tipo === "Terreno") {
+        terrenos.push(...geojson.features);
+        L.geoJSON(geojson, { style: { color: 'red' } }).addTo(map);
+      }
+      alert(`${tipo} cargado exitosamente.`);
+    }
+
+    uploadBtn.addEventListener('click', function () {
+      if (!selectedFile) return;
+      const name = selectedFile.name.toLowerCase();
+      if (name.endsWith('.kmz')) processKMZ(selectedFile);
+      else if (name.endsWith('.kml')) processKML(selectedFile);
+      else if (name.endsWith('.geojson')) processGeoJSON(selectedFile);
+      else alert("Formato no soportado.");
+    });
+
+    function processKMZ(file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        JSZip.loadAsync(e.target.result).then(zip => {
+          const kmlFile = Object.keys(zip.files).find(n => n.endsWith('.kml'));
+          return zip.files[kmlFile].async("string");
+        }).then(kmlText => {
+          const parser = new DOMParser();
+          const kmlDom = parser.parseFromString(kmlText, "text/xml");
+          const geojson = toGeoJSON.kml(kmlDom);
+          validarYAgregar(geojson);
+        });
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    function processKML(file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const parser = new DOMParser();
+        const kmlDom = parser.parseFromString(e.target.result, "text/xml");
+        const geojson = toGeoJSON.kml(kmlDom);
+        validarYAgregar(geojson);
+      };
+      reader.readAsText(file);
+    }
+
+    function processGeoJSON(file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          const geojson = JSON.parse(e.target.result);
+          validarYAgregar(geojson);
+        } catch {
+          alert("Error en GeoJSON.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function validarYAgregar(geojson) {
+        if (ultimaCapaCargada) {
+            map.removeLayer(ultimaCapaCargada);
+        }
+
+        ultimaCapaCargada = L.geoJSON(geojson, { style: { color: 'blue', dashArray: '4,4' }}).addTo(map);
+        map.fitBounds(ultimaCapaCargada.getBounds());
+
+        setTimeout(() => {
+            // Validar si está dentro del Proyecto Ejecutivo
+            let fueraDelProyecto = false;
+
+            for (const f of geojson.features) {
+            const dentroDeProyecto = proyectos.some(proj => turf.booleanWithin(f, proj));
+            if (!dentroDeProyecto) {
+                fueraDelProyecto = true;
+                break;
+            }
+            }
+
+            if (fueraDelProyecto) {
+            alert("❌ La geometría está fuera del Proyecto Ejecutivo.");
+            sendBtn.disabled = true;
+            return;
+            }
+
+            // Validar si se traslapa con algún Terreno existente
+            let traslapaConTerreno = false;
+
+            for (const f of geojson.features) {
+            const interseca = terrenos.some(t => turf.booleanIntersects(f, t));
+            if (interseca) {
+                traslapaConTerreno = true;
+                break;
+            }
+            }
+
+            if (traslapaConTerreno) {
+            alert("❌ La geometría se traslapa con un Terreno existente.");
+            sendBtn.disabled = true;
+            return;
+            }
+
+            // Si pasa todas las validaciones
+            loadedGeoJSON = geojson;
+            alert("✅ Geometría válida y cargada.");
+            sendBtn.disabled = false;
+
+        }, 600); // Tiempo para renderizar antes de validar
+    }
+
+
+
+
+    sendBtn.addEventListener('click', function () {
+      const nombreSolicitante = document.getElementById('nombreSolicitante').value.trim();
+      const tipoProyecto = document.getElementById('tipoProyecto').value;
+
+      if (!nombreSolicitante) {
+        alert("⚠️ Ingresa el nombre del solicitante.");
+        return;
+      }
+
+      if (!tipoProyecto) {
+        alert("⚠️ Selecciona un tipo de proyecto.");
+        return;
+      }
+
+      if (!loadedGeoJSON) {
+        alert("⚠️ Carga una geometría válida primero.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("nombreSolicitante", nombreSolicitante);
+      formData.append("tipoProyecto", tipoProyecto);
+      formData.append("documento", new Blob([JSON.stringify(loadedGeoJSON)], {
+        type: "application/json"
+      }), "terreno.geojson");
+
+      fetch("http://172.25.30.94/submit", { // Cambia la URL
+        method: "POST",
+        body: formData
+      })
+        .then(response => {
+          if (!response.ok) throw new Error("Error del servidor");
+          return response.text();
+        })
+        .then(data => {
+          alert("✅ Proceso iniciado correctamente.");
+          const win = window.open();
+          win.document.write(data);
+        })
+        .catch(err => {
+          console.error(err);
+          alert("❌ Hubo un error al enviar los datos.");
+        });
+    });
+
+
+
+
+  </script>
+  <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+
+</body>
+
+</html>

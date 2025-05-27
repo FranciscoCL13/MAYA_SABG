@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validación Geoespacial con Tipos</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://framework-gb.cdn.gob.mx/gm/v4/css/main.css" rel="stylesheet">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://makinacorpus.github.io/Leaflet.FileLayer/leaflet.filelayer.js"></script>
+  <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
+  <script src="https://unpkg.com/togeojson"></script>
+  <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+  <script src="https://github.com/AetherKronos/geojson.git"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #navbar{
+      background-color: #10312B;
+      height: 70px;
+    }
+
+    #map {
+      width: 100%;
+      height: 70vh;
+      margin-top: 10px;
+    }
+
+    .controls { margin: 10px; display:flex; flex-direction:row; align-items: center; gap: 10px;}
+
+    #projectType {
+      display: none;
+    }
+
+    #baseLoaderSection {
+      display: block;
+    }
+
+    /* Ahora visible al inicio */
+    .logo {
+      width: 400px;
+      top: -3px;
+      left: 0;
+      padding: 0rem 8.6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+
+    }
+   
+  </style>
+
+
+</head>
+
+<body ">
+     <!-- Barra sub navegacion-->
+<nav id="navbar" style="color: rgb(209, 12, 12);">
+  <!--LOGO BUEN GOBIERNO-->
+  <!-- <a href="https://www.gob.mx/buengobierno" target="_blank">
+    
+  </a> -->
+  <img class="logo" url="https://www.gob.mx/buengobierno"
+      src="https://raw.githubusercontent.com/FranciscoCL13/UAM-Cua/refs/heads/main/Buen_Gob_Logo_Bl.png"
+      alt="Buen Gobierno">
+
+  </nav>
+
+  
+
+  <div class="container" cols="12">
+    <h2 style="font-family: 'Noto Sans', sans-serif; font-size: 24px; padding: 3px;">
+      Vía Transparente: Sistema tecnológico para la trazabilidad y georreferenciación de derechos de vías
+    </h2>
+    <hr class="red">
+    <div style="display:none" class="controls" id="baseLoaderSection">
+      <!-- <p><strong>Para registrar un nuevo proyecto, cargar georeferencia y datos del proyecto:</strong></p> -->
+      <input style="display: none" type="text" id="baseType" value="ProyectoEjecutivo" readonly>
+      <input style="display: none" type="text" id="baseType" value="Terreno" readonly>
+
+      <!-- <select id="baseType">
+      <option value="ProyectoEjecutivo">Proyecto Ejecutivo</option>
+      <option value="Terreno">Favor de capturar el tipo de terreno.</option>
+    </select> -->
+      <input type="file" id="baseInput" accept=".geojson,.kmz" />
+      <button style="display: none" id="hideBaseLoader">Ocultar carga de datos previos</button>
+    </div>
+
+    <div class="controls">
+      <p style="font-family: 'Noto Sans', sans-serif; font-size: 15px;"><strong> Cargar archivo: <i>(KMZ, KML o
+            GeoJSON): </i></strong></p>
+      <input display="" type="file" id="fileInput" accept=".kmz,.kml,.geojson" class="btn btn-secondary" />
+      <button type="button" class="btn btn-primary" id="uploadButton" disabled>Cargar</button>
+      <button type="button" class="btn btn-primary" id="sendToJBPM" disabled>Iniciar Proceso</button>
+    </div>
+    <!-- <div class="for-row">
+
+
+      <label for="nombreSolicitante" style="font-family: 'Noto Sans', sans-serif;">
+        <strong>Nombre del Solicitante:</strong>
+      </label>
+      <input type="text" id="nombreSolicitante" class="form-control" required />
+    </div>
+
+    <div class="controls">
+      <label for="tipoProyecto"><strong>Tipo de Proyecto:</strong></label><label for="tipoProyecto"
+        style="font-family: 'Noto Sans', sans-serif;"> -->
+        <!-- <strong>Tipo de Proyecto:</strong> -->
+      <!-- </label>
+      
+      <select id="tipoProyecto" name="tipoProyecto" class="form-control" required>
+        <option value="">Selecciona...</option>
+        <option value="Privado">Privado</option>
+        <option value="Social">Social</option>
+        <option value="Público">Público</option>
+      </select>
+    </div> -->
+    <div class="form-row">
+      <label for="nombreSolicitante"><strong>Nombre del Solicitante:</strong></label>
+      <input type="text" id="nombreSolicitante" class="form-control" required />
+    
+      <label for="tipoProyecto"><strong>Tipo de Proyecto:</strong></label>
+      <select id="tipoProyecto" name="tipoProyecto" class="form-control" required>
+        <option value="">Selecciona...</option>
+        <option value="Privado">Privado</option>
+        <option value="Social">Social</option>
+        <option value="Público">Público</option>
+      </select>
+    </div>
+
+    <hr class="red">
+
+    <div id="map"></div>
+  </div>
+  <script>
+    const map = L.map('map').setView([20.4, -89.0], 8);
+    // const map = L.map('map').setView([23.6345, -102.5528], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    let selectedFile = null;
+    let loadedGeoJSON = null;
+    let proyectos = []; // Lista de ProyectoEjecutivo
+    let terrenos = [];  // Lista de Terreno
+    let ultimaCapaCargada = null;
+
+    const terrenoConstante = {
+      "type": "FeatureCollection",
+      "features": [{
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [
+              -89.64091776909031,
+              20.978579706820568
+            ],
+            [
+              -89.25776275049857,
+              20.679985000373037
+            ],
+            [
+              -88.13666074174995,
+              20.568179445916073
+            ],
+            [
+              -87.11664170100272,
+              20.877593003944256
+            ],
+            [
+              -86.84555555954323,
+              21.16494838274552
+            ],
+            [
+              -88.1811946963877,
+              20.93736812905017
+            ],
+            [
+              -89.64091776909031,
+              20.978579706820568
+            ]
+          ]]
+        }
+      }]
+    };
+    L.geoJSON(terrenoConstante, { style: { color: 'green' } }).addTo(map);
+    map.fitBounds(L.geoJSON(terrenoConstante).getBounds());
+    proyectos.push(...terrenoConstante.features);
+
+    const geometriaDentro = {
+      "type": "FeatureCollection",
+      "features": [{
+        "type": "Feature",
+        "properties": { "nombre": "Dentro" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [-89.35, 20.88],
+            [-89.33, 20.89],
+            [-89.32, 20.91],
+            [-89.34, 20.93],
+            [-89.36, 20.91],
+            [-89.35, 20.88]
+          ]]
+        }
+      }]
+    };
+    L.geoJSON(geometriaDentro, { style: { color: 'red' } }).addTo(map);
+    map.fitBounds(L.geoJSON(geometriaDentro).getBounds());
+    terrenos.push(...geometriaDentro.features);
+
+    
+
+    // L.geoJSON(geometriaParcial, { style: { color: 'orange' } }).addTo(map);
+    //     terrenos.push(...terrenoConstante.features);
+
+    const uploadBtn = document.getElementById('uploadButton');
+    const sendBtn = document.getElementById('sendToJBPM');
+
+    document.getElementById('fileInput').addEventListener('change', (e) => {
+      selectedFile = e.target.files[0];
+      uploadBtn.disabled = !selectedFile;
+    });
+
+    document.getElementById('tipoProyecto').addEventListener('change', function () {
+      document.getElementById('projectType').style.display = this.checked ? 'none' : 'inline';
+    });
+
+    document.getElementById('hideBaseLoader').addEventListener('click', () => {
+      document.getElementById('baseLoaderSection').style.display = 'none';
+    });
+
+    document.getElementById('baseInput').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      const type = document.getElementById('baseType').value;
+      if (!file) return;
+      const name = file.name.toLowerCase();
+
+      if (name.endsWith('.geojson')) {
+        const reader = new FileReader();
+        reader.onload = function (evt) {
+          try {
+            const geojson = JSON.parse(evt.target.result);
+            agregarBasePorTipo(geojson, type);
+          } catch (err) {
+            alert("GeoJSON inválido.");
+          }
+        };
+        reader.readAsText(file);
+      } else if (name.endsWith('.kmz')) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          JSZip.loadAsync(e.target.result).then(zip => {
+            const kmlFile = Object.keys(zip.files).find(n => n.endsWith('.kml'));
+            return zip.files[kmlFile].async("string");
+          }).then(kmlText => {
+            const parser = new DOMParser();
+            const kmlDom = parser.parseFromString(kmlText, "text/xml");
+            const geojson = toGeoJSON.kml(kmlDom);
+            agregarBasePorTipo(geojson, type);
+          }).catch(err => {
+            alert("Error al procesar KMZ.");
+          });
+        };
+        reader.readAsArrayBuffer(file);
+      } else {
+        alert("Formato no soportado.");
+      }
+    });
+
+    function agregarBasePorTipo(geojson, tipo) {
+      if (tipo === "ProyectoEjecutivo") {
+        proyectos.push(...geojson.features);
+        L.geoJSON(geojson, { style: { color: 'green' } }).addTo(map);
+      } else if (tipo === "Terreno") {
+        terrenos.push(...geojson.features);
+        L.geoJSON(geojson, { style: { color: 'red' } }).addTo(map);
+      }
+      alert(`${tipo} cargado exitosamente.`);
+    }
+
+    uploadBtn.addEventListener('click', function () {
+      if (!selectedFile) return;
+      const name = selectedFile.name.toLowerCase();
+      if (name.endsWith('.kmz')) processKMZ(selectedFile);
+      else if (name.endsWith('.kml')) processKML(selectedFile);
+      else if (name.endsWith('.geojson')) processGeoJSON(selectedFile);
+      else alert("Formato no soportado.");
+    });
+
+    function processKMZ(file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        JSZip.loadAsync(e.target.result).then(zip => {
+          const kmlFile = Object.keys(zip.files).find(n => n.endsWith('.kml'));
+          return zip.files[kmlFile].async("string");
+        }).then(kmlText => {
+          const parser = new DOMParser();
+          const kmlDom = parser.parseFromString(kmlText, "text/xml");
+          const geojson = toGeoJSON.kml(kmlDom);
+          validarYAgregar(geojson);
+        });
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    function processKML(file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const parser = new DOMParser();
+        const kmlDom = parser.parseFromString(e.target.result, "text/xml");
+        const geojson = toGeoJSON.kml(kmlDom);
+        validarYAgregar(geojson);
+      };
+      reader.readAsText(file);
+    }
+
+    function processGeoJSON(file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          const geojson = JSON.parse(e.target.result);
+          validarYAgregar(geojson);
+        } catch {
+          alert("Error en GeoJSON.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function validarYAgregar(geojson) {
+        if (ultimaCapaCargada) {
+            map.removeLayer(ultimaCapaCargada);
+        }
+
+        ultimaCapaCargada = L.geoJSON(geojson, { style: { color: 'blue', dashArray: '4,4' }}).addTo(map);
+        map.fitBounds(ultimaCapaCargada.getBounds());
+
+        setTimeout(() => {
+            // Validar si está dentro del Proyecto Ejecutivo
+            let fueraDelProyecto = false;
+
+            for (const f of geojson.features) {
+            const dentroDeProyecto = proyectos.some(proj => turf.booleanWithin(f, proj));
+            if (!dentroDeProyecto) {
+                fueraDelProyecto = true;
+                break;
+            }
+            }
+
+            if (fueraDelProyecto) {
+            alert("❌ La geometría está fuera del Proyecto Ejecutivo.");
+            sendBtn.disabled = true;
+            return;
+            }
+
+            // Validar si se traslapa con algún Terreno existente
+            let traslapaConTerreno = false;
+
+            for (const f of geojson.features) {
+            const interseca = terrenos.some(t => turf.booleanIntersects(f, t));
+            if (interseca) {
+                traslapaConTerreno = true;
+                break;
+            }
+            }
+
+            if (traslapaConTerreno) {
+            alert("❌ La geometría se traslapa con un Terreno existente.");
+            sendBtn.disabled = true;
+            return;
+            }
+
+            // Si pasa todas las validaciones
+            loadedGeoJSON = geojson;
+            alert("✅ Geometría válida y cargada.");
+            sendBtn.disabled = false;
+
+        }, 600); // Tiempo para renderizar antes de validar
+    }
+
+
+
+
+    sendBtn.addEventListener('click', function () {
+      const nombreSolicitante = document.getElementById('nombreSolicitante').value.trim();
+      const tipoProyecto = document.getElementById('tipoProyecto').value;
+
+      if (!nombreSolicitante) {
+        alert("⚠️ Ingresa el nombre del solicitante.");
+        return;
+      }
+
+      if (!tipoProyecto) {
+        alert("⚠️ Selecciona un tipo de proyecto.");
+        return;
+      }
+
+      if (!loadedGeoJSON) {
+        alert("⚠️ Carga una geometría válida primero.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("nombreSolicitante", nombreSolicitante);
+      formData.append("tipoProyecto", tipoProyecto);
+      formData.append("documento", new Blob([JSON.stringify(loadedGeoJSON)], {
+        type: "application/json"
+      }), "terreno.geojson");
+
+      fetch("http://172.25.30.94/submit", { // Cambia la URL
+        method: "POST",
+        body: formData
+      })
+        .then(response => {
+          if (!response.ok) throw new Error("Error del servidor");
+          return response.text();
+        })
+        .then(data => {
+          alert("✅ Proceso iniciado correctamente.");
+          const win = window.open();
+          win.document.write(data);
+        })
+        .catch(err => {
+          console.error(err);
+          alert("❌ Hubo un error al enviar los datos.");
+        });
+    });
+
+
+
+
+  </script>
+  <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+
+</body>
+
+</html>
