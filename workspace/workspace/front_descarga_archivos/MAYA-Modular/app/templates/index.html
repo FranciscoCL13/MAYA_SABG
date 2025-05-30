@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Descarga de archivos adjuntos Tren Maya & Vía Transparente</title>
+
+    <!-- Estilos oficiales del Gobierno de México -->
+    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+
+    <style>
+        table {
+            font-size: 12px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 4px 6px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Ocultar inicialmente el filtro */
+        #filtroBusqueda {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body onload="inicia_sesion(null)">
+    <div class="container">
+        <h2 class="h3">Descarga de archivos adjuntos Tren Maya & Vía Transparente</h2>
+
+        <button id="btnGenerar" class="btn btn-primary">Generar tabla</button>
+
+        <!-- Filtro oculto inicialmente -->
+        <div id="filtroBusqueda">
+            <input type="text" id="filtroNumeroCatastral" placeholder="Buscar número catastral" />
+            <button id="btnBuscar" class="btn btn-secondary">Buscar</button>
+        </div>
+
+        <div id="tablaResultado" class="s-margin-top--medium"></div>
+    </div>
+
+    <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+
+    <script>
+        // Mostrar tabla al hacer clic en Generar
+        document.getElementById('btnGenerar').addEventListener('click', function () {
+            fetch('/tablas/generar_tabla')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('tablaResultado').innerHTML = data.tabla;
+                    // Mostrar filtro cuando ya esté la tabla
+                    document.getElementById('filtroBusqueda').style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Hubo un problema al generar la tabla.');
+                });
+        });
+
+        // Función para buscar por número catastral
+        document.getElementById('btnBuscar').addEventListener('click', function () {
+            const valor = document.getElementById('filtroNumeroCatastral').value;
+            fetch('/tablas/buscar_tabla?numero_catastral=' + encodeURIComponent(valor))
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('tablaResultado').innerHTML = data.tabla;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al buscar por número catastral');
+                });
+        });
+    </script>
+	<script>
+    let sesion = null;
+
+    async function inicia_sesion(datos) {
+    const respuesta = await fetch("http://172.25.30.98:80/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: datos ? JSON.stringify(datos) : "{}"
+    });
+
+    sesion = await respuesta.json();
+
+    const overlay = document.getElementById("overlayBloqueo");
+    const cerrarSesionDiv = document.getElementById("cerrarSesionDiv");
+    const rfcSpan = document.getElementById("rfcUsuario");
+
+    if ("rfc" in sesion) {
+        overlay.style.display = "none";
+        cerrarSesionDiv.style.display = "block";
+        rfcSpan.innerText = `RFC: ${sesion.rfc}`;
+    } else {
+        overlay.style.display = "block";
+        cerrarSesionDiv.style.display = "none";
+        overlay.onclick = () => {
+        Swal.fire({
+            icon: 'warning',
+            title: 'No ha iniciado sesión',
+            text: 'Por favor, ingrese su e-firma',
+            confirmButtonText: 'Entendido',
+            background: '#1a1a1a',
+            color: '#ffffff',
+            confirmButtonColor: '#235B4E'
+        }).then(() => {
+            window.location.href = "/login";
+        });
+        };
+    }
+    }
+
+    async function cierra_sesion() {
+        await inicia_sesion({ salir: true });
+    }
+
+    document.addEventListener("DOMContentLoaded", inicia_sesion);
+  </script>
+
+
+<script>
+    document.getElementById("activarCampos").addEventListener("click", function () {
+      const overlay = document.getElementById("overlayBloqueo");
+      if (overlay) {
+        overlay.style.display = "none";
+      }
+    });
+</body>
+</html>

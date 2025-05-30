@@ -1,0 +1,906 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8083
+ * Running on http://172.19.78.144:8083
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:09:42] "POST /copiar_y_limpiar HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:12:49] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:12:51] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\functions.py', reloading
+--------------INICIANDO PROCESO copiar archivos--------------
+[INFO] Salida copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al dÃ­a actual (evitando duplicados previos)...
+[CHECK] Creando carpeta destino si no existe: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22
+[CHECK] Iniciando recorrido de carpetas UUID en .docs...
+[SKIP] UUID '10c8f1ec-38d3-41b6-be3f-c1febcb200d4' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/10c8f1ec-38d3-41b6-be3f-c1febcb200d4
+[SKIP] UUID '11632276' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/11632276
+[SKIP] UUID '168620893' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/168620893
+[SKIP] UUID '252042678' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/252042678
+[SKIP] UUID '26552515' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/26552515
+[COPY] Copiando '285007433' a carpeta de hoy...
+[SKIP] UUID '299168191' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/299168191
+[SKIP] UUID '31331253' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/31331253
+[SKIP] UUID '34385655' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/34385655
+[SKIP] UUID '421278591' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/421278591
+[SKIP] UUID '446470588' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/446470588
+[SKIP] UUID '452643407' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/452643407
+[SKIP] UUID '454964083' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/454964083
+[SKIP] UUID '469339014' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/469339014
+[SKIP] UUID '483886065' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/483886065
+[SKIP] UUID '484135336' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/484135336
+[SKIP] UUID '515238335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/515238335
+[SKIP] UUID '51569664' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/51569664
+[SKIP] UUID '526649734' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/526649734
+[SKIP] UUID '546317552' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/546317552
+[SKIP] UUID '54848827' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/54848827
+[SKIP] UUID '595359335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/595359335
+[SKIP] UUID '629754630' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/629754630
+[SKIP] UUID '694461897' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/694461897
+[SKIP] UUID '73544792' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/73544792
+[SKIP] UUID '743128012' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/743128012
+[SKIP] UUID '75867489' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/75867489
+[SKIP] UUID '767389476' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/767389476
+[SKIP] UUID '793460429' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/793460429
+[SKIP] UUID '801778758' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/801778758
+[SKIP] UUID '82375477' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/82375477
+[SKIP] UUID '890745227' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/890745227
+[SKIP] UUID '910353427' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/910353427
+[SKIP] UUID '919534863' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/919534863
+[SKIP] UUID '939328787' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/939328787
+[SKIP] UUID '951237755' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/951237755
+[SKIP] UUID '99829367' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/99829367
+[SKIP] UUID 'b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8
+[CHECK] Â¡Proceso completado!
+
+--------------FINALIZANDO PROCESO copiar archivos--------------
+--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------
+[INFO] Salida limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaÃ±o de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]TamaÃ±o actual de /opt/jboss/wildfly/bin/.docs: 359608 bytes
+[YY]LÃ­mite configurado: 107374182400 bytes
+[YY]Dentro del lÃ­mite. No se borra nada.
+
+--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------
+--------------INICIANDO PROCESO documentCollection--------------
+-----INICIANDO PROCESO documentCollection---------
+[INFO] Consultando últimas instancias activas en: http://host.docker.internal:8080/kie-server/services/rest/server/queries/processes/instances?status=1
+[OK] Última instancia activa: 83
+[ZZ] Contenedor detectado: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[ZZ] Instancia obtenida: 83
+[ZZ] Contenedor obtenido: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[INFO] Consultando variables del proceso: http://host.docker.internal:8080/kie-server/services/rest/server/containers/Publica_In_Out_Local_1.0.0-SNAPSHOT/processes/instances/83/variables
+[DEBUG] Código de respuesta: 200
+[DEBUG] Respuesta raw: {
+  "documentosSETN" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "595359335",
+    "name" : "Publica (3) (4) (1).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747759918289
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "168620893",
+    "name" : "geo-3 (5) (1) (3).kml",
+    "link" : "",
+    "size" : 507,
+    "lastModified" : {
+      "java.util.Date" : 1747759715208
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "EsSuceptibledeEntrega" : true,
+  "documentosSRTIC" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "285007433",
+    "name" : "Publica (3) (4) (1).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747759918289
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "initiator" : "wbadmin"
+}
+[DEBUG] Variables encontradas: ['documentosSETN', 'EsSuceptibledeEntrega', 'documentosSRTIC', 'initiator']
+[DEBUG] Analizando variable: documentosSETN
+[DEBUG] Se encontraron documentos en documentosSETN
+[DEBUG] Analizando variable: EsSuceptibledeEntrega
+[DEBUG] EsSuceptibledeEntrega no contiene documentos
+[DEBUG] Analizando variable: documentosSRTIC
+[DEBUG] Se encontraron documentos en documentosSRTIC
+[DEBUG] Analizando variable: initiator
+[DEBUG] initiator no contiene documentos
+[OK] Se insertaron 1 documento(s) nuevo(s).
+[INFO] Últimos registros en tabla_document_collections:
+    processinstanceid  ... identifier
+0                   7  ...   31331253
+1                   7  ...  526649734
+2                   7  ...  939328787
+3                   9  ...   54848827
+4                   9  ...  454964083
+5                   9  ...  252042678
+6                   9  ...  483886065
+7                   9  ...   82375477
+8                   9  ...  890745227
+9                  10  ...  546317552
+10                 10  ...  951237755
+11                 10  ...  801778758
+12                 19  ...   73544792
+13                 46  ...  629754630
+14                 83  ...  595359335
+15                 83  ...  168620893
+16                 83  ...  285007433
+
+[17 rows x 5 columns]
+--------------FINALIZANDO PROCESO documentCollection--------------
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:22:18] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:22:25] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:22:30] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+--------------INICIANDO PROCESO copiar archivos--------------
+[INFO] Salida copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al dÃ­a actual (evitando duplicados previos)...
+[CHECK] Creando carpeta destino si no existe: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22
+[CHECK] Iniciando recorrido de carpetas UUID en .docs...
+[SKIP] UUID '10c8f1ec-38d3-41b6-be3f-c1febcb200d4' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/10c8f1ec-38d3-41b6-be3f-c1febcb200d4
+[SKIP] UUID '11632276' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/11632276
+[SKIP] UUID '168620893' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/168620893
+[COPY] Copiando '19042194' a carpeta de hoy...
+[COPY] Copiando '209763095' a carpeta de hoy...
+[SKIP] UUID '252042678' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/252042678
+[SKIP] UUID '26552515' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/26552515
+[SKIP] UUID '285007433' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/285007433
+[SKIP] UUID '299168191' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/299168191
+[SKIP] UUID '31331253' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/31331253
+[SKIP] UUID '34385655' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/34385655
+[SKIP] UUID '421278591' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/421278591
+[SKIP] UUID '446470588' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/446470588
+[SKIP] UUID '452643407' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/452643407
+[SKIP] UUID '454964083' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/454964083
+[SKIP] UUID '469339014' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/469339014
+[SKIP] UUID '483886065' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/483886065
+[SKIP] UUID '484135336' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/484135336
+[SKIP] UUID '515238335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/515238335
+[SKIP] UUID '51569664' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/51569664
+[SKIP] UUID '526649734' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/526649734
+[SKIP] UUID '546317552' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/546317552
+[SKIP] UUID '54848827' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/54848827
+[SKIP] UUID '595359335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/595359335
+[SKIP] UUID '629754630' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/629754630
+[COPY] Copiando '689785201' a carpeta de hoy...
+[SKIP] UUID '694461897' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/694461897
+[SKIP] UUID '73544792' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/73544792
+[SKIP] UUID '743128012' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/743128012
+[SKIP] UUID '75867489' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/75867489
+[SKIP] UUID '767389476' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/767389476
+[SKIP] UUID '793460429' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/793460429
+[SKIP] UUID '801778758' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/801778758
+[SKIP] UUID '82375477' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/82375477
+[SKIP] UUID '890745227' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/890745227
+[COPY] Copiando '903549483' a carpeta de hoy...
+[SKIP] UUID '910353427' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/910353427
+[SKIP] UUID '919534863' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/919534863
+[SKIP] UUID '939328787' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/939328787
+[SKIP] UUID '951237755' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/951237755
+[COPY] Copiando '994368961' a carpeta de hoy...
+[SKIP] UUID '99829367' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/99829367
+[SKIP] UUID 'b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8
+[CHECK] Â¡Proceso completado!
+
+--------------FINALIZANDO PROCESO copiar archivos--------------
+--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------
+[INFO] Salida limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaÃ±o de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]TamaÃ±o actual de /opt/jboss/wildfly/bin/.docs: 513611 bytes
+[YY]LÃ­mite configurado: 107374182400 bytes
+[YY]Dentro del lÃ­mite. No se borra nada.
+
+--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------
+--------------INICIANDO PROCESO documentCollection--------------
+-----INICIANDO PROCESO documentCollection---------
+[INFO] Consultando últimas instancias activas en: http://host.docker.internal:8080/kie-server/services/rest/server/queries/processes/instances?status=1
+[OK] Última instancia activa: 84
+[ZZ] Contenedor detectado: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[ZZ] Instancia obtenida: 84
+[ZZ] Contenedor obtenido: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[INFO] Consultando variables del proceso: http://host.docker.internal:8080/kie-server/services/rest/server/containers/Publica_In_Out_Local_1.0.0-SNAPSHOT/processes/instances/84/variables
+[DEBUG] Código de respuesta: 200
+[DEBUG] Respuesta raw: {
+  "documentosSETN" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "994368961",
+    "name" : "ipconfig_Francisco_CL (3) (1).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747850281224
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "903549483",
+    "name" : "Publica (3) (5).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747844635865
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "689785201",
+    "name" : "Publica (3) (4) (1).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747759918289
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "209763095",
+    "name" : "geo-3 (5) (1) (3).kml",
+    "link" : "",
+    "size" : 507,
+    "lastModified" : {
+      "java.util.Date" : 1747759715208
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "19042194",
+    "name" : "ipconfig_Francisco_CL (3).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747694721693
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "initiator" : "wbadmin"
+}
+[DEBUG] Variables encontradas: ['documentosSETN', 'initiator']
+[DEBUG] Analizando variable: documentosSETN
+[DEBUG] Se encontraron documentos en documentosSETN
+[DEBUG] Analizando variable: initiator
+[DEBUG] initiator no contiene documentos
+[OK] Se insertaron 5 documento(s) nuevo(s).
+[INFO] Últimos registros en tabla_document_collections:
+    processinstanceid  ... identifier
+0                   7  ...   31331253
+1                   7  ...  526649734
+2                   7  ...  939328787
+3                   9  ...   54848827
+4                   9  ...  454964083
+5                   9  ...  252042678
+6                   9  ...  483886065
+7                   9  ...   82375477
+8                   9  ...  890745227
+9                  10  ...  546317552
+10                 10  ...  951237755
+11                 10  ...  801778758
+12                 19  ...   73544792
+13                 46  ...  629754630
+14                 83  ...  595359335
+15                 83  ...  168620893
+16                 83  ...  285007433
+17                 84  ...  994368961
+18                 84  ...  903549483
+19                 84  ...  689785201
+20                 84  ...  209763095
+21                 84  ...   19042194
+
+[22 rows x 5 columns]127.0.0.1 - - [22/May/2025 11:34:06] "POST /copiar_y_limpiar HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:38:28] "GET /tablas/buscar_tabla?numero_catastral=11PruebaLocal HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:39:22] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:10] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:10] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:10] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:11] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:20] "GET /tablas/buscar_tabla?numero_catastral=33.PRUEBALOCAL HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:40:23] "GET /tablas/descargar/Publica%20(3).bpmn HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:41:14] "GET /tablas/ HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-Copy1-checkpoint.py', reloading
+
+--------------FINALIZANDO PROCESO documentCollection--------------
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:42:56] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 11:42:57] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-Copy1-checkpoint.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 11:43:07] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 12:16:59] "POST /copiar_y_limpiar HTTP/1.1" 200 -
+--------------INICIANDO PROCESO copiar archivos--------------
+[INFO] Salida copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al dÃ­a actual (evitando duplicados previos)...
+[CHECK] Creando carpeta destino si no existe: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22
+[CHECK] Iniciando recorrido de carpetas UUID en .docs...
+[SKIP] UUID '10c8f1ec-38d3-41b6-be3f-c1febcb200d4' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/10c8f1ec-38d3-41b6-be3f-c1febcb200d4
+[SKIP] UUID '11632276' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/11632276
+[SKIP] UUID '168620893' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/168620893
+[SKIP] UUID '19042194' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/19042194
+[SKIP] UUID '209763095' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/209763095
+[SKIP] UUID '252042678' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/252042678
+[SKIP] UUID '26552515' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/26552515
+[SKIP] UUID '285007433' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/285007433
+[SKIP] UUID '299168191' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/299168191
+[SKIP] UUID '31331253' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/31331253
+[SKIP] UUID '34385655' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/34385655
+[SKIP] UUID '421278591' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/421278591
+[SKIP] UUID '446470588' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/446470588
+[SKIP] UUID '452643407' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/452643407
+[SKIP] UUID '454964083' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/454964083
+[SKIP] UUID '469339014' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/469339014
+[SKIP] UUID '483886065' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/483886065
+[SKIP] UUID '484135336' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/484135336
+[SKIP] UUID '515238335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/515238335
+[SKIP] UUID '51569664' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/51569664
+[SKIP] UUID '526649734' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/526649734
+[COPY] Copiando '54489781' a carpeta de hoy...
+[SKIP] UUID '546317552' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/546317552
+[SKIP] UUID '54848827' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/54848827
+[COPY] Copiando '564487000' a carpeta de hoy...
+[SKIP] UUID '595359335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/595359335
+[SKIP] UUID '629754630' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/629754630
+[SKIP] UUID '689785201' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/689785201
+[SKIP] UUID '694461897' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/694461897
+[SKIP] UUID '73544792' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/73544792
+[SKIP] UUID '743128012' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/743128012
+[SKIP] UUID '75867489' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/75867489
+[SKIP] UUID '767389476' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/767389476
+[SKIP] UUID '793460429' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/793460429
+[SKIP] UUID '801778758' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/801778758
+[SKIP] UUID '82375477' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/82375477
+[SKIP] UUID '890745227' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/890745227
+[SKIP] UUID '903549483' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/903549483
+[SKIP] UUID '910353427' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/910353427
+[SKIP] UUID '919534863' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/919534863
+[SKIP] UUID '939328787' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/939328787
+[SKIP] UUID '951237755' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/951237755
+[SKIP] UUID '994368961' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/994368961
+[SKIP] UUID '99829367' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/99829367
+[SKIP] UUID 'b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8
+[CHECK] Â¡Proceso completado!
+
+--------------FINALIZANDO PROCESO copiar archivos--------------
+--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------
+[INFO] Salida limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaÃ±o de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]TamaÃ±o actual de /opt/jboss/wildfly/bin/.docs: 588311 bytes
+[YY]LÃ­mite configurado: 107374182400 bytes
+[YY]Dentro del lÃ­mite. No se borra nada.
+
+--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------
+--------------INICIANDO PROCESO documentCollection--------------
+-----INICIANDO PROCESO documentCollection---------
+[INFO] Consultando últimas instancias activas en: http://host.docker.internal:8080/kie-server/services/rest/server/queries/processes/instances?status=1
+[OK] Última instancia activa: 85
+[ZZ] Contenedor detectado: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[ZZ] Instancia obtenida: 85
+[ZZ] Contenedor obtenido: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[INFO] Consultando variables del proceso: http://host.docker.internal:8080/kie-server/services/rest/server/containers/Publica_In_Out_Local_1.0.0-SNAPSHOT/processes/instances/85/variables
+[DEBUG] Código de respuesta: 200
+[DEBUG] Respuesta raw: {
+  "documentosSETN" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "54489781",
+    "name" : "Publica (3) (6).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747935623466
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "564487000",
+    "name" : "ipconfig_Francisco_CL (3) (1).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747850281224
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "initiator" : "wbadmin"
+}
+[DEBUG] Variables encontradas: ['documentosSETN', 'initiator']
+[DEBUG] Analizando variable: documentosSETN
+[DEBUG] Se encontraron documentos en documentosSETN
+[DEBUG] Analizando variable: initiator
+[DEBUG] initiator no contiene documentos
+[OK] Se insertaron 2 documento(s) nuevo(s).
+[INFO] Últimos registros en tabla_document_collections:
+    processinstanceid  ... identifier
+0                   7  ...   31331253
+1                   7  ...  526649734
+2                   7  ...  939328787
+3                   9  ...   54848827
+4                   9  ...  454964083
+5                   9  ...  252042678
+6                   9  ...  483886065
+7                   9  ...   82375477
+8                   9  ...  890745227
+9                  10  ...  546317552
+10                 10  ...  951237755
+11                 10  ...  801778758
+12                 19  ...   73544792
+13                 46  ...  629754630
+14                 83  ...  595359335
+15                 83  ...  168620893
+16                 83  ...  285007433
+17                 84  ...  994368961
+18                 84  ...  903549483
+19                 84  ...  689785201
+20                 84  ...  209763095
+21                 84  ...   19042194
+22                 85  ...   54489781
+23                 85  ...  564487000
+
+[24 rows x 5 columns]
+--------------FINALIZANDO PROCESO documentCollection--------------
+--------------INICIANDO PROCESO copiar archivos--------------
+[INFO] Salida copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al dÃ­a actual (evitando duplicados previos)...
+[CHECK] Creando carpeta destino si no existe: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22
+[CHECK] Iniciando recorrido de carpetas UUID en .docs...
+[SKIP] UUID '10c8f1ec-38d3-41b6-be3f-c1febcb200d4' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/10c8f1ec-38d3-41b6-be3f-c1febcb200d4
+[SKIP] UUID '11632276' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/11632276
+[SKIP] UUID '168620893' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/168620893
+[SKIP] UUID '19042194' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/19042194
+[SKIP] UUID '209763095' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/209763095
+[SKIP] UUID '252042678' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/252042678
+[SKIP] UUID '26552515' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/26552515
+[SKIP] UUID '285007433' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/285007433
+[SKIP] UUID '299168191' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/299168191
+[SKIP] UUID '31331253' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/31331253
+[SKIP] UUID '34385655' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/34385655
+[SKIP] UUID '421278591' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/421278591
+[SKIP] UUID '446470588' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/446470588
+[SKIP] UUID '452643407' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/452643407
+[SKIP] UUID '454964083' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/454964083
+[SKIP] UUID '469339014' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/469339014
+[SKIP] UUID '483886065' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/483886065
+[SKIP] UUID '484135336' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/484135336
+[SKIP] UUID '515238335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/515238335
+[SKIP] UUID '51569664' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/51569664
+[SKIP] UUID '526649734' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/526649734
+[SKIP] UUID '54489781' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/54489781
+[SKIP] UUID '546317552' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/546317552
+[SKIP] UUID '54848827' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/54848827
+[SKIP] UUID '564487000' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/564487000
+[SKIP] UUID '595359335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/595359335
+[SKIP] UUID '629754630' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/629754630
+[SKIP] UUID '689785201' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/689785201
+[SKIP] UUID '694461897' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/694461897
+[SKIP] UUID '73544792' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/73544792
+[SKIP] UUID '743128012' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/743128012
+[SKIP] UUID '75867489' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/75867489
+[SKIP] UUID '767389476' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/767389476
+[COPY] Copiando '783743235' a carpeta de hoy...
+[SKIP] UUID '793460429' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/793460429
+[SKIP] UUID '801778758' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/801778758
+[SKIP] UUID '82375477' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/82375477
+[SKIP] UUID '890745227' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/890745227
+[SKIP] UUID '903549483' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/903549483
+[SKIP] UUID '910353427' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/910353427
+[SKIP] UUID '919534863' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/919534863
+[SKIP] UUID '939328787' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/939328787
+[COPY] Copiando '942516020' a carpeta de hoy...
+[SKIP] UUID '951237755' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/951237755
+[SKIP] UUID '994368961' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/994368961
+[SKIP] UUID '99829367' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/99829367
+[SKIP] UUID 'b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8
+[CHECK] Â¡Proceso completado!
+127.0.0.1 - - [22/May/2025 12:17:49] "POST /copiar_y_limpiar HTTP/1.1" 200 -
+
+--------------FINALIZANDO PROCESO copiar archivos--------------
+--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------
+[INFO] Salida limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaÃ±o de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]TamaÃ±o actual de /opt/jboss/wildfly/bin/.docs: 599205 bytes
+[YY]LÃ­mite configurado: 107374182400 bytes
+[YY]Dentro del lÃ­mite. No se borra nada.
+
+--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------
+--------------INICIANDO PROCESO documentCollection--------------
+-----INICIANDO PROCESO documentCollection---------
+[INFO] Consultando últimas instancias activas en: http://host.docker.internal:8080/kie-server/services/rest/server/queries/processes/instances?status=1
+[OK] Última instancia activa: 85
+[ZZ] Contenedor detectado: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[ZZ] Instancia obtenida: 85
+[ZZ] Contenedor obtenido: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[INFO] Consultando variables del proceso: http://host.docker.internal:8080/kie-server/services/rest/server/containers/Publica_In_Out_Local_1.0.0-SNAPSHOT/processes/instances/85/variables
+[DEBUG] Código de respuesta: 200
+[DEBUG] Respuesta raw: {
+  "documentosSETN" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "54489781",
+    "name" : "Publica (3) (6).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747935623466
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "564487000",
+    "name" : "ipconfig_Francisco_CL (3) (1).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747850281224
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "EsSuceptibledeEntrega" : true,
+  "documentosSRTIC" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "942516020",
+    "name" : "ipconfig_Francisco_CL (3) (1).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747850281224
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "783743235",
+    "name" : "geo-3 (5) (1) (3).kml",
+    "link" : "",
+    "size" : 507,
+    "lastModified" : {
+      "java.util.Date" : 1747759715208
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "initiator" : "wbadmin"
+}
+[DEBUG] Variables encontradas: ['documentosSETN', 'EsSuceptibledeEntrega', 'documentosSRTIC', 'initiator']
+[DEBUG] Analizando variable: documentosSETN
+[DEBUG] Se encontraron documentos en documentosSETN
+[DEBUG] Analizando variable: EsSuceptibledeEntrega
+[DEBUG] EsSuceptibledeEntrega no contiene documentos
+[DEBUG] Analizando variable: documentosSRTIC
+[DEBUG] Se encontraron documentos en documentosSRTIC
+[DEBUG] Analizando variable: initiator
+[DEBUG] initiator no contiene documentos
+[OK] Se insertaron 2 documento(s) nuevo(s).
+[INFO] Últimos registros en tabla_document_collections:
+    processinstanceid  ... identifier
+0                   7  ...   31331253
+1                   7  ...  526649734
+2                   7  ...  939328787
+3                   9  ...   54848827
+4                   9  ...  454964083
+5                   9  ...  252042678
+6                   9  ...  483886065
+7                   9  ...   82375477
+8                   9  ...  890745227
+9                  10  ...  546317552
+10                 10  ...  951237755
+11                 10  ...  801778758
+12                 19  ...   73544792
+13                 46  ...  629754630
+14                 83  ...  595359335
+15                 83  ...  168620893
+16                 83  ...  285007433
+17                 84  ...  994368961
+18                 84  ...  903549483
+19                 84  ...  689785201
+20                 84  ...  209763095
+21                 84  ...   19042194
+22                 85  ...   54489781
+23                 85  ...  564487000
+24                 85  ...  942516020
+25                 85  ...  783743235
+
+[26 rows x 5 columns]
+--------------FINALIZANDO PROCESO documentCollection--------------
+--------------INICIANDO PROCESO copiar archivos--------------
+[INFO] Salida copiar_completo_CC_localADocker_V2.sh:
+[CHECK] Copiando SOLO carpetas UUID nuevas desde .docs al dÃ­a actual (evitando duplicados previos)...
+[CHECK] Creando carpeta destino si no existe: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22
+[CHECK] Iniciando recorrido de carpetas UUID en .docs...
+[SKIP] UUID '10c8f1ec-38d3-41b6-be3f-c1febcb200d4' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/10c8f1ec-38d3-41b6-be3f-c1febcb200d4
+[SKIP] UUID '11632276' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/11632276
+[SKIP] UUID '168620893' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/168620893
+[SKIP] UUID '19042194' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/19042194
+[SKIP] UUID '209763095' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/209763095
+[SKIP] UUID '252042678' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/252042678
+[SKIP] UUID '26552515' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/26552515
+[SKIP] UUID '285007433' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/285007433
+[SKIP] UUID '299168191' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/299168191
+[SKIP] UUID '31331253' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/31331253
+[SKIP] UUID '34385655' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/34385655
+[SKIP] UUID '421278591' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/421278591
+[SKIP] UUID '446470588' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/446470588
+[SKIP] UUID '452643407' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/452643407
+[SKIP] UUID '454964083' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/454964083
+[SKIP] UUID '469339014' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/469339014
+[COPY] Copiando '47b16df7-79a0-4d2b-b315-8c2f5e357469' a carpeta de hoy...
+[SKIP] UUID '483886065' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/483886065
+[SKIP] UUID '484135336' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/484135336
+[SKIP] UUID '515238335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/515238335
+[SKIP] UUID '51569664' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/51569664
+[SKIP] UUID '526649734' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/526649734
+[SKIP] UUID '54489781' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/54489781
+[SKIP] UUID '546317552' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/546317552
+[SKIP] UUID '54848827' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/54848827
+[SKIP] UUID '564487000' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/564487000
+[SKIP] UUID '595359335' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/595359335
+[SKIP] UUID '629754630' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/629754630
+[SKIP] UUID '689785201' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/689785201
+[SKIP] UUID '694461897' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/694461897
+[SKIP] UUID '73544792' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/73544792
+[SKIP] UUID '743128012' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/743128012
+[SKIP] UUID '75867489' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/75867489
+[SKIP] UUID '767389476' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/767389476
+[SKIP] UUID '783743235' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/783743235
+[SKIP] UUID '793460429' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/793460429
+[SKIP] UUID '801778758' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/801778758
+[SKIP] UUID '82375477' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/82375477
+[SKIP] UUID '890745227' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/890745227
+[SKIP] UUID '903549483' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/903549483
+[SKIP] UUID '910353427' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/910353427
+[SKIP] UUID '919534863' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/919534863
+[SKIP] UUID '939328787' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/939328787
+[SKIP] UUID '942516020' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/942516020
+[SKIP] UUID '951237755' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/951237755
+[SKIP] UUID '994368961' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-22/994368961
+[SKIP] UUID '99829367' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/99829367
+[SKIP] UUID 'b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8' ya existe en: /opt/jboss/wildfly/bin/jbpm_docs/2025-05-21/b4bbff8f-f1ee-497c-b3b2-7017ae8d34e8
+[CHECK] Â¡Proceso completado!
+
+--------------FINALIZANDO PROCESO copiar archivos--------------
+--------------INICIANDO PROCESO limpiar directorios 100gb Max--------------
+[INFO] Salida limpiar_jbpm_docs_localADocker.sh:
+[YY]Verificando existencia y tamaÃ±o de /opt/jboss/wildfly/bin/.docs dentro del contenedor 'jbpm-server'...
+[YY]TamaÃ±o actual de /opt/jboss/wildfly/bin/.docs: 641279 bytes
+[YY]LÃ­mite configurado: 107374182400 bytes
+[YY]Dentro del lÃ­mite. No se borra nada.
+
+--------------FINALIZANDO PROCESO limpiar directorios 100gb Max--------------
+--------------INICIANDO PROCESO documentCollection--------------
+-----INICIANDO PROCESO documentCollection---------
+[INFO] Consultando últimas instancias activas en: http://host.docker.internal:8080/kie-server/services/rest/server/queries/processes/instances?status=1
+[OK] Última instancia activa: 85
+[ZZ] Contenedor detectado: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[ZZ] Instancia obtenida: 85
+[ZZ] Contenedor obtenido: Publica_In_Out_Local_1.0.0-SNAPSHOT
+[INFO] Consultando variables del proceso: http://host.docker.internal:8080/kie-server/services/rest/server/containers/Publica_In_Out_Local_1.0.0-SNAPSHOT/processes/instances/85/variables
+[DEBUG] Código de respuesta: 200
+[DEBUG] Respuesta raw: {
+  "documentosSETN" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "54489781",
+    "name" : "Publica (3) (6).bpmn",
+    "link" : "",
+    "size" : 64313,
+    "lastModified" : {
+      "java.util.Date" : 1747935623466
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "564487000",
+    "name" : "ipconfig_Francisco_CL (3) (1).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747850281224
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "EsSuceptibledeEntrega" : true,
+  "documentosSEPTB" : {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "47b16df7-79a0-4d2b-b315-8c2f5e357469",
+    "name" : "Adquisicion de Inmuebles_V2_20022025 (2) (1).xlsx",
+    "link" : "",
+    "size" : 37978,
+    "lastModified" : {
+      "java.util.Date" : 1747937909769
+    },
+    "content" : "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",
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+},
+  "documentosSRTIC" : {
+    "documents" : [ {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "942516020",
+    "name" : "ipconfig_Francisco_CL (3) (1).out",
+    "link" : "",
+    "size" : 2195,
+    "lastModified" : {
+      "java.util.Date" : 1747850281224
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+}, {
+  "org.jbpm.document.service.impl.DocumentImpl" : {
+    "identifier" : "783743235",
+    "name" : "geo-3 (5) (1) (3).kml",
+    "link" : "",
+    "size" : 507,
+    "lastModified" : {
+      "java.util.Date" : 1747759715208
+    },
+    "content" : null,
+    "attributes" : {
+      "_UPDATED_" : "false"
+    }
+  }
+} ]
+  },
+  "initiator" : "wbadmin"
+}127.0.0.1 - - [22/May/2025 12:18:41] "POST /copiar_y_limpiar HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 13:16:26] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 15:22:15] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\tablas_busqueda-Copy1.py', reloading
+
+[DEBUG] Variables encontradas: ['documentosSETN', 'EsSuceptibledeEntrega', 'documentosSEPTB', 'documentosSRTIC', 'initiator']
+[DEBUG] Analizando variable: documentosSETN
+[DEBUG] Se encontraron documentos en documentosSETN
+[DEBUG] Analizando variable: EsSuceptibledeEntrega
+[DEBUG] EsSuceptibledeEntrega no contiene documentos
+[DEBUG] Analizando variable: documentosSEPTB
+[DEBUG] documentosSEPTB no contiene documentos
+[DEBUG] Analizando variable: documentosSRTIC
+[DEBUG] Se encontraron documentos en documentosSRTIC
+[DEBUG] Analizando variable: initiator
+[DEBUG] initiator no contiene documentos
+[INFO] No hay nuevos documentos para insertar.
+[INFO] Últimos registros en tabla_document_collections:
+    processinstanceid  ... identifier
+0                   7  ...   31331253
+1                   7  ...  526649734
+2                   7  ...  939328787
+3                   9  ...   54848827
+4                   9  ...  454964083
+5                   9  ...  252042678
+6                   9  ...  483886065
+7                   9  ...   82375477
+8                   9  ...  890745227
+9                  10  ...  546317552
+10                 10  ...  951237755
+11                 10  ...  801778758
+12                 19  ...   73544792
+13                 46  ...  629754630
+14                 83  ...  595359335
+15                 83  ...  168620893
+16                 83  ...  285007433
+17                 84  ...  994368961
+18                 84  ...  903549483
+19                 84  ...  689785201
+20                 84  ...  209763095
+21                 84  ...   19042194
+22                 85  ...   54489781
+23                 85  ...  564487000
+24                 85  ...  942516020
+25                 85  ...  783743235
+
+[26 rows x 5 columns]
+--------------FINALIZANDO PROCESO documentCollection--------------
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 15:31:15] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 15:31:17] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-Copy1-checkpoint.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-checkpoint.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 112, in _get_module_details
+  File "C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\__init__.py", line 2, in <module>
+    from app.tablas_busqueda import tablas_bp
+  File "C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\tablas_busqueda.py", line 1, in <module>
+    @tablas_bp.route('/generar_tabla', methods=['GET'])
+     ^^^^^^^^^
+NameError: name 'tablas_bp' is not defined

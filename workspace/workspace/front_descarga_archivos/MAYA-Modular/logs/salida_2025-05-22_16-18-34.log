@@ -1,0 +1,90 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8083
+ * Running on http://172.19.78.144:8083
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 16:18:53] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:18:54] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:20:57] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:20:58] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:21:02] "GET /tablas/buscar_tabla?numero_catastral=7 HTTP/1.1" 500 -
+127.0.0.1 - - [22/May/2025 16:21:05] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:21:10] "GET /tablas/buscar_tabla?numero_catastral=18 HTTP/1.1" 500 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\tablas_busqueda.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 16:23:45] "GET /tablas/buscar_tabla?numero_catastral=18 HTTP/1.1" 500 -
+127.0.0.1 - - [22/May/2025 16:23:47] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:23:48] "GET /tablas/buscar_tabla?numero_catastral=18 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:23:52] "GET /tablas/buscar_tabla?numero_catastral=7 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:23:57] "GET /tablas/buscar_tabla?numero_catastral=1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:31:20] "GET /tablas/buscar_tabla?numero_catastral=1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:31:26] "GET /tablas/buscar_tabla?numero_catastral=1_APLI_Local HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\tablas_busqueda.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\main-checkpoint.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 16:38:30] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:38:31] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 16:44:04] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:44:05] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:44:09] "GET /tablas/buscar_tabla?numero_catastral=5 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:46:01] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:46:02] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-checkpoint.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 16:48:29] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:48:32] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:48:35] "GET /tablas/buscar_tabla?numero_catastral=2 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:48:38] "GET /tablas/buscar_tabla?numero_catastral=5 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:48:41] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:48:50] "GET /tablas/buscar_tabla?numero_catastral=5 HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:48:52] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\tablas_busqueda.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 16:50:24] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:50:25] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:50:35] "GET /tablas/buscar_tabla?numero_catastral=5 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\tablas_busqueda.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 303-598-026
+127.0.0.1 - - [22/May/2025 16:51:05] "GET /tablas/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2025 16:51:06] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\MAYA-Modular\\app\\.ipynb_checkpoints\\tablas_busqueda-checkpoint.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 112, in _get_module_details
+  File "C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\__init__.py", line 2, in <module>
+    from app.tablas_busqueda import tablas_bp
+  File "C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\MAYA-Modular\app\tablas_busqueda.py", line 120
+    df_final = pd.read_sql(combinacion_sql, engine)
+                                                   ^
+IndentationError: unindent does not match any outer indentation level

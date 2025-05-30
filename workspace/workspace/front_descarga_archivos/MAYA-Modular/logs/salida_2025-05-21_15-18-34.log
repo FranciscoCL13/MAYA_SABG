@@ -1,0 +1,14 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8083
+ * Running on http://172.19.78.144:8083
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 605-078-264
+127.0.0.1 - - [21/May/2025 15:21:15] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2025 15:21:16] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2025 15:21:16] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2025 15:21:17] "GET /tablas/generar_tabla HTTP/1.1" 200 -

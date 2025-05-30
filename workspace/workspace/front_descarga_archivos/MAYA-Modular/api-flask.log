@@ -1,0 +1,77 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de copiado: name 'ejecutar_script' is not defined
+[ERROR] Falló ejecución de limpieza: name 'ejecutar_script' is not defined
+h: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de limpieza
+[ERROR] Script MAYA-Modular-scripts-copiar_completo_CC.sh falló:
+bash: MAYA-Modular-scripts-copiar_completo_CC.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de copiado
+[ERROR] Script limpiar_jbpm_docs_localADocker.sh falló:
+bash: limpiar_jbpm_docs_localADocker.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de limpieza
+[ERROR] Script MAYA-Modular-scripts-copiar_completo_CC.sh falló:
+bash: MAYA-Modular-scripts-copiar_completo_CC.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de copiado
+[ERROR] Script limpiar_jbpm_docs_localADocker.sh falló:
+bash: limpiar_jbpm_docs_localADocker.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de limpieza
+[ERROR] Script MAYA-Modular-scripts-copiar_completo_CC.sh falló:
+bash: MAYA-Modular-scripts-copiar_completo_CC.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de copiado
+[ERROR] Script limpiar_jbpm_docs_localADocker.sh falló:
+bash: limpiar_jbpm_docs_localADocker.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de limpieza
+[ERROR] Script MAYA-Modular-scripts-copiar_completo_CC.sh falló:
+bash: MAYA-Modular-scripts-copiar_completo_CC.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de copiado
+[ERROR] Script limpiar_jbpm_docs_localADocker.sh falló:
+bash: limpiar_jbpm_docs_localADocker.sh: No existe el fichero o el directorio
+
+[WARNING] Error al ejecutar script de limpieza

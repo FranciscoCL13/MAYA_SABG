@@ -183,5 +183,14 @@ ORDER BY modificationdate desc;
 ---------------------------------
 select * from x_mi_tabla_combinada;
 
+-- ¿Hay datos que cumplan el filtro en variableinstancelog?
+SELECT * FROM variableinstancelog WHERE variableinstanceid LIKE 'documentos%' LIMIT 5;
+
+-- ¿Qué resultados da el JOIN con task?
+SELECT v.processinstanceid, t.actualowner_id
+FROM variableinstancelog v
+JOIN task t ON v.processinstanceid = t.processinstanceid
+WHERE v.variableinstanceid LIKE 'documentos%'
+LIMIT 5;
 
 

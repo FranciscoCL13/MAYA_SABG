@@ -1,0 +1,100 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8083
+ * Running on http://172.25.30.98:8083
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 416-426-265
+172.19.78.144 - - [29/May/2025 16:36:14] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:36:15] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in '/home/admin/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 416-426-265
+172.19.78.144 - - [29/May/2025 16:36:44] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:36:51] "[33mGET /tablas/descargar/sabg_2%20(1).png HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:36:55] "[33mGET /tablas/descargar/sabg_2%20(3).png HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:43:22] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:43:22] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:43:24] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:43:27] "[33mGET /tablas/descargar/sabg_2%20(1).png HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:43:29] "[31m[1mGET /tablas/buscar_tabla?numero_catastral= HTTP/1.1[0m" 400 -
+172.19.78.144 - - [29/May/2025 16:43:30] "[31m[1mGET /tablas/buscar_tabla?numero_catastral= HTTP/1.1[0m" 400 -
+172.19.78.144 - - [29/May/2025 16:43:31] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:44:29] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:46:21] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:46:21] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:46:22] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:46:23] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:46:23] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:47:48] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:47:49] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:48:06] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:48:06] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:48:11] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:49:06] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:49:06] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:50:35] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:50:35] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:50:38] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:50:39] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:50:39] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:52:42] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:52:42] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:52:46] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:52:48] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:52:48] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 16:54:10] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:54:11] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:54:14] "GET /tablas/buscar_tabla?numero_catastral=1234 HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:54:17] "GET /tablas/buscar_tabla?numero_catastral=1 HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:54:19] "GET /tablas/buscar_tabla?numero_catastral=666 HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:54:20] "GET /tablas/buscar_tabla?numero_catastral=666 HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:59:36] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 16:59:42] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:00:08] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:00:08] "[33mPOST /login HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 17:00:09] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:00:36] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:00:37] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:00:59] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:13:26] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:13:27] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:13:28] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:35:59] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:36:01] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:41:53] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:41:56] "[33mGET /business-central/docs HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 17:50:48] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 17:50:52] "[33mGET /tablas/descargar/sabg_2%20(1).png HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 17:50:59] "[33mGET /tablas/descargar/ipconfig_Francisco_CL%20(4).out HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 17:51:07] "[36mGET /tablas/descargar/minuta_LlaveCDMX_26_05_2025.docx HTTP/1.1[0m" 304 -
+172.19.78.144 - - [29/May/2025 17:51:15] "[33mGET /tablas/descargar/sabg_2%20(1).png HTTP/1.1[0m" 404 -
+172.19.78.144 - - [29/May/2025 17:51:34] "GET /tablas/buscar_tabla?numero_catastral=1234 HTTP/1.1" 200 -
+172.19.78.212 - - [30/May/2025 09:30:08] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.212 - - [30/May/2025 09:30:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.19.78.212 - - [30/May/2025 09:30:10] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [30/May/2025 09:40:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.19.78.144 - - [30/May/2025 09:43:44] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [30/May/2025 09:59:45] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [30/May/2025 10:15:53] "GET /tablas/ HTTP/1.1" 200 -
+44 - - [29/May/2025 15:37:46] "GET /tablas/ HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 15:37:47] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 15:39:58] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 15:43:25] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 15:43:27] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 15:43:33] "GET /tablas/buscar_tabla?numero_catastral=1234 HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 15:43:36] "GET /tablas/buscar_tabla?numero_catastral=123 HTTP/1.1" 200 -
+172.19.78.144 - - [29/May/2025 15:43:39] "GET /tablas/generar_tabla HTTP/1.1" 200 -
+ * Detected change in '/home/admin/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 112, in _get_module_details
+  File "/home/admin/workspace/front_descarga_archivos/MAYA-Modular/app/__init__.py", line 2, in <module>
+    from app.tablas_busqueda import tablas_bp
+  File "/home/admin/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py", line 12
+    font-size: 12px;
+                ^
+SyntaxError: invalid decimal literal
