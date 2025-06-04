@@ -1,0 +1,8 @@
+Flask
+requests
+SQLAlchemy
+psycopg2-binary
+pycfdi
+satcfdi
+cryptography
+pandas

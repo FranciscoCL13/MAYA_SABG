@@ -1,0 +1,89 @@
+[I 2025-06-03 09:56:23.712 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-03 09:56:23.717 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-06-03 09:56:23.722 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-03 09:56:24.620 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-03 09:56:24.688 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-03 09:56:24.691 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-03 09:56:24.691 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-03 09:56:24.696 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyterlab
+[I 2025-06-03 09:56:24.696 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\share\jupyter\lab
+[I 2025-06-03 09:56:24.697 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-03 09:56:25.028 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-03 09:56:25.029 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\workspace\workspace\frank\app
+[I 2025-06-03 09:56:25.029 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-06-03 09:56:25.029 ServerApp] http://localhost:8888/lab?token=944f6cf4f2a5d9c701d24327259aa3e77933caf5fab446e2
+[I 2025-06-03 09:56:25.029 ServerApp]     http://127.0.0.1:8888/lab?token=944f6cf4f2a5d9c701d24327259aa3e77933caf5fab446e2
+[I 2025-06-03 09:56:25.029 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-06-03 09:56:25.126 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-1120-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=944f6cf4f2a5d9c701d24327259aa3e77933caf5fab446e2
+        http://127.0.0.1:8888/lab?token=944f6cf4f2a5d9c701d24327259aa3e77933caf5fab446e2
+[I 2025-06-03 09:56:25.281 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-06-03 09:56:28.116 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-06-03 09:56:28.806 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app?content=0&hash=0&1748966188799 (309f91296725408088f28968e3de7ab3@::1) 1.88ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.807 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app?content=0&hash=0&1748966188799 (::1): No such file or directory: workspace/workspace/frank/app
+[W 2025-06-03 09:56:28.815 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/readme.md?content=0&hash=0&1748966188800 (309f91296725408088f28968e3de7ab3@::1) 1.73ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.816 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/readme.md?content=0&hash=0&1748966188800 (::1): No such file or directory: workspace/workspace/frank/api_integrada/readme.md
+[W 2025-06-03 09:56:28.819 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada?content=0&hash=0&1748966188800 (309f91296725408088f28968e3de7ab3@::1) 3.49ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.820 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada?content=0&hash=0&1748966188800 (::1): No such file or directory: workspace/workspace/frank/api_integrada
+[W 2025-06-03 09:56:28.821 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app/readme.md?content=0&hash=0&1748966188799 (309f91296725408088f28968e3de7ab3@::1) 3.94ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.822 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app/readme.md?content=0&hash=0&1748966188799 (::1): No such file or directory: workspace/workspace/frank/app/readme.md
+[W 2025-06-03 09:56:28.824 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/__init__.py?content=0&hash=0&1748966188800 (309f91296725408088f28968e3de7ab3@::1) 1.84ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.824 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/__init__.py?content=0&hash=0&1748966188800 (::1): No such file or directory: workspace/workspace/frank/api_integrada/__init__.py
+[W 2025-06-03 09:56:28.839 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/config.py?content=0&hash=0&1748966188800 (309f91296725408088f28968e3de7ab3@::1) 1.90ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.839 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/config.py?content=0&hash=0&1748966188800 (::1): No such file or directory: workspace/workspace/frank/api_integrada/config.py
+[W 2025-06-03 09:56:28.844 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/main.py?content=0&hash=0&1748966188800 (309f91296725408088f28968e3de7ab3@::1) 1.97ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.844 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/main.py?content=0&hash=0&1748966188800 (::1): No such file or directory: workspace/workspace/frank/api_integrada/main.py
+[W 2025-06-03 09:56:28.846 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas?content=0&hash=0&1748966188801 (309f91296725408088f28968e3de7ab3@::1) 1.64ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.846 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas?content=0&hash=0&1748966188801 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_tablas
+[W 2025-06-03 09:56:28.849 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas/limpiar_docs.sh?content=0&hash=0&1748966188801 (309f91296725408088f28968e3de7ab3@::1) 1.66ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.849 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas/limpiar_docs.sh?content=0&hash=0&1748966188801 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_tablas/limpiar_docs.sh
+[W 2025-06-03 09:56:28.855 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas/routes.py?content=0&hash=0&1748966188801 (309f91296725408088f28968e3de7ab3@::1) 1.72ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.855 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas/routes.py?content=0&hash=0&1748966188801 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_tablas/routes.py
+[W 2025-06-03 09:56:28.866 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app/readme.md?content=0&hash=0&1748966188802 (309f91296725408088f28968e3de7ab3@::1) 1.43ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.866 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app/readme.md?content=0&hash=0&1748966188802 (::1): No such file or directory: workspace/workspace/frank/app/readme.md
+[W 2025-06-03 09:56:28.869 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/main.py?content=0&hash=0&1748966188802 (309f91296725408088f28968e3de7ab3@::1) 2.75ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.869 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/main.py?content=0&hash=0&1748966188802 (::1): No such file or directory: workspace/workspace/frank/api_integrada/main.py
+[W 2025-06-03 09:56:28.872 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/__init__.py?content=0&hash=0&1748966188803 (309f91296725408088f28968e3de7ab3@::1) 2.29ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.872 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/__init__.py?content=0&hash=0&1748966188803 (::1): No such file or directory: workspace/workspace/frank/api_integrada/__init__.py
+[W 2025-06-03 09:56:28.877 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas/templates/index.html?content=0&hash=0&1748966188803 (309f91296725408088f28968e3de7ab3@::1) 1.72ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.877 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_tablas/templates/index.html?content=0&hash=0&1748966188803 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_tablas/templates/index.html
+[W 2025-06-03 09:56:28.879 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/readme.md?content=0&hash=0&1748966188803 (309f91296725408088f28968e3de7ab3@::1) 1.51ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.879 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/readme.md?content=0&hash=0&1748966188803 (::1): No such file or directory: workspace/workspace/frank/api_integrada/readme.md
+[W 2025-06-03 09:56:28.884 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_documentos/routes.py?content=0&hash=0&1748966188804 (309f91296725408088f28968e3de7ab3@::1) 2.48ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.884 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_documentos/routes.py?content=0&hash=0&1748966188804 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_documentos/routes.py
+[W 2025-06-03 09:56:28.895 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/config.py?content=0&hash=0&1748966188804 (309f91296725408088f28968e3de7ab3@::1) 1.57ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.895 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/config.py?content=0&hash=0&1748966188804 (::1): No such file or directory: workspace/workspace/frank/api_integrada/config.py
+[W 2025-06-03 09:56:28.897 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_efirma/templates/form7.html?content=0&hash=0&1748966188804 (309f91296725408088f28968e3de7ab3@::1) 1.53ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.897 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_efirma/templates/form7.html?content=0&hash=0&1748966188804 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_efirma/templates/form7.html
+[W 2025-06-03 09:56:28.900 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_efirma/templates/index.html?content=0&hash=0&1748966188804 (309f91296725408088f28968e3de7ab3@::1) 1.62ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.900 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_efirma/templates/index.html?content=0&hash=0&1748966188804 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_efirma/templates/index.html
+[W 2025-06-03 09:56:28.905 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_efirma/ocsp_proxy.py?content=0&hash=0&1748966188804 (309f91296725408088f28968e3de7ab3@::1) 2.43ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:28.906 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/api_efirma/ocsp_proxy.py?content=0&hash=0&1748966188804 (::1): No such file or directory: workspace/workspace/frank/api_integrada/api_efirma/ocsp_proxy.py
+[W 2025-06-03 09:56:29.525 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app?1748966189520 (309f91296725408088f28968e3de7ab3@::1) 1.09ms referer=http://localhost:8888/lab
+[W 2025-06-03 09:56:29.525 ServerApp] 404 GET /api/contents/workspace/workspace/frank/app?1748966189520 (::1): No such file or directory: workspace/workspace/frank/app
+[I 2025-06-03 10:02:43.206 ServerApp] Saving file at /requeriments.txt
+[I 2025-06-03 10:08:19.391 ServerApp] Saving file at /__init__.py
+[I 2025-06-03 10:08:19.906 ServerApp] Saving file at /__init__.py
+[I 2025-06-03 10:08:52.612 ServerApp] Saving file at /__init__.py
+[I 2025-06-03 10:10:48.655 ServerApp] Saving file at /__init__.py
+[I 2025-06-03 10:12:13.533 ServerApp] Saving file at /api_documentos/routes.py
+[I 2025-06-03 10:13:03.610 ServerApp] Saving file at /api_documentos/routes.py
+[I 2025-06-03 10:14:04.565 ServerApp] Saving file at /__init__.py
+[I 2025-06-03 10:14:38.288 ServerApp] Saving file at /api_efirma/routes.py
+[I 2025-06-03 10:19:36.407 ServerApp] Saving file at /api_tablas/routes.py
+[I 2025-06-03 10:19:37.101 ServerApp] Saving file at /api_tablas/routes.py
+[I 2025-06-03 10:21:07.746 ServerApp] Saving file at /api_documentos/routes.py
+[I 2025-06-03 10:21:08.104 ServerApp] Saving file at /api_documentos/routes.py
+[I 2025-06-03 10:22:09.122 ServerApp] Saving file at /api_documentos/routes.py
+[I 2025-06-03 10:22:31.338 ServerApp] Saving file at /api_documentos/routes.py
+[W 2025-06-03 10:30:05.730 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-06-03 10:30:06.348 ServerApp] 404 GET /api/contents/workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py?content=0&hash=0&1748968206341 (309f91296725408088f28968e3de7ab3@::1) 1.42ms referer=http://localhost:8888/lab/tree/__init__.py
+[W 2025-06-03 10:30:06.349 ServerApp] 404 GET /api/contents/workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py?content=0&hash=0&1748968206341 (::1): No such file or directory: workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py
+[W 2025-06-03 10:30:06.350 ServerApp] 404 GET /api/contents/workspace/workspace/front_descarga_archivos/MAYA-Modular/app?content=0&hash=0&1748968206340 (309f91296725408088f28968e3de7ab3@::1) 1.52ms referer=http://localhost:8888/lab/tree/__init__.py
+[W 2025-06-03 10:30:06.351 ServerApp] 404 GET /api/contents/workspace/workspace/front_descarga_archivos/MAYA-Modular/app?content=0&hash=0&1748968206340 (::1): No such file or directory: workspace/workspace/front_descarga_archivos/MAYA-Modular/app
+[W 2025-06-03 10:30:06.365 ServerApp] 404 GET /api/contents/workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py?content=0&hash=0&1748968206342 (309f91296725408088f28968e3de7ab3@::1) 4.14ms referer=http://localhost:8888/lab/tree/__init__.py
+[W 2025-06-03 10:30:06.365 ServerApp] 404 GET /api/contents/workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py?content=0&hash=0&1748968206342 (::1): No such file or directory: workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py

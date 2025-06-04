@@ -1,0 +1,133 @@
+<app-spinner #spinner></app-spinner>
+
+<div style="position: relative;" id="relative">
+  <div class="input-group-wrapper" style="position: absolute; top: 10px; left: 10px; z-index: 1000;">
+
+    <p-checkbox 
+      [binary]="true" 
+      inputId="anpmxCheckbox" 
+      [(ngModel)]="isAnpmxLayerVisible"
+      (onChange)="onCheckboxChange($event)">
+    </p-checkbox>
+    <label for="anpmxCheckbox">&nbsp;Mostrar Areas Naturales Protegidas</label>
+
+
+  </div>
+
+  <div style="position: absolute; top: 50px; left: 10px; z-index: 1000;">
+    <div class="p-inputgroup">
+      <input pInputText type="text" [(ngModel)]="expedienteBuscado" placeholder="Ingresar expediente" />
+      <button pButton type="button" (click)="buscarPorExpediente()" icon="pi pi-search" severity="info"></button>
+    </div>
+  </div>
+
+  <div style="position: absolute; top: 110px; left: 10px; z-index: 1000;">
+
+    <p-multiSelect 
+      [options]="metadata_options" 
+      [(ngModel)]="selectedOptions" 
+      [filter]="false"
+      optionLabel="label" 
+      (onChange)="filtrarCapas()"
+      placeholder="Select Options">
+      <ng-template let-option pTemplate="item">
+        <div class="custom-option">
+          {{ option.label }}
+          &nbsp;
+          <span 
+            class="color-box" 
+            [ngStyle]="{ 'background-color': option.color }">
+          </span>
+        </div>
+      </ng-template>
+    </p-multiSelect>
+
+  </div>
+
+  <div style="position: absolute; top: 50px; left: 300px; z-index: 1000;">
+    <p style="color: #FFC107;">{{result}}</p>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- <div #layers id="layers" class="map-legend">
+    <table>
+      <tr>
+        <th colspan="2">Capas</th>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #D32F2F"></div></td>
+        <td>Tramo 2</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #C2185B"></div></td>
+        <td>Tramo 3</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #7B1FA2"></div></td>
+        <td>Tramo 4</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #512DA8"></div></td>
+        <td>Tramo 5</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #303F9F"></div></td>
+        <td>Tramo 6</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #1976D2"></div></td>
+        <td>Tramo 7</td>
+      </tr>
+      
+    </table>
+  </div>   -->
+
+  <div #legend id="legend" class="map-legend">
+    <table>
+      <tr>
+        <th colspan="2">Régimen de Propiedad</th>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #4CAF50;"></div></td>
+        <td>Propiedad Pública</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #FFC107"></div></td>
+        <td>Propiedad Privada</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #2196F3;"></div></td>
+        <td>Propiedad Social</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #7C4DFF;"></div></td>
+        <td>Federal / Zona Federal</td>
+      </tr>
+      <!-- rOJO -->
+      <tr>
+        <td><div class="color-box" style="background-color: #D32F2F;"></div></td>
+        <td>Terreno Nacional</td>
+      </tr>
+      <!-- rOJO -->
+      <tr>
+        <td><div class="color-box" style="background-color: #E91E63;"></div></td>
+        <td>Posesionario</td>
+      </tr>
+      <!-- rOJO -->
+      <tr>
+        <td><div class="color-box" style="background-color: #00BCD4;"></div></td>
+        <td>Fundo Legal</td>
+      </tr>
+      <tr>
+        <td><div class="color-box" style="background-color: #000;"></div></td>
+        <td>N/A</td>
+      </tr>
+      
+    </table>
+  </div>  <!-- fin de 'div' class= map-legend=relative-->
+
+</div>  <!-- fin de 'div' id=relative-->
+
+
+

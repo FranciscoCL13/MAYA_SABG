@@ -463,3 +463,553 @@
 [I 2025-05-23 11:10:42.752 ServerApp] Creating new file in /MAYA-Modular
 [I 2025-05-23 11:11:19.907 ServerApp] Saving file at /MAYA-Modular/llamarAPI.java
 [I 2025-05-23 11:18:26.071 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-06-02 16:16:01.645 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-02 16:16:01.651 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-06-02 16:16:01.656 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-02 16:16:03.277 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-02 16:16:03.382 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-02 16:16:03.384 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-02 16:16:03.385 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-02 16:16:03.388 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyterlab
+[I 2025-06-02 16:16:03.388 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\share\jupyter\lab
+[I 2025-06-02 16:16:03.389 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-02 16:16:03.787 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-02 16:16:03.788 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-06-02 16:16:03.788 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-06-02 16:16:03.788 ServerApp] http://localhost:8888/lab?token=b4f735574d08dbb66d28c012d73207847968a9a0fdc5e053
+[I 2025-06-02 16:16:03.788 ServerApp]     http://127.0.0.1:8888/lab?token=b4f735574d08dbb66d28c012d73207847968a9a0fdc5e053
+[I 2025-06-02 16:16:03.788 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-06-02 16:16:03.954 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-8096-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=b4f735574d08dbb66d28c012d73207847968a9a0fdc5e053
+        http://127.0.0.1:8888/lab?token=b4f735574d08dbb66d28c012d73207847968a9a0fdc5e053
+[I 2025-06-02 16:16:04.103 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-06-02 16:16:07.873 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-06-02 16:27:47.044 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-06-02 16:28:23.755 ServerApp] Saving file at /workspace/workspace/api_maya_dev/app.py
+[I 2025-06-02 16:29:47.343 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-06-02 16:30:21.258 ServerApp] Saving file at /workspace/workspace/api_maya_dev/app.py
+[I 2025-06-02 16:31:29.188 ServerApp] Saving file at /MAYA-Modular/app/tablas_busqueda.py
+[I 2025-06-02 17:41:02.371 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:41:19.068 ServerApp] Creating new directory in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:41:27.349 ServerApp] Creating new directory in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:41:36.380 ServerApp] Creating new directory in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:41:58.277 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:42:11.664 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/__init__.py
+[I 2025-06-02 17:42:14.747 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/readme.md
+[I 2025-06-02 17:42:20.998 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:42:30.946 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/main.py
+[I 2025-06-02 17:42:37.054 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:42:45.542 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/config.py
+[I 2025-06-02 17:43:05.440 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_documentos
+[I 2025-06-02 17:43:13.975 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_documentos/routes.py
+[I 2025-06-02 17:43:14.370 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_documentos/routes.py
+[I 2025-06-02 17:48:55.301 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_efirma
+[I 2025-06-02 17:49:12.037 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_efirma/routes.py
+[I 2025-06-02 17:49:15.837 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_efirma
+[I 2025-06-02 17:49:35.165 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_efirma/ocsp_proxy.py
+[I 2025-06-02 17:49:46.718 ServerApp] Creating new directory in /workspace/workspace/frank/api_integrada/api_efirma
+[I 2025-06-02 17:49:51.620 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_efirma/templates
+[I 2025-06-02 17:50:07.665 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_efirma/templates/index.html
+[I 2025-06-02 17:50:26.556 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_efirma/templates
+[I 2025-06-02 17:50:49.346 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_efirma/templates/form7.html
+[I 2025-06-02 17:50:59.431 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_efirma/templates/form7.html
+[I 2025-06-02 17:51:39.222 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_tablas
+[I 2025-06-02 17:51:50.748 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_tablas/routes.py
+[I 2025-06-02 17:51:57.773 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_tablas
+[I 2025-06-02 17:52:05.403 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_tablas/conexion.py
+[I 2025-06-02 17:52:18.605 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_tablas
+[I 2025-06-02 17:52:33.540 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_tablas/copiar_completo.sh
+[I 2025-06-02 17:52:38.405 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_tablas
+[I 2025-06-02 17:52:46.018 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_tablas/limpiar_docs.sh
+[I 2025-06-02 17:52:54.933 ServerApp] Creating new directory in /workspace/workspace/frank/api_integrada/api_tablas
+[I 2025-06-02 17:52:59.197 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada/api_tablas/templates
+[I 2025-06-02 17:53:10.460 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/api_tablas/templates/index.html
+[I 2025-06-02 17:55:05.028 ServerApp] Creating new file in /workspace/workspace/frank/api_integrada
+[I 2025-06-02 17:55:17.799 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/requeriments.txt
+[I 2025-06-02 17:55:18.099 ServerApp] Saving file at /workspace/workspace/frank/api_integrada/requeriments.txt
+[W 2025-06-02 18:02:12.727 ServerApp] 403 PATCH /api/contents/workspace/workspace/frank/api_integrada?1748908932666 (::1): Permission denied: workspace/workspace/frank/api_integrada
+[W 2025-06-02 18:02:12.728 ServerApp] wrote error: 'Permission denied: workspace/workspace/frank/api_integrada'
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 856, in move
+        os.rename(src, real_dst)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+    PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\workspace\\workspace\\frank\\api_integrada' -> 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\workspace\\workspace\\frank\\app'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\services\contents\fileio.py", line 230, in perm_to_403
+        yield
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 1069, in rename_file
+        await run_sync(shutil.move, old_os_path, new_os_path)
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+        return await get_async_backend().run_sync_in_worker_thread(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\anyio\_backends\_asyncio.py", line 2470, in run_sync_in_worker_thread
+        return await future
+               ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+        result = context.run(func, *args)
+      File "C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 874, in move
+        rmtree(src)
+        ~~~~~~^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 790, in rmtree
+        return _rmtree_unsafe(path, onexc)
+      File "C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 635, in _rmtree_unsafe
+        onexc(os.rmdir, path, err)
+        ~~~~~^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 631, in _rmtree_unsafe
+        os.rmdir(path)
+        ~~~~~~~~^^^^^^
+    PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\workspace\\workspace\\frank\\api_integrada'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\auth\decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\services\contents\handlers.py", line 206, in patch
+        model = await ensure_async(cm.update(model, path))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_core\utils\__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\services\contents\manager.py", line 919, in update
+        await self.rename(path, new_path)
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\services\contents\manager.py", line 906, in rename
+        await self.rename_file(old_path, new_path)
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 1068, in rename_file
+        with self.perm_to_403():
+             ~~~~~~~~~~~~~~~~^^
+      File "C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+        self.gen.throw(value)
+        ~~~~~~~~~~~~~~^^^^^^^
+      File "C:\Users\francisco.contreras\Desktop\jupyter-projects\jbpm-data\Lib\site-packages\jupyter_server\services\contents\fileio.py", line 239, in perm_to_403
+        raise HTTPError(403, "Permission denied: %s" % path) from e
+    tornado.web.HTTPError: HTTP 403: Forbidden (Permission denied: workspace/workspace/frank/api_integrada)
+[W 2025-06-02 18:02:12.818 ServerApp] 403 PATCH /api/contents/workspace/workspace/frank/api_integrada?1748908932666 (309f91296725408088f28968e3de7ab3@::1) 143.82ms referer=http://localhost:8888/lab/tree/workspace/workspace/frank/api_integrada/readme.md
+[W 2025-06-02 18:02:14.905 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/readme.md?content=0&hash=1&contentProviderId=undefined&1748908934900 (309f91296725408088f28968e3de7ab3@::1) 1.74ms referer=http://localhost:8888/lab/tree/workspace/workspace/frank/api_integrada/readme.md
+[W 2025-06-02 18:02:14.905 ServerApp] 404 GET /api/contents/workspace/workspace/frank/api_integrada/readme.md?content=0&hash=1&contentProviderId=undefined&1748908934900 (::1): No such file or directory: workspace/workspace/frank/api_integrada/readme.md
+[I 2025-06-02 18:02:14.924 ServerApp] Uploading file to /workspace/workspace/frank/api_integrada/readme.md
+[I 2025-06-03 10:27:33.107 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-03 10:27:33.113 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-06-03 10:27:33.120 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-03 10:27:33.125 ServerApp] notebook | extension was successfully linked.
+[I 2025-06-03 10:27:34.890 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-03 10:27:34.890 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-06-03 10:27:34.996 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-03 10:27:34.998 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-03 10:27:34.999 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-03 10:27:35.006 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyterlab
+[I 2025-06-03 10:27:35.006 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\AppData\Local\anaconda3\share\jupyter\lab
+[I 2025-06-03 10:27:35.007 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-03 10:27:35.259 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-03 10:27:35.261 ServerApp] notebook | extension was successfully loaded.
+[I 2025-06-03 10:27:35.261 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-06-03 10:27:35.261 ServerApp] The port 8888 is already in use, trying another port.
+[I 2025-06-03 10:27:35.261 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-06-03 10:27:35.261 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-06-03 10:27:35.261 ServerApp] http://localhost:8889/lab?token=6262689f05174ca730c8caa505f4ebc883e9baa9a9128e83
+[I 2025-06-03 10:27:35.261 ServerApp]     http://127.0.0.1:8889/lab?token=6262689f05174ca730c8caa505f4ebc883e9baa9a9128e83
+[I 2025-06-03 10:27:35.261 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-06-03 10:27:35.378 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-15484-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/lab?token=6262689f05174ca730c8caa505f4ebc883e9baa9a9128e83
+        http://127.0.0.1:8889/lab?token=6262689f05174ca730c8caa505f4ebc883e9baa9a9128e83
+[I 2025-06-03 10:27:35.602 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 2025-06-03 10:27:40.709 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-06-03 10:27:41.367 ServerApp] 404 GET /api/contents/main.py?content=0&hash=0&1748968061358 (157a63ed8f8c442783e5550bf52a428c@::1) 1.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.368 ServerApp] 404 GET /api/contents/main.py?content=0&hash=0&1748968061358 (::1): No such file or directory: main.py
+[W 2025-06-03 10:27:41.371 ServerApp] 404 GET /api/contents/__init__.py?content=0&hash=0&1748968061359 (157a63ed8f8c442783e5550bf52a428c@::1) 2.34ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.371 ServerApp] 404 GET /api/contents/__init__.py?content=0&hash=0&1748968061359 (::1): No such file or directory: __init__.py
+[W 2025-06-03 10:27:41.372 ServerApp] 404 GET /api/contents/api_documentos?content=0&hash=0&1748968061359 (157a63ed8f8c442783e5550bf52a428c@::1) 2.34ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.373 ServerApp] 404 GET /api/contents/api_documentos?content=0&hash=0&1748968061359 (::1): No such file or directory: api_documentos
+[W 2025-06-03 10:27:41.374 ServerApp] 404 GET /api/contents/api_documentos/routes.py?content=0&hash=0&1748968061359 (157a63ed8f8c442783e5550bf52a428c@::1) 4.07ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.374 ServerApp] 404 GET /api/contents/api_documentos/routes.py?content=0&hash=0&1748968061359 (::1): No such file or directory: api_documentos/routes.py
+[W 2025-06-03 10:27:41.382 ServerApp] 404 GET /api/contents/api_tablas/routes.py?content=0&hash=0&1748968061359 (157a63ed8f8c442783e5550bf52a428c@::1) 1.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.382 ServerApp] 404 GET /api/contents/api_tablas/routes.py?content=0&hash=0&1748968061359 (::1): No such file or directory: api_tablas/routes.py
+[W 2025-06-03 10:27:41.384 ServerApp] 404 GET /api/contents/api_tablas?content=0&hash=0&1748968061359 (157a63ed8f8c442783e5550bf52a428c@::1) 2.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.384 ServerApp] 404 GET /api/contents/api_tablas?content=0&hash=0&1748968061359 (::1): No such file or directory: api_tablas
+[W 2025-06-03 10:27:41.386 ServerApp] 404 GET /api/contents/api_efirma?content=0&hash=0&1748968061359 (157a63ed8f8c442783e5550bf52a428c@::1) 1.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.387 ServerApp] 404 GET /api/contents/api_efirma?content=0&hash=0&1748968061359 (::1): No such file or directory: api_efirma
+[W 2025-06-03 10:27:41.389 ServerApp] 404 GET /api/contents/api_efirma/routes.py?content=0&hash=0&1748968061359 (157a63ed8f8c442783e5550bf52a428c@::1) 2.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.389 ServerApp] 404 GET /api/contents/api_efirma/routes.py?content=0&hash=0&1748968061359 (::1): No such file or directory: api_efirma/routes.py
+[W 2025-06-03 10:27:41.395 ServerApp] 404 GET /api/contents/api_documentos/routes.py?content=0&hash=0&1748968061361 (157a63ed8f8c442783e5550bf52a428c@::1) 2.09ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.395 ServerApp] 404 GET /api/contents/api_documentos/routes.py?content=0&hash=0&1748968061361 (::1): No such file or directory: api_documentos/routes.py
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/api_tablas/routes.py?content=0&hash=0&1748968061362 (157a63ed8f8c442783e5550bf52a428c@::1) 0.60ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/api_tablas/routes.py?content=0&hash=0&1748968061362 (::1): No such file or directory: api_tablas/routes.py
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/api_efirma/routes.py?content=0&hash=0&1748968061362 (157a63ed8f8c442783e5550bf52a428c@::1) 0.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/api_efirma/routes.py?content=0&hash=0&1748968061362 (::1): No such file or directory: api_efirma/routes.py
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/api_efirma/ocsp_proxy.py?content=0&hash=0&1748968061363 (157a63ed8f8c442783e5550bf52a428c@::1) 0.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/api_efirma/ocsp_proxy.py?content=0&hash=0&1748968061363 (::1): No such file or directory: api_efirma/ocsp_proxy.py
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/main.py?content=0&hash=0&1748968061366 (157a63ed8f8c442783e5550bf52a428c@::1) 0.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/main.py?content=0&hash=0&1748968061366 (::1): No such file or directory: main.py
+[W 2025-06-03 10:27:41.396 ServerApp] 404 GET /api/contents/__init__.py?content=0&hash=0&1748968061367 (157a63ed8f8c442783e5550bf52a428c@::1) 0.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.411 ServerApp] 404 GET /api/contents/__init__.py?content=0&hash=0&1748968061367 (::1): No such file or directory: __init__.py
+[W 2025-06-03 10:27:41.413 ServerApp] 404 GET /api/contents/api_documentos/routes.py?content=0&hash=0&1748968061368 (157a63ed8f8c442783e5550bf52a428c@::1) 0.00ms referer=http://localhost:8889/lab
+[W 2025-06-03 10:27:41.413 ServerApp] 404 GET /api/contents/api_documentos/routes.py?content=0&hash=0&1748968061368 (::1): No such file or directory: api_documentos/routes.py
+[W 2025-06-03 10:30:20.916 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-06-03 10:35:53.728 ServerApp] delete /workspace/workspace/frank
+[W 2025-06-03 10:35:53.730 ServerApp] 400 DELETE /api/contents/workspace/workspace/frank?1748968553724 (::1): Directory C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\workspace\workspace\frank not empty
+[W 2025-06-03 10:35:53.731 ServerApp] wrote error: 'Directory C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\workspace\\workspace\\frank not empty'
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\auth\decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\handlers.py", line 335, in delete
+        await ensure_async(cm.delete(path))
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_core\utils\__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\manager.py", line 900, in delete
+        await self.delete_file(path)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 1024, in delete_file
+        raise web.HTTPError(400, "Directory %s not empty" % os_path)
+    tornado.web.HTTPError: HTTP 400: Bad Request (Directory C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\workspace\workspace\frank not empty)
+[W 2025-06-03 10:35:53.756 ServerApp] 400 DELETE /api/contents/workspace/workspace/frank?1748968553724 (157a63ed8f8c442783e5550bf52a428c@::1) 28.96ms referer=http://localhost:8889/lab/workspaces/auto-x/tree/workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py
+[W 2025-06-03 10:36:14.352 ServerApp] delete /workspace/workspace/frank
+[W 2025-06-03 10:36:14.354 ServerApp] 400 DELETE /api/contents/workspace/workspace/frank?1748968574348 (::1): Directory C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\workspace\workspace\frank not empty
+[W 2025-06-03 10:36:14.354 ServerApp] wrote error: 'Directory C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\workspace\\workspace\\frank not empty'
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\auth\decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\handlers.py", line 335, in delete
+        await ensure_async(cm.delete(path))
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_core\utils\__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\manager.py", line 900, in delete
+        await self.delete_file(path)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 1024, in delete_file
+        raise web.HTTPError(400, "Directory %s not empty" % os_path)
+    tornado.web.HTTPError: HTTP 400: Bad Request (Directory C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\workspace\workspace\frank not empty)
+[W 2025-06-03 10:36:14.355 ServerApp] 400 DELETE /api/contents/workspace/workspace/frank?1748968574348 (157a63ed8f8c442783e5550bf52a428c@::1) 4.01ms referer=http://localhost:8889/lab/workspaces/auto-x/tree/workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py
+[W 2025-06-03 10:36:26.077 ServerApp] delete /workspace/workspace/frank
+[W 2025-06-03 10:36:26.092 ServerApp] 400 DELETE /api/contents/workspace/workspace/frank?1748968586085 (::1): Directory C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\workspace\workspace\frank not empty
+[W 2025-06-03 10:36:26.092 ServerApp] wrote error: 'Directory C:\\Users\\francisco.contreras\\Desktop\\jupyter-projects\\notebooks\\workspace\\workspace\\frank not empty'
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\auth\decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\handlers.py", line 335, in delete
+        await ensure_async(cm.delete(path))
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_core\utils\__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\manager.py", line 900, in delete
+        await self.delete_file(path)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 1024, in delete_file
+        raise web.HTTPError(400, "Directory %s not empty" % os_path)
+    tornado.web.HTTPError: HTTP 400: Bad Request (Directory C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks\workspace\workspace\frank not empty)
+[W 2025-06-03 10:36:26.094 ServerApp] 400 DELETE /api/contents/workspace/workspace/frank?1748968586085 (157a63ed8f8c442783e5550bf52a428c@::1) 16.94ms referer=http://localhost:8889/lab/workspaces/auto-x/tree/workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py
+[W 2025-06-03 10:36:38.813 ServerApp] delete /workspace/workspace/frank/api_integrada/readme.md
+[I 2025-06-03 10:51:25.446 ServerApp] Saving file at /workspace/workspace/api_maya_v3/efirma.py
+[I 2025-06-03 11:13:51.337 ServerApp] Creating new file in /workspace/workspace/api_maya_dev
+[I 2025-06-03 11:14:16.019 ServerApp] Saving file at /workspace/workspace/api_maya_dev/__init__.py
+[I 2025-06-03 11:14:34.538 ServerApp] Creating new directory in /workspace/workspace/api_maya_dev
+[W 2025-06-03 11:14:48.586 ServerApp] delete /workspace/workspace/api_maya_dev/app.py
+[I 2025-06-03 11:14:54.167 ServerApp] Creating new file in /workspace/workspace/api_maya_dev
+[I 2025-06-03 11:15:05.325 ServerApp] Saving file at /workspace/workspace/api_maya_dev/run.py
+[I 2025-06-03 11:15:05.649 ServerApp] Saving file at /workspace/workspace/api_maya_dev/run.py
+[I 2025-06-03 11:15:31.665 ServerApp] Creating new file in /workspace/workspace/api_maya_dev
+[I 2025-06-03 11:15:40.536 ServerApp] Saving file at /workspace/workspace/api_maya_dev/readme.md
+[I 2025-06-03 11:16:00.250 ServerApp] Creating new file in /workspace/workspace/api_maya_dev/app
+[I 2025-06-03 11:16:07.703 ServerApp] Saving file at /workspace/workspace/api_maya_dev/app/config.py
+[I 2025-06-03 11:16:13.639 ServerApp] Creating new file in /workspace/workspace/api_maya_dev/app
+[I 2025-06-03 11:16:22.817 ServerApp] Saving file at /workspace/workspace/api_maya_dev/app/functions.py
+[I 2025-06-03 11:16:31.343 ServerApp] Creating new file in /workspace/workspace/api_maya_dev/app
+[I 2025-06-03 11:16:38.401 ServerApp] Saving file at /workspace/workspace/api_maya_dev/app/routes.py
+[I 2025-06-03 11:16:39.338 ServerApp] Saving file at /workspace/workspace/api_maya_dev/app/routes.py
+[W 2025-06-03 12:02:16.866 ServerApp] delete /workspace/workspace/frank/app_v2/api_tablas
+[W 2025-06-03 12:02:18.628 ServerApp] delete /workspace/workspace/frank/app_v2/api_efirma
+[W 2025-06-03 12:02:20.456 ServerApp] delete /workspace/workspace/frank/app_v2/api_documentos
+[I 2025-06-03 12:02:26.067 ServerApp] Creating new file in /workspace/workspace/frank/app_v2
+[I 2025-06-03 12:02:35.067 ServerApp] Saving file at /workspace/workspace/frank/app_v2/readme.md
+[I 2025-06-03 12:02:35.305 ServerApp] Saving file at /workspace/workspace/frank/app_v2/readme.md
+[I 2025-06-03 12:02:58.957 ServerApp] Creating new file in /workspace/workspace/frank/app_v2
+[I 2025-06-03 12:03:10.604 ServerApp] Creating new directory in /workspace/workspace/frank/app_v2
+[I 2025-06-03 12:03:17.818 ServerApp] Creating new directory in /workspace/workspace/frank/app_v2
+[I 2025-06-03 12:03:24.953 ServerApp] Creating new file in /workspace/workspace/frank/app_v2
+[I 2025-06-03 12:03:47.946 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[I 2025-06-03 12:03:48.198 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[I 2025-06-03 12:03:48.446 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[W 2025-06-03 12:10:57.759 ServerApp] delete /workspace/workspace/frank/app_v2/api_tablas
+[I 2025-06-03 12:10:59.878 ServerApp] Creating new directory in /workspace/workspace/frank/app_v2
+[I 2025-06-03 12:11:18.646 ServerApp] Creating new directory in /workspace/workspace/frank/app_v2/api_tablas
+[I 2025-06-03 12:11:37.999 ServerApp] Creating new directory in /workspace/workspace/frank/app_v2/api_efirma
+[I 2025-06-03 12:12:31.038 ServerApp] Creating new file in /workspace/workspace/frank/app_v2/api_adjuntos
+[I 2025-06-03 12:12:46.985 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/routes.py
+[I 2025-06-03 12:14:47.056 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/routes.py
+[I 2025-06-03 12:14:50.055 ServerApp] Creating new file in /workspace/workspace/frank/app_v2/api_efirma
+[I 2025-06-03 12:15:09.867 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_efirma/ocsp_proxy.py
+[I 2025-06-03 12:15:10.100 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_efirma/ocsp_proxy.py
+[I 2025-06-03 12:15:48.048 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[I 2025-06-03 12:16:25.850 ServerApp] Copying workspace/workspace/api_maya_v3/templates/redirect.html to /workspace/workspace/frank/app_v2/api_efirma/templates
+[I 2025-06-03 12:16:25.854 ServerApp] Copying workspace/workspace/api_maya_v3/templates/form7.html to /workspace/workspace/frank/app_v2/api_efirma/templates
+[I 2025-06-03 12:16:25.857 ServerApp] Copying workspace/workspace/api_maya_v3/templates/index.html to /workspace/workspace/frank/app_v2/api_efirma/templates
+[I 2025-06-03 12:17:08.463 ServerApp] Copying workspace/workspace/api_maya_v3/efirma.py to /workspace/workspace/frank/app_v2/api_efirma
+[I 2025-06-03 12:17:39.097 ServerApp] Saving file at /workspace/workspace/api_maya_v3/efirma.py
+[I 2025-06-03 12:20:16.674 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[I 2025-06-03 12:20:19.612 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_efirma/routes.py
+[I 2025-06-03 12:20:54.984 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/routes.py
+[I 2025-06-03 12:21:24.819 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/routes.py
+[I 2025-06-03 12:21:25.067 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/routes.py
+[I 2025-06-03 12:22:24.230 ServerApp] Copying workspace/workspace/front_descarga_archivos/MAYA-Modular/app/templates/index.html to /workspace/workspace/frank/app_v2/api_tablas/templates
+[I 2025-06-03 12:22:47.502 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[I 2025-06-03 12:23:24.635 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[I 2025-06-03 12:23:24.862 ServerApp] Saving file at /workspace/workspace/frank/app_v2/main.py
+[I 2025-06-03 12:24:57.697 ServerApp] Copying workspace/workspace/front_descarga_archivos/MAYA-Modular/app/tablas_busqueda.py to /workspace/workspace/frank/app_v2/api_tablas
+[I 2025-06-03 12:24:57.701 ServerApp] Copying workspace/workspace/front_descarga_archivos/MAYA-Modular/app/conexion.py to /workspace/workspace/frank/app_v2/api_tablas
+[I 2025-06-03 12:25:23.768 ServerApp] Creating new file in /workspace/workspace/frank/app_v2/api_tablas
+[I 2025-06-03 12:25:52.944 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_tablas/__init__.py
+[I 2025-06-03 12:25:57.495 ServerApp] Creating new file in /workspace/workspace/frank/app_v2/api_efirma
+[I 2025-06-03 12:26:11.648 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_efirma/__init__.py
+[I 2025-06-03 12:26:29.227 ServerApp] Creating new file in /workspace/workspace/frank/app_v2/api_adjuntos
+[I 2025-06-03 12:26:38.934 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/__init__.py
+[I 2025-06-03 12:26:39.239 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/__init__.py
+[I 2025-06-03 12:26:39.482 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/__init__.py
+[I 2025-06-03 12:26:39.705 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/__init__.py
+[I 2025-06-03 12:26:40.174 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/__init__.py
+[I 2025-06-03 12:26:40.422 ServerApp] Saving file at /workspace/workspace/frank/app_v2/api_adjuntos/__init__.py
+[I 2025-06-03 12:35:19.100 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/__init__.py
+[I 2025-06-03 12:35:19.343 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/__init__.py
+[I 2025-06-03 12:35:59.689 ServerApp] Creating new file in /integracion_apis/app
+[I 2025-06-03 12:37:51.076 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 12:37:51.275 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 12:37:51.474 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 12:41:33.087 ServerApp] Saving file at /integracion_apis/app/main.py
+[I 2025-06-03 12:41:36.600 ServerApp] Saving file at /integracion_apis/app/main.py
+[I 2025-06-03 12:41:41.692 ServerApp] Saving file at /integracion_apis/app/__init__.py
+[I 2025-06-03 12:45:32.063 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/__init__.py
+[I 2025-06-03 12:45:32.326 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/__init__.py
+[I 2025-06-03 12:46:01.859 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/routes.py
+[I 2025-06-03 12:47:11.723 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/__init__.py
+[I 2025-06-03 12:47:11.945 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/__init__.py
+[I 2025-06-03 12:47:13.264 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/routes.py
+[I 2025-06-03 12:47:13.492 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/routes.py
+[I 2025-06-03 12:48:21.016 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/routes.py
+[I 2025-06-03 12:48:21.222 ServerApp] Saving file at /integracion_apis/app/api_adjuntos/routes.py
+[I 2025-06-03 12:51:07.583 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 12:51:07.834 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:06:33.708 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 13:06:33.970 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 13:07:16.707 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 13:07:16.964 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 13:07:26.600 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 13:12:47.940 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:12:51.944 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:12:52.192 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:13:03.690 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:24:43.468 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:24:43.752 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:27:17.187 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:28:49.056 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:28:49.288 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:29:41.106 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:29:41.314 ServerApp] Saving file at /integracion_apis/app/api_efirma/routes.py
+[I 2025-06-03 13:32:45.035 ServerApp] Saving file at /integracion_apis/app/__init__.py
+[I 2025-06-03 13:32:45.255 ServerApp] Saving file at /integracion_apis/app/__init__.py
+[I 2025-06-03 13:32:51.668 ServerApp] Saving file at /integracion_apis/app/api_efirma/__init__.py
+[I 2025-06-03 13:36:05.829 ServerApp] Creating new file in /integracion_apis/app
+[I 2025-06-03 13:36:13.770 ServerApp] Saving file at /integracion_apis/app/requirements.txt
+[I 2025-06-03 13:36:14.324 ServerApp] Saving file at /integracion_apis/app/requirements.txt
+[I 2025-06-03 13:37:44.268 ServerApp] Saving file at /integracion_apis/app/requirements.txt
+[I 2025-06-03 13:37:44.494 ServerApp] Saving file at /integracion_apis/app/requirements.txt
+[I 2025-06-03 13:39:14.787 ServerApp] Copying integracion_apis/app/api_tablas/conexion.py to /integracion_apis/app
+[I 2025-06-03 13:39:57.302 ServerApp] Saving file at /integracion_apis/app/api_tablas/__init__.py
+[I 2025-06-03 13:45:15.319 ServerApp] Saving file at /integracion_apis/app/__init__.py
+[I 2025-06-03 13:46:37.656 ServerApp] Saving file at /integracion_apis/app/__init__.py
+[I 2025-06-03 13:47:50.952 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 13:47:52.351 ServerApp] Saving file at /integracion_apis/app/readme.md
+[I 2025-06-03 13:54:10.057 ServerApp] Saving file at /integracion_apis/app/__init__.py
+[I 2025-06-03 13:55:51.936 ServerApp] Saving file at /integracion_apis/app/api_efirma/__init__.py
+[I 2025-06-04 13:30:38.105 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-04 13:30:38.116 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-06-04 13:30:38.128 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-06-04 13:30:38.140 ServerApp] notebook | extension was successfully linked.
+[I 2025-06-04 13:30:40.608 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-06-04 13:30:40.608 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2025-06-04 13:30:40.784 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-06-04 13:30:40.790 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-06-04 13:30:40.791 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-06-04 13:30:40.805 LabApp] JupyterLab extension loaded from C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyterlab
+[I 2025-06-04 13:30:40.805 LabApp] JupyterLab application directory is C:\Users\francisco.contreras\AppData\Local\anaconda3\share\jupyter\lab
+[I 2025-06-04 13:30:40.806 LabApp] Extension Manager is 'pypi'.
+[I 2025-06-04 13:30:41.260 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-06-04 13:30:41.273 ServerApp] notebook | extension was successfully loaded.
+[I 2025-06-04 13:30:41.274 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2025-06-04 13:30:41.276 ServerApp] Serving notebooks from local directory: C:\Users\francisco.contreras\Desktop\jupyter-projects\notebooks
+[I 2025-06-04 13:30:41.277 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-06-04 13:30:41.277 ServerApp] http://localhost:8888/lab?token=2125d2b74dac8caf5bc181d601ff83b98b15501b7b2fec72
+[I 2025-06-04 13:30:41.277 ServerApp]     http://127.0.0.1:8888/lab?token=2125d2b74dac8caf5bc181d601ff83b98b15501b7b2fec72
+[I 2025-06-04 13:30:41.277 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-06-04 13:30:41.477 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/francisco.contreras/AppData/Roaming/jupyter/runtime/jpserver-1504-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=2125d2b74dac8caf5bc181d601ff83b98b15501b7b2fec72
+        http://127.0.0.1:8888/lab?token=2125d2b74dac8caf5bc181d601ff83b98b15501b7b2fec72
+[W 2025-06-04 13:30:41.635 ServerApp] Could not determine npm prefix: [WinError 2] El sistema no puede encontrar el archivo especificado
+[I 2025-06-04 13:30:41.932 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-06-04 13:30:51.105 LabApp] Build is up to date
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:07.346 ServerApp] Kernel started: 81c8dfe0-8df8-4446-bc99-8c3b2db7a225
+[I 2025-06-04 13:31:10.231 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:13.262 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (2/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:16.282 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (3/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:19.329 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (4/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:22.352 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (5/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[W 2025-06-04 13:31:25.384 ServerApp] AsyncIOLoopKernelRestarter: restart failed
+[W 2025-06-04 13:31:25.385 ServerApp] Kernel 81c8dfe0-8df8-4446-bc99-8c3b2db7a225 died, removing from map.
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:25.861 ServerApp] Kernel started: 2bb97ed3-19dd-455e-aeea-dd9e14b4baa3
+[I 2025-06-04 13:31:28.846 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:31.854 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (2/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:34.870 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (3/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:37.896 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (4/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[I 2025-06-04 13:31:40.932 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (5/5), new random ports
+did not find executable at 'C:\Users\francisco.contreras\AppData\Local\Programs\Python\Python313\python.exe': El sistema no puede encontrar el archivo especificado.
+
+[W 2025-06-04 13:31:43.946 ServerApp] AsyncIOLoopKernelRestarter: restart failed
+[W 2025-06-04 13:31:43.946 ServerApp] Kernel 2bb97ed3-19dd-455e-aeea-dd9e14b4baa3 died, removing from map.
+[E 2025-06-04 13:32:07.465 ServerApp] Uncaught exception GET /api/kernels/81c8dfe0-8df8-4446-bc99-8c3b2db7a225/channels?session_id=f31fa236-6a0d-4c7a-b827-811f0ff265d6 (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/api/kernels/81c8dfe0-8df8-4446-bc99-8c3b2db7a225/channels?session_id=f31fa236-6a0d-4c7a-b827-811f0ff265d6', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 65, in get
+        await self.pre_get()
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 59, in pre_get
+        await self.connection.prepare()
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\connection\channels.py", line 318, in prepare
+        raise TimeoutError(msg)
+    TimeoutError: Kernel never reached an 'alive' state.
+[E 2025-06-04 13:32:07.582 ServerApp] {
+      "Host": "localhost:8888",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+    }
+[E 2025-06-04 13:32:07.583 ServerApp] 500 GET /api/kernels/81c8dfe0-8df8-4446-bc99-8c3b2db7a225/channels?session_id=f31fa236-6a0d-4c7a-b827-811f0ff265d6 (309f91296725408088f28968e3de7ab3@::1) 60187.88ms referer=None
+[E 2025-06-04 13:32:07.792 ServerApp] Uncaught exception GET /api/kernels/81c8dfe0-8df8-4446-bc99-8c3b2db7a225/channels?session_id=30f54179-075d-44fd-8c2f-f3248d0e8bfb (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/api/kernels/81c8dfe0-8df8-4446-bc99-8c3b2db7a225/channels?session_id=30f54179-075d-44fd-8c2f-f3248d0e8bfb', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 65, in get
+        await self.pre_get()
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 59, in pre_get
+        await self.connection.prepare()
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\connection\channels.py", line 318, in prepare
+        raise TimeoutError(msg)
+    TimeoutError: Kernel never reached an 'alive' state.
+[E 2025-06-04 13:32:07.796 ServerApp] {
+      "Host": "localhost:8888",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+    }
+[E 2025-06-04 13:32:07.796 ServerApp] 500 GET /api/kernels/81c8dfe0-8df8-4446-bc99-8c3b2db7a225/channels?session_id=30f54179-075d-44fd-8c2f-f3248d0e8bfb (309f91296725408088f28968e3de7ab3@127.0.0.1) 60080.69ms referer=None
+[W 2025-06-04 13:32:28.911 ServerApp] Timeout waiting for kernel_info reply from 2bb97ed3-19dd-455e-aeea-dd9e14b4baa3
+[W 2025-06-04 13:32:28.911 ServerApp] Timeout waiting for kernel_info reply from 2bb97ed3-19dd-455e-aeea-dd9e14b4baa3
+[E 2025-06-04 13:32:28.912 ServerApp] Uncaught exception GET /api/kernels/2bb97ed3-19dd-455e-aeea-dd9e14b4baa3/channels?session_id=1737ea7e-a243-4b9e-bc15-88e8f995f9e7 (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/api/kernels/2bb97ed3-19dd-455e-aeea-dd9e14b4baa3/channels?session_id=1737ea7e-a243-4b9e-bc15-88e8f995f9e7', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 66, in get
+        await super().get(kernel_id=kernel_id)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\websocket.py", line 273, in get
+        await self.ws_connection.accept_connection(self)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\websocket.py", line 863, in accept_connection
+        await self._accept_connection(handler)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\websocket.py", line 903, in _accept_connection
+        self.selected_subprotocol = handler.select_subprotocol(subprotocols)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 88, in select_subprotocol
+        preferred_protocol = self.connection.kernel_ws_protocol
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    AttributeError: 'NoneType' object has no attribute 'kernel_ws_protocol'
+[E 2025-06-04 13:32:28.925 ServerApp] {
+      "Host": "localhost:8888",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+    }
+[E 2025-06-04 13:32:28.925 ServerApp] 500 GET /api/kernels/2bb97ed3-19dd-455e-aeea-dd9e14b4baa3/channels?session_id=1737ea7e-a243-4b9e-bc15-88e8f995f9e7 (309f91296725408088f28968e3de7ab3@::1) 63031.46ms referer=None
+[E 2025-06-04 13:32:28.926 ServerApp] Uncaught exception GET /api/kernels/2bb97ed3-19dd-455e-aeea-dd9e14b4baa3/channels?session_id=3c295607-1a9d-475e-9bc9-6a82902b202d (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/api/kernels/2bb97ed3-19dd-455e-aeea-dd9e14b4baa3/channels?session_id=3c295607-1a9d-475e-9bc9-6a82902b202d', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 66, in get
+        await super().get(kernel_id=kernel_id)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\websocket.py", line 273, in get
+        await self.ws_connection.accept_connection(self)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\websocket.py", line 863, in accept_connection
+        await self._accept_connection(handler)
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\tornado\websocket.py", line 903, in _accept_connection
+        self.selected_subprotocol = handler.select_subprotocol(subprotocols)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\francisco.contreras\AppData\Local\anaconda3\Lib\site-packages\jupyter_server\services\kernels\websocket.py", line 88, in select_subprotocol
+        preferred_protocol = self.connection.kernel_ws_protocol
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    AttributeError: 'NoneType' object has no attribute 'kernel_ws_protocol'
+[E 2025-06-04 13:32:28.932 ServerApp] {
+      "Host": "localhost:8888",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+    }
+[E 2025-06-04 13:32:28.932 ServerApp] 500 GET /api/kernels/2bb97ed3-19dd-455e-aeea-dd9e14b4baa3/channels?session_id=3c295607-1a9d-475e-9bc9-6a82902b202d (309f91296725408088f28968e3de7ab3@127.0.0.1) 62697.85ms referer=None
+[I 2025-06-04 13:37:25.682 ServerApp] Saving file at /document_Complete.ipynb

@@ -1,0 +1,47 @@
+# Configuración de Kong 2
+# Referencia: https://docs.konghq.com/2.1.x/db-less-and-declarative-config/#the-declarative-configuration-format
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kong-config
+data:
+  kong.yml: |
+    _format_version: '2.1'
+    services:
+      - name: sofia-b
+        url: http://staging-auto-deploy.maya-b-1844-staging:5000/sofia
+        routes:
+        - name: sofia-b
+          preserve_host: false
+          methods: 
+          - GET
+          - POST
+          - PUT
+          - OPTIONS
+          protocols:
+          - http
+          - https
+          paths:
+          - /prueba-maya
+
+    # plugins:
+    #   - name: cors
+    #     service: sofia-b
+    #     protocols:
+    #     - http
+    #     - https
+    #     config:
+    #       methods:
+    #       - GET
+    #       exposed_headers:
+    #       - content-type
+    #       - authorization
+    #       headers:
+    #       - content-type
+    #       - authorization
+    #       origins:
+    #       - "https://maya.stgcd.funcionpublica.gob.mx"
+    #       preflight_continue: true
+    #       credentials: false
+
+          

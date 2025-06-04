@@ -7,11 +7,12 @@ import os
 import secrets
 from pycfdi_credentials import Certificate
 from ocsp_proxy import validar_ocsp_proxy
-from flask_cors import CORS
+from flask import Blueprint
 
-app = Flask(__name__)
+efirma_bp = Blueprint('efirma_bp', __name__)
+
 app.secret_key = secrets.token_hex(32)
-CORS(app, origins=["http://172.25.30.98:8083"])
+
 
 # === Configuración de carpetas y jBPM ===
 UPLOAD_FOLDER = os.path.join(os.path.dirname(__file__), 'uploaded_docs')

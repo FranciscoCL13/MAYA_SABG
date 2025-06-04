@@ -1,0 +1,69 @@
+stages:
+  - config
+  - staging
+  - production
+
+image: registry.gitlab.com/gitlab-org/cluster-integration/helm-install-image/releases/3.5.3-kube-1.16.15-alpine-3.12
+
+variables:
+  VERSION: 2.16.5
+
+Staging:
+  stage: staging
+  script:
+    - echo "configurando contexto"
+    - kubectl config use-context $KUBE_CONTEXT
+    - echo "generando el namespace"
+    - export KUBE_NAMESPACE=$(echo "$CI_PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr '_' '-')-$CI_PROJECT_ID-$CI_ENVIRONMENT_SLUG
+    - echo "Asegurando que existe namespace"
+    - kubectl get namespace "$KUBE_NAMESPACE" || kubectl create namespace "$KUBE_NAMESPACE"
+    - echo "Aplicando ConfigMap con configuración de kong/kong"
+    - echo "$KUBE_NAMESPACE"
+    - kubectl --namespace "$KUBE_NAMESPACE" apply -f config-staging.yml
+    - echo "Activando repositorio de Helm charts de Kong..."
+    - helm repo add kong https://charts.konghq.com
+    - helm repo update
+    - |
+      helm upgrade kong kong/kong \
+        --install \
+        -f values.yml \
+        --namespace $KUBE_NAMESPACE \
+        ${VERSION:+--version $VERSION} \
+        ${HELM_UPGRADE_EXTRA_ARGS} --wait
+    - echo 'Re-deploy'
+    - 'kubectl -n=$KUBE_NAMESPACE patch deployment kong-kong -p "{\"spec\": {\"template\": {\"metadata\": { \"labels\": {  \"redeploy\": \"$(date +%s)\"}}}}}"'
+  environment:
+    name: staging
+    url: https://${INGRESS_HOST}
+  only:
+  - main
+
+Production:
+  stage: production
+  script:
+    - echo "configurando contexto"
+    - kubectl config use-context $KUBE_CONTEXT
+    - echo "generando el namespace"
+    - export KUBE_NAMESPACE=$(echo "$CI_PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | tr '_' '-')-$CI_PROJECT_ID-$CI_ENVIRONMENT_SLUG
+    - echo "Asegurando que existe namespace"
+    - kubectl get namespace "$KUBE_NAMESPACE" || kubectl create namespace "$KUBE_NAMESPACE"
+    - echo "Aplicando ConfigMap con configuración de kong/kong"
+    - echo "$KUBE_NAMESPACE"
+    - kubectl --namespace "$KUBE_NAMESPACE" apply -f config-prod.yml
+    - echo "Activando repositorio de Helm charts de Kong..."
+    - helm repo add kong https://charts.konghq.com
+    - helm repo update
+    - |
+      helm upgrade kong kong/kong \
+        --install \
+        -f values.yml \
+        --namespace $KUBE_NAMESPACE \
+        ${VERSION:+--version $VERSION} \
+        ${HELM_UPGRADE_EXTRA_ARGS} --wait
+    - echo 'Re-deploy'
+    - 'kubectl -n=$KUBE_NAMESPACE patch deployment kong-kong -p "{\"spec\": {\"template\": {\"metadata\": { \"labels\": {  \"redeploy\": \"$(date +%s)\"}}}}}"'
+  environment:
+    name: production
+    url: https://${INGRESS_HOST}
+  only:
+  - main

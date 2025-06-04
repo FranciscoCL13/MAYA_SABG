@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Firma Digital</title>
+</head>
+<body>
+    <h1>Formulario para Firma Digital (form7)</h1>
+
+    <form id="formFirma" method="POST" onsubmit="return enviarFirma(event)">
+        <label for="documentId">ID Documento:</label><br>
+        <input type="text" id="documentId" name="documentId" required><br><br>
+
+        <label for="firmaDigital">Firma Digital (Base64):</label><br>
+        <textarea id="firmaDigital" name="firmaDigital" rows="6" cols="60" required></textarea><br><br>
+
+        <button type="submit">Enviar Firma</button>
+    </form>
+
+    <div id="respuesta"></div>
+
+    <script>
+        async function enviarFirma(event) {
+            event.preventDefault();
+
+            const documentId = document.getElementById('documentId').value;
+            const firmaDigital = document.getElementById('firmaDigital').value;
+
+            const payload = {
+                documentId,
+                firmaDigital
+            };
+
+            try {
+                const response = await fetch('/efirma/procesar_firma', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+                document.getElementById('respuesta').innerText = JSON.stringify(data, null, 2);
+
+            } catch (error) {
+                document.getElementById('respuesta').innerText = 'Error al enviar la firma';
+            }
+        }
+    </script>
+</body>
+</html>
