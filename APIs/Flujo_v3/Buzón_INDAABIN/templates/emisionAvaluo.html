@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emisión del Avalúo Maestro</title>
+
+    <!-- CSS del Gobierno -->
+    <link href="https://framework-gb.cdn.gob.mx/gm/v4/image/favicon.ico" rel="shortcut icon">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v4/css/main.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="{{ url_for('static', filename='css/emisionAvaluo.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-----------------------------------------BARRA DE PROGRESO-------------------------------------------------->
+    <ul class="wizard-steps">
+        <li class="completed">
+            <h5>Paso 1</h5>
+            <span>Emisión de Avaluo Maestro</span>
+        </li>
+        <li>
+            <h5>Paso 2</h5>
+            <span>Firma electrónica</span>
+        </li>
+    </ul>
+    <!------------------------------------------LOGO-------------------------------------------------------------->
+    <a href="https://www.gob.mx/buengobierno" target="_blank">
+        <img class="logo" url="https://www.gob.mx/buengobierno"
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Buen_gobierno.svg" alt="Buen Gobierno">
+    </a>
+    <!---------------------------------------------FORMULARIO----------------------------------------------------->
+    <div>
+        <strong>Clave de solicitud de avalúo maestro (plataforma INDAABIN):</strong> {{ emisionAvaluo.identificador }}
+    </div>
+
+    <div class="form-container">
+        <h2>Emisión del Avalúo Maestro</h2>
+        <hr class="red" style="padding:0; margin-bottom:20px;">
+        <form id="emision" enctype="multipart/form-data">
+
+            <input type="hidden" id="clave_solicitud" name="clave_solicitud" value="{{ emisionAvaluo.identificador }}">
+
+            <div class="form-group">
+                <div class="field">
+                    <label for="servidor">Nombre del servidor público del INDAABIN<br>que informa sobre la emisión del
+                        avalúo maestro:</label>
+                    <input type="text" id="servidor" name="servidor" placeholder="Nombre del servidor" required>
+                </div>
+
+                <div class="field">
+                    <label for="fuente">Valor total en pesos del terreno<br>determinado en el avalúo maestro:</label>
+                    <input type="number" id="fuente" name="fuente" placeholder="$0,000.00" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="field">
+                    <label for="costo">Nombre del perito que realizó el avalúo maestro:</label>
+                    <input type="text" id="costo" name="costo" placeholder="Nombre del perito" required>
+                </div>
+
+                <div class="field">
+                    <label for="fecha_pago">Superficie valuada en metros cuadrados:</label>
+                    <input type="number" id="fecha_pago" name="fecha_pago" placeholder="m²" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="field">
+                    <label for="comprobante_numero">Clave del Avalúo Maestro:</label>
+                    <input type="text" id="comprobante_numero" name="comprobante_numero" placeholder="AB1-C2D" required>
+                </div>
+
+                <div class="field">
+                    <label for="clc_numero">Uso del terreno:</label>
+                    <input type="text" id="clc_numero" name="clc_numero" placeholder="" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="field">
+                    <label for="archivo_comprobante">Versión digital del avalúo maestro entregado (.pdf):</label>
+                    <input type="file" id="archivo_comprobante" name="archivo_comprobante" accept=".pdf" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar y Firmar</button>
+        </form>
+    </div>
+    <!-------------------------------------------------------JS's---------------------------------------------->
+    <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+    <script src="{{ url_for('static', filename='js/emisionAvaluo.js') }}"></script>
+</body>
+
+</html>

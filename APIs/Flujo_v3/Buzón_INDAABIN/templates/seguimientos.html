@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Seguimientos - Emisión Avalúo</title>
+</head>
+<body>
+    <h2>Seguimientos - Todos los Registros de Emisión Avalúo</h2>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Clave Solicitud</th>
+                <th>Servidor</th>
+                <th>Fuente</th>
+                <th>Costo</th>
+                <th>Fecha de Pago</th>
+                <th>Comprobante Número</th>
+                <th>CLC Número</th>
+                <th>Archivo Comprobante</th>
+                <th>Usuario (RFC)</th>
+                <th>Fecha Firmada</th>
+                <th>Firma Digital</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in registros %}
+            <tr>
+                <td>{{ r.id }}</td>
+                <td>{{ r.clave_solicitud }}</td>
+                <td>{{ r.servidor }}</td>
+                <td>{{ r.fuente }}</td>
+                <td>{{ r.costo }}</td>
+                <td>{{ r.fecha_pago }}</td>
+                <td>{{ r.comprobante_numero }}</td>
+                <td>{{ r.clc_numero }}</td>
+                <td>{{ r.archivo_comprobante }}</td>
+                <td>{{ r.usuario }}</td>
+                <td>{{ r.fecha_firmada }}</td>
+                <td><pre>{{ r.firma_digital }}</pre></td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="12">No hay registros disponibles.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="{{ url_for('home') }}">Volver al Home</a>
+</body>
+</html>
